@@ -1,0 +1,3 @@
+Pillow
+fitparse
+# pillow-heif  # décommenter si des photos sont en .heic (iPhone)

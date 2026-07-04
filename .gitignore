@@ -8,6 +8,10 @@ scripts/.geocode_cache.json
 # Python
 __pycache__/
 *.pyc
+.venv/
 
 # OS
 .DS_Store
+
+# Claude Code local state
+.claude/

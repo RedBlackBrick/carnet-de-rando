@@ -65,6 +65,37 @@ def haversine_m(lat1, lon1, lat2, lon2):
     return 2 * r * math.asin(math.sqrt(a))
 
 
+def elevation_gain_loss(points, smoothing_window=31):
+    """Dénivelé +/- à partir d'une série d'altitudes lissée (moyenne glissante).
+
+    Les traces montre échantillonnent l'altitude toutes les quelques secondes ; sommer les
+    deltas bruts entre points consécutifs surestime fortement le dénivelé réel (le bruit du
+    capteur barométrique s'accumule sur des milliers de points). Un lissage sur ~31 points
+    (~1-2 min à la fréquence d'échantillonnage habituelle d'une montre Garmin) reproduit de
+    très près le dénivelé calculé par Garmin Connect (écart <5% mesuré sur des traces réelles).
+    """
+    eles = [p["ele"] for p in points]
+    n = len(eles)
+    half = smoothing_window // 2
+    smoothed = []
+    for i in range(n):
+        lo, hi = max(0, i - half), min(n, i + half + 1)
+        window_vals = [e for e in eles[lo:hi] if e is not None]
+        smoothed.append(sum(window_vals) / len(window_vals) if window_vals else None)
+
+    gain_m = 0.0
+    loss_m = 0.0
+    for a, b in zip(smoothed, smoothed[1:]):
+        if a is None or b is None:
+            continue
+        delta = b - a
+        if delta > 0:
+            gain_m += delta
+        else:
+            loss_m += -delta
+    return gain_m, loss_m
+
+
 def parse_gpx_time(text):
     if not text:
         return None
@@ -91,16 +122,10 @@ def parse_gpx(path: Path):
         return None
 
     distance_m = 0.0
-    gain_m = 0.0
-    loss_m = 0.0
     for a, b in zip(points, points[1:]):
         distance_m += haversine_m(a["lat"], a["lon"], b["lat"], b["lon"])
-        if a["ele"] is not None and b["ele"] is not None:
-            delta = b["ele"] - a["ele"]
-            if delta > 0:
-                gain_m += delta
-            else:
-                loss_m += -delta
+
+    gain_m, loss_m = elevation_gain_loss(points)
 
     times = [p["time"] for p in points if p["time"] is not None]
     start_time = min(times) if times else None

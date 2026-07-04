@@ -1,27 +1,233 @@
 {
   "trip": {
-    "title": "Ma randonnée",
-    "subtitle": "Quelques jours en montagne",
-    "startDate": "2026-07-01",
-    "endDate": "2026-07-05",
-    "intro": "Récit de notre randonnée de plusieurs jours, avec les traces GPS, les trajets en bus et les photos prises en chemin.",
+    "title": "Traversée des Pyrénées",
+    "subtitle": "Sept jours de randonnée, de Cauterets à Vielle-Aure",
+    "startDate": "2026-06-27",
+    "endDate": "2026-07-03",
+    "timezone": "Europe/Paris",
+    "intro": "Récit de notre randonnée de plusieurs jours dans les Pyrénées, avec les traces GPS, les trajets en bus et les photos prises en chemin.",
     "days": [
       {
         "id": "jour-1",
+        "date": "2026-06-27",
+        "title": "Cauterets",
+        "description": ""
+      },
+      {
+        "id": "jour-2",
+        "date": "2026-06-28",
+        "title": "Cauterets",
+        "description": ""
+      },
+      {
+        "id": "jour-3",
+        "date": "2026-06-29",
+        "title": "Gavarnie — Gèdre",
+        "description": ""
+      },
+      {
+        "id": "jour-4",
+        "date": "2026-06-30",
+        "title": "Gavarnie — Gèdre",
+        "description": ""
+      },
+      {
+        "id": "jour-5",
         "date": "2026-07-01",
-        "title": "Jour 1 — À compléter",
-        "description": "Description de l'étape (facultatif)."
+        "title": "Gavarnie — Gèdre",
+        "description": ""
+      },
+      {
+        "id": "jour-6",
+        "date": "2026-07-02",
+        "title": "Barèges",
+        "description": ""
+      },
+      {
+        "id": "jour-7",
+        "date": "2026-07-03",
+        "title": "Vielle-Aure",
+        "description": ""
       }
     ]
   },
   "stats": {
-    "totalDistanceKm": 0,
-    "totalElevationGainM": 0,
-    "totalDurationS": 0,
-    "dayCount": 0
+    "totalDistanceKm": 107.2,
+    "totalElevationGainM": 5636,
+    "totalDurationS": 182472.0,
+    "dayCount": 7
   },
-  "tracks": [],
+  "tracks": [
+    {
+      "id": "day-1",
+      "file": "data/gpx/day-1.gpx",
+      "label": "Cauterets",
+      "description": "",
+      "date": "2026-06-27",
+      "color": "#2f6f4f",
+      "distanceKm": 9.79,
+      "elevationGainM": 724,
+      "elevationLossM": 134,
+      "durationS": 15549.0,
+      "startTime": "2026-06-27T18:01:47+00:00",
+      "endTime": "2026-06-27T22:20:56+00:00",
+      "bounds": [
+        [
+          42.8500404,
+          -0.1419269
+        ],
+        [
+          42.8902273,
+          -0.1055514
+        ]
+      ]
+    },
+    {
+      "id": "day-2",
+      "file": "data/gpx/day-2.gpx",
+      "label": "Cauterets",
+      "description": "",
+      "date": "2026-06-28",
+      "color": "#b5651d",
+      "distanceKm": 13.77,
+      "elevationGainM": 1313,
+      "elevationLossM": 183,
+      "durationS": 29514.0,
+      "startTime": "2026-06-28T04:44:26+00:00",
+      "endTime": "2026-06-28T12:56:20+00:00",
+      "bounds": [
+        [
+          42.7792851,
+          -0.1426903
+        ],
+        [
+          42.851042,
+          -0.1243584
+        ]
+      ]
+    },
+    {
+      "id": "day-3",
+      "file": "data/gpx/day-3.gpx",
+      "label": "Gavarnie — Gèdre",
+      "description": "",
+      "date": "2026-06-29",
+      "color": "#3a6ea5",
+      "distanceKm": 16.26,
+      "elevationGainM": 278,
+      "elevationLossM": 1416,
+      "durationS": 27547.0,
+      "startTime": "2026-06-29T05:00:09+00:00",
+      "endTime": "2026-06-29T12:39:16+00:00",
+      "bounds": [
+        [
+          42.7373673,
+          -0.1241177
+        ],
+        [
+          42.7792139,
+          -0.0223107
+        ]
+      ]
+    },
+    {
+      "id": "day-4",
+      "file": "data/gpx/day-4.gpx",
+      "label": "Gavarnie — Gèdre",
+      "description": "",
+      "date": "2026-06-30",
+      "color": "#a13d3d",
+      "distanceKm": 11.94,
+      "elevationGainM": 904,
+      "elevationLossM": 271,
+      "durationS": 20875.0,
+      "startTime": "2026-06-30T05:12:03+00:00",
+      "endTime": "2026-06-30T10:59:58+00:00",
+      "bounds": [
+        [
+          42.6947575,
+          -0.0109545
+        ],
+        [
+          42.7279573,
+          0.0125011
+        ]
+      ]
+    },
+    {
+      "id": "day-5",
+      "file": "data/gpx/day-5.gpx",
+      "label": "Gavarnie — Gèdre",
+      "description": "",
+      "date": "2026-07-01",
+      "color": "#6b5b95",
+      "distanceKm": 17.36,
+      "elevationGainM": 569,
+      "elevationLossM": 1569,
+      "durationS": 29554.0,
+      "startTime": "2026-07-01T05:11:18+00:00",
+      "endTime": "2026-07-01T13:23:52+00:00",
+      "bounds": [
+        [
+          42.7126695,
+          0.0124689
+        ],
+        [
+          42.7869779,
+          0.0504782
+        ]
+      ]
+    },
+    {
+      "id": "day-6",
+      "file": "data/gpx/day-6.gpx",
+      "label": "Barèges",
+      "description": "",
+      "date": "2026-07-02",
+      "color": "#4c7a3f",
+      "distanceKm": 21.3,
+      "elevationGainM": 1669,
+      "elevationLossM": 594,
+      "durationS": 36564.0,
+      "startTime": "2026-07-02T07:46:04+00:00",
+      "endTime": "2026-07-02T17:55:28+00:00",
+      "bounds": [
+        [
+          42.8574168,
+          0.0626453
+        ],
+        [
+          42.9037008,
+          0.2076246
+        ]
+      ]
+    },
+    {
+      "id": "day-7",
+      "file": "data/gpx/day-7.gpx",
+      "label": "Vielle-Aure",
+      "description": "",
+      "date": "2026-07-03",
+      "color": "#c1875a",
+      "distanceKm": 16.8,
+      "elevationGainM": 179,
+      "elevationLossM": 1682,
+      "durationS": 22869.0,
+      "startTime": "2026-07-03T05:53:55+00:00",
+      "endTime": "2026-07-03T12:15:04+00:00",
+      "bounds": [
+        [
+          42.8297659,
+          0.2072053
+        ],
+        [
+          42.8575332,
+          0.3274977
+        ]
+      ]
+    }
+  ],
   "buses": [],
   "photos": [],
-  "generatedAt": "2026-07-04T12:12:45.031191+00:00"
+  "generatedAt": "2026-07-04T12:36:20.957254+00:00"
 }

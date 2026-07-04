@@ -1,15 +1,52 @@
 {
-  "title": "Ma randonnée",
-  "subtitle": "Quelques jours en montagne",
-  "startDate": "2026-07-01",
-  "endDate": "2026-07-05",
-  "intro": "Récit de notre randonnée de plusieurs jours, avec les traces GPS, les trajets en bus et les photos prises en chemin.",
+  "title": "Traversée des Pyrénées",
+  "subtitle": "Sept jours de randonnée, de Cauterets à Vielle-Aure",
+  "startDate": "2026-06-27",
+  "endDate": "2026-07-03",
+  "timezone": "Europe/Paris",
+  "intro": "Récit de notre randonnée de plusieurs jours dans les Pyrénées, avec les traces GPS, les trajets en bus et les photos prises en chemin.",
   "days": [
     {
       "id": "jour-1",
+      "date": "2026-06-27",
+      "title": "Cauterets",
+      "description": ""
+    },
+    {
+      "id": "jour-2",
+      "date": "2026-06-28",
+      "title": "Cauterets",
+      "description": ""
+    },
+    {
+      "id": "jour-3",
+      "date": "2026-06-29",
+      "title": "Gavarnie — Gèdre",
+      "description": ""
+    },
+    {
+      "id": "jour-4",
+      "date": "2026-06-30",
+      "title": "Gavarnie — Gèdre",
+      "description": ""
+    },
+    {
+      "id": "jour-5",
       "date": "2026-07-01",
-      "title": "Jour 1 — À compléter",
-      "description": "Description de l'étape (facultatif)."
+      "title": "Gavarnie — Gèdre",
+      "description": ""
+    },
+    {
+      "id": "jour-6",
+      "date": "2026-07-02",
+      "title": "Barèges",
+      "description": ""
+    },
+    {
+      "id": "jour-7",
+      "date": "2026-07-03",
+      "title": "Vielle-Aure",
+      "description": ""
     }
   ]
 }
