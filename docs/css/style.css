@@ -384,7 +384,9 @@ a { color: var(--pine); }
   position: fixed;
   inset: 0;
   background: rgba(20, 24, 18, 0.93);
-  z-index: 200;
+  /* Au-dessus des panneaux/contrôles Leaflet (jusqu'à z-index 1000 pour .leaflet-top/.leaflet-bottom),
+     sinon les boutons de zoom et le sélecteur de fond de carte restent visibles par-dessus. */
+  z-index: 2000;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -398,8 +400,32 @@ a { color: var(--pine); }
   border-radius: 4px;
   box-shadow: 0 20px 60px rgba(0,0,0,0.5);
 }
+.lightbox-minimap {
+  position: absolute;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  width: 170px;
+  height: 170px;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 2px solid var(--paper-alt);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+}
+.lightbox-minimap[hidden] { display: none; }
+.lightbox-minimap .leaflet-control-attribution {
+  font-size: 0.55rem;
+  padding: 0 4px;
+  background: rgba(247, 243, 232, 0.75);
+}
+.lightbox-minimap .leaflet-marker-icon { filter: drop-shadow(0 1px 2px rgba(0,0,0,0.6)); }
+
+@media (max-width: 600px) {
+  .lightbox-minimap { width: 110px; height: 110px; bottom: 0.75rem; right: 0.75rem; }
+}
+
 .lightbox-caption { max-width: 700px; text-align: center; color: var(--paper-alt); margin-top: 1rem; }
 .lightbox-date { font-family: var(--font-mono); font-size: 0.75rem; opacity: 0.7; margin-top: 0.2rem; }
+.lightbox-meta { font-family: var(--font-mono); font-size: 0.68rem; opacity: 0.55; margin-top: 0.25rem; }
 .lightbox-close, .lightbox-nav {
   position: absolute;
   background: transparent;

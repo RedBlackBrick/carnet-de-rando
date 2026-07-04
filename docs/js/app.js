@@ -234,6 +234,18 @@ function renderDetailLiaisons(manifest) {
   `;
 }
 
+function formatMediaMeta(media) {
+  const parts = [];
+  if (media.altitudeM != null) parts.push(`${media.altitudeM} m`);
+  if (media.direction != null) parts.push(`${media.direction}° ${media.directionCompass || ""}`.trim());
+  if (media.camera) parts.push(media.camera);
+  const settings = [media.aperture, media.shutterSpeed, media.iso ? `ISO ${media.iso}` : null, media.focalLength]
+    .filter(Boolean)
+    .join(" · ");
+  if (settings) parts.push(settings);
+  return parts.join(" · ");
+}
+
 let allMedia = [];
 function openLightbox(index) {
   const lb = document.getElementById("lightbox");
@@ -260,8 +272,48 @@ function openLightbox(index) {
 
   document.getElementById("lightbox-caption-text").textContent = media.caption || "";
   document.getElementById("lightbox-date").textContent = media.date ? formatDate(media.date) : "";
+  document.getElementById("lightbox-meta").textContent = formatMediaMeta(media);
   lb.dataset.index = index;
   lb.hidden = false;
+
+  updateLightboxMiniMap(media);
+}
+
+let miniMap = null;
+let miniMapMarker = null;
+function updateLightboxMiniMap(media) {
+  const container = document.getElementById("lightbox-minimap");
+  if (media.lat == null || media.lon == null) {
+    container.hidden = true;
+    return;
+  }
+  container.hidden = false;
+
+  // Créée au premier usage : un conteneur caché (display:none) donnerait à Leaflet une taille de 0x0.
+  if (!miniMap) {
+    miniMap = L.map(container, {
+      zoomControl: false,
+      dragging: false,
+      scrollWheelZoom: false,
+      doubleClickZoom: false,
+      touchZoom: false,
+      keyboard: false,
+      attributionControl: true,
+    });
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      maxZoom: 19,
+      attribution: "© OSM",
+    }).addTo(miniMap);
+  }
+
+  const latlng = [media.lat, media.lon];
+  miniMap.setView(latlng, 14);
+  if (miniMapMarker) {
+    miniMapMarker.setLatLng(latlng);
+  } else {
+    miniMapMarker = L.marker(latlng).addTo(miniMap);
+  }
+  requestAnimationFrame(() => miniMap.invalidateSize());
 }
 
 function setupLightbox() {

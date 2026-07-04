@@ -267,10 +267,76 @@ def _to_deg(value_tuple):
     return d + m / 60 + s / 3600
 
 
+def _compass_point(degrees):
+    points = ["N", "NE", "E", "SE", "S", "SO", "O", "NO"]
+    return points[round(degrees / 45) % 8]
+
+
+def _fmt_num(value):
+    return f"{round(float(value), 1):g}"
+
+
+def extract_camera_settings(exif):
+    """Altitude/direction GPS + réglages photo (appareil, ouverture, vitesse, ISO, focale)."""
+    settings = {}
+
+    gps_ifd = exif.get_ifd(0x8825)
+    if gps_ifd:
+        try:
+            alt = float(gps_ifd[6])
+            if gps_ifd.get(5) == 1:
+                alt = -alt
+            settings["altitudeM"] = round(alt)
+        except (KeyError, TypeError, ValueError):
+            pass
+        try:
+            direction = float(gps_ifd[17])
+            settings["direction"] = round(direction)
+            settings["directionCompass"] = _compass_point(direction)
+        except (KeyError, TypeError, ValueError):
+            pass
+
+    make = exif.get(271)
+    model = exif.get(272)
+    if model:
+        model = model.strip()
+        make = (make or "").strip()
+        settings["camera"] = model if not make or model.lower().startswith(make.lower()) else f"{make} {model}"
+
+    try:
+        exif_ifd = exif.get_ifd(0x8769)
+    except Exception:
+        exif_ifd = {}
+    if exif_ifd:
+        try:
+            settings["aperture"] = f"f/{_fmt_num(exif_ifd[33437])}"
+        except (KeyError, TypeError, ValueError, ZeroDivisionError):
+            pass
+        try:
+            exposure = float(exif_ifd[33434])
+            settings["shutterSpeed"] = f"1/{round(1 / exposure)}s" if exposure < 1 else f"{_fmt_num(exposure)}s"
+        except (KeyError, TypeError, ValueError, ZeroDivisionError):
+            pass
+        iso = exif_ifd.get(34855)
+        if iso:
+            settings["iso"] = int(iso[0]) if isinstance(iso, (tuple, list)) else int(iso)
+        # Préfère l'équivalent 35 mm (plus parlant) à la focale réelle du capteur (ex. 5.4mm sur mobile).
+        focal_35mm = exif_ifd.get(41989)
+        try:
+            if focal_35mm:
+                settings["focalLength"] = f"{int(focal_35mm)}mm"
+            else:
+                settings["focalLength"] = f"{_fmt_num(exif_ifd[37386])}mm"
+        except (KeyError, TypeError, ValueError, ZeroDivisionError):
+            pass
+
+    return settings
+
+
 def extract_exif(img: Image.Image):
     exif = img.getexif()
     if not exif:
-        return None, None
+        return None, None, {}
 
     gps_ifd = exif.get_ifd(0x8825)
     lat = lon = None
@@ -298,7 +364,8 @@ def extract_exif(img: Image.Image):
             dt = None
 
     has_gps = lat is not None and lon is not None and (lat, lon) != (0.0, 0.0)
-    return (lat, lon) if has_gps else None, dt
+    settings = extract_camera_settings(exif)
+    return (lat, lon) if has_gps else None, dt, settings
 
 
 def find_nearest_time_point(dt_utc, time_points):
@@ -339,7 +406,7 @@ def build_photos(time_points, trip_timezone, captions):
             skipped.append((path.name, f"lecture impossible ({e})"))
             continue
 
-        gps, dt_naive = extract_exif(img)
+        gps, dt_naive, settings = extract_exif(img)
         source = None
         lat = lon = None
 
@@ -380,7 +447,7 @@ def build_photos(time_points, trip_timezone, captions):
             dt_local = dt_naive.replace(tzinfo=tz) if tz else dt_naive.replace(tzinfo=timezone.utc)
             date_iso = dt_local.isoformat()
 
-        entries.append({
+        entry = {
             "file": f"photos/full/{out_name}",
             "thumb": f"photos/thumb/{out_name}",
             "lat": lat,
@@ -388,7 +455,9 @@ def build_photos(time_points, trip_timezone, captions):
             "date": date_iso,
             "caption": captions.get(path.name, ""),
             "positionSource": source,
-        })
+        }
+        entry.update(settings)
+        entries.append(entry)
 
     entries.sort(key=lambda e: e["date"] or "")
 
