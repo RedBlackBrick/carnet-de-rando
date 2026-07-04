@@ -4,49 +4,49 @@
   "startDate": "2026-06-27",
   "endDate": "2026-07-03",
   "timezone": "Europe/Paris",
-  "intro": "Récit de notre randonnée de plusieurs jours dans les Pyrénées, avec les traces GPS, les trajets en bus et les photos prises en chemin.",
+  "intro": "Une traversée de sept jours dans les Hautes-Pyrénées, de Cauterets à la vallée d'Aure, en suivant le fil du GR10 : vallée de Gaube et Vignemale, cirques classés de Gavarnie et d'Estaubé, cols au-dessus de 2 700 m et lacs du Néouvielle. Traces GPS de la montre, trajets en bus et photos prises en chemin.",
   "days": [
     {
       "id": "jour-1",
       "date": "2026-06-27",
-      "title": "Cauterets",
-      "description": ""
+      "title": "Cauterets → Pont d'Espagne",
+      "description": "Mise en jambes depuis Cauterets (935 m) : on remonte le Val de Jéret le long du gave, au fil des cascades (Cerisey, Pas de l'Ours, Boussès), jusqu'au site classé du Pont d'Espagne (1 496 m). C'est là que se rejoignent les gaves de Gaube et du Marcadau, à l'entrée du Parc national des Pyrénées."
     },
     {
       "id": "jour-2",
       "date": "2026-06-28",
-      "title": "Cauterets",
-      "description": ""
+      "title": "Vallée de Gaube → Hourquette d'Ossoue",
+      "description": "La grosse montée du séjour (+1 300 m). Du Pont d'Espagne on longe le splendide Lac de Gaube face au Vignemale (3 298 m), plus haut sommet des Pyrénées françaises, puis on grimpe par les Oulettes de Gaube jusqu'à la Hourquette d'Ossoue (2 734 m) — le point le plus haut du GR10."
     },
     {
       "id": "jour-3",
       "date": "2026-06-29",
-      "title": "Gavarnie — Gèdre",
-      "description": ""
+      "title": "Vallée d'Ossoue → Gavarnie",
+      "description": "Longue descente au pied du Vignemale et de son glacier : on bascule de la Hourquette d'Ossoue dans la vallée d'Ossoue, suivie en pente douce en passant le barrage d'Ossoue, jusqu'au village de Gavarnie."
     },
     {
       "id": "jour-4",
       "date": "2026-06-30",
-      "title": "Gavarnie — Gèdre",
-      "description": ""
+      "title": "Cirque de Gavarnie → Espuguettes",
+      "description": "Journée face au cirque de Gavarnie, classé à l'UNESCO (ensemble Pyrénées–Mont Perdu). On approche la Grande Cascade — 422 m de chute, la plus haute de France métropolitaine — avant de monter au Refuge des Espuguettes (2 027 m), posé en balcon au-dessus de la vallée."
     },
     {
       "id": "jour-5",
       "date": "2026-07-01",
-      "title": "Gavarnie — Gèdre",
-      "description": ""
+      "title": "Hourquette d'Alans → Gèdre",
+      "description": "Étape de cols et de cirques. Depuis les Espuguettes on franchit la Hourquette d'Alans (2 430 m) pour basculer dans le cirque d'Estaubé, descendu jusqu'au lac des Gloriettes, puis longue descente par les granges jusqu'à Gèdre (1 010 m)."
     },
     {
       "id": "jour-6",
       "date": "2026-07-02",
-      "title": "Barèges",
-      "description": ""
+      "title": "Barèges → Col de Bastanet",
+      "description": "Entrée dans le massif du Néouvielle et ses lacs d'altitude. De Barèges, on remonte par Tournaboup et le vallon d'Aygues-Cluses avant d'enchaîner les cols — Hourquette Nère (2 465 m), Hourquette de Caderolle (2 495 m) et Col de Bastanet (2 507 m) — au milieu des lacs. C'est l'étape la plus longue du séjour (21 km)."
     },
     {
       "id": "jour-7",
       "date": "2026-07-03",
-      "title": "Vielle-Aure",
-      "description": ""
+      "title": "Lacs de Bastan → Vielle-Aure",
+      "description": "Dernière étape, presque tout en descente vers la vallée d'Aure. On quitte les lacs de Bastan par le Col de Portet (2 215 m), d'où l'on plonge sur près de 1 500 m de dénivelé jusqu'au village de Vielle-Aure (800 m), terme de la traversée."
     }
   ]
 }

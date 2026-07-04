@@ -1,0 +1,456 @@
+{
+  "pois": [
+    {
+      "name": "Pont d'Espagne",
+      "kind": "lieu",
+      "ele": null,
+      "lat": 42.85096,
+      "lon": -0.13951,
+      "day": 2,
+      "major": true
+    },
+    {
+      "name": "Cascade du Pont d'Espagne",
+      "kind": "cascade",
+      "ele": null,
+      "lat": 42.85023,
+      "lon": -0.13987,
+      "day": 2,
+      "major": false
+    },
+    {
+      "name": "Lac des Huats",
+      "kind": "lac",
+      "ele": null,
+      "lat": 42.84285,
+      "lon": -0.14023,
+      "day": 2,
+      "major": false
+    },
+    {
+      "name": "Lac de Gaube",
+      "kind": "lac",
+      "ele": null,
+      "lat": 42.83145,
+      "lon": -0.1397,
+      "day": 2,
+      "major": true
+    },
+    {
+      "name": "Cascade Esplumouse",
+      "kind": "cascade",
+      "ele": null,
+      "lat": 42.81355,
+      "lon": -0.13842,
+      "day": 2,
+      "major": false
+    },
+    {
+      "name": "Cascade Darré Splumouse",
+      "kind": "cascade",
+      "ele": null,
+      "lat": 42.80543,
+      "lon": -0.13604,
+      "day": 2,
+      "major": false
+    },
+    {
+      "name": "Lacs d'Arraillé",
+      "kind": "lac",
+      "ele": null,
+      "lat": 42.79005,
+      "lon": -0.13121,
+      "day": 2,
+      "major": false
+    },
+    {
+      "name": "Hourquette d'Ossoue",
+      "kind": "col",
+      "ele": 2734,
+      "lat": 42.77929,
+      "lon": -0.13135,
+      "day": 2,
+      "major": true
+    },
+    {
+      "name": "serre des Tousaus",
+      "kind": "pic",
+      "ele": 1783,
+      "lat": 42.74027,
+      "lon": -0.03073,
+      "day": 3,
+      "major": false
+    },
+    {
+      "name": "La Grande Cascade de Gavarnie",
+      "kind": "cascade",
+      "ele": null,
+      "lat": 42.69332,
+      "lon": -0.00445,
+      "day": 4,
+      "major": true
+    },
+    {
+      "name": "Grande Clère",
+      "kind": "pic",
+      "ele": 2521,
+      "lat": 42.71922,
+      "lon": 0.02992,
+      "day": 5,
+      "major": false
+    },
+    {
+      "name": "Hourquette d'Alan",
+      "kind": "col",
+      "ele": 2430,
+      "lat": 42.7156,
+      "lon": 0.02815,
+      "day": 5,
+      "major": true
+    },
+    {
+      "name": "Cirque d'Estaubé",
+      "kind": "lieu",
+      "ele": null,
+      "lat": 42.71725,
+      "lon": 0.04674,
+      "day": 5,
+      "major": true
+    },
+    {
+      "name": "Cabane d'Estaubé",
+      "kind": "refuge",
+      "ele": 1765,
+      "lat": 42.72948,
+      "lon": 0.04926,
+      "day": 5,
+      "major": false
+    },
+    {
+      "name": "Lac des Gloriettes",
+      "kind": "lac",
+      "ele": null,
+      "lat": 42.75135,
+      "lon": 0.04911,
+      "day": 5,
+      "major": true
+    },
+    {
+      "name": "Lac Supérieur",
+      "kind": "lac",
+      "ele": null,
+      "lat": 42.85698,
+      "lon": 0.21067,
+      "day": 7,
+      "major": false
+    },
+    {
+      "name": "Lac du Milieu",
+      "kind": "lac",
+      "ele": null,
+      "lat": 42.85191,
+      "lon": 0.20781,
+      "day": 7,
+      "major": false
+    },
+    {
+      "name": "Lac inférieur",
+      "kind": "lac",
+      "ele": null,
+      "lat": 42.84629,
+      "lon": 0.20847,
+      "day": 7,
+      "major": false
+    },
+    {
+      "name": "Cabane du Bastan",
+      "kind": "refuge",
+      "ele": null,
+      "lat": 42.84133,
+      "lon": 0.20512,
+      "day": 7,
+      "major": false
+    },
+    {
+      "name": "Col de Portet",
+      "kind": "col",
+      "ele": 2215,
+      "lat": 42.83311,
+      "lon": 0.2365,
+      "day": 7,
+      "major": true
+    },
+    {
+      "name": "Cap de Pède",
+      "kind": "pic",
+      "ele": 1634,
+      "lat": 42.83873,
+      "lon": 0.3022,
+      "day": 7,
+      "major": false
+    },
+    {
+      "name": "Turan des Oules",
+      "kind": "pic",
+      "ele": 1380,
+      "lat": 42.88432,
+      "lon": -0.10535,
+      "day": 1,
+      "major": false
+    },
+    {
+      "name": "Cascade de Lutour",
+      "kind": "cascade",
+      "ele": null,
+      "lat": 42.87093,
+      "lon": -0.10642,
+      "day": 1,
+      "major": false
+    },
+    {
+      "name": "Cascade des sources de Mauhourat",
+      "kind": "cascade",
+      "ele": null,
+      "lat": 42.87065,
+      "lon": -0.1119,
+      "day": 1,
+      "major": false
+    },
+    {
+      "name": "Cascade d'Escane Gat",
+      "kind": "cascade",
+      "ele": null,
+      "lat": 42.86594,
+      "lon": -0.11618,
+      "day": 1,
+      "major": false
+    },
+    {
+      "name": "Cascade du Cerisey",
+      "kind": "cascade",
+      "ele": null,
+      "lat": 42.86325,
+      "lon": -0.11885,
+      "day": 1,
+      "major": false
+    },
+    {
+      "name": "Cascade de Pouey Bacou",
+      "kind": "cascade",
+      "ele": null,
+      "lat": 42.86137,
+      "lon": -0.12307,
+      "day": 1,
+      "major": false
+    },
+    {
+      "name": "Cascade du Pas de l'Ours",
+      "kind": "cascade",
+      "ele": null,
+      "lat": 42.85976,
+      "lon": -0.12446,
+      "day": 1,
+      "major": false
+    },
+    {
+      "name": "Cascade de Boussès",
+      "kind": "cascade",
+      "ele": null,
+      "lat": 42.85516,
+      "lon": -0.13174,
+      "day": 1,
+      "major": false
+    },
+    {
+      "name": "Tournaboup",
+      "kind": "lieu",
+      "ele": null,
+      "lat": 42.90371,
+      "lon": 0.10191,
+      "day": 6,
+      "major": false
+    },
+    {
+      "name": "Aygues Cluses",
+      "kind": "lieu",
+      "ele": null,
+      "lat": 42.87715,
+      "lon": 0.14707,
+      "day": 6,
+      "major": false
+    },
+    {
+      "name": "Lac de Coueyla-Gran",
+      "kind": "lac",
+      "ele": null,
+      "lat": 42.87508,
+      "lon": 0.15327,
+      "day": 6,
+      "major": false
+    },
+    {
+      "name": "Lac d'Agalops",
+      "kind": "lac",
+      "ele": null,
+      "lat": 42.87751,
+      "lon": 0.15711,
+      "day": 6,
+      "major": false
+    },
+    {
+      "name": "Hourquette Nère",
+      "kind": "col",
+      "ele": 2465,
+      "lat": 42.87374,
+      "lon": 0.17212,
+      "day": 6,
+      "major": true
+    },
+    {
+      "name": "Gourg Nère",
+      "kind": "lac",
+      "ele": null,
+      "lat": 42.87058,
+      "lon": 0.17795,
+      "day": 6,
+      "major": false
+    },
+    {
+      "name": "Lac de Port Bielh",
+      "kind": "lac",
+      "ele": null,
+      "lat": 42.8728,
+      "lon": 0.18723,
+      "day": 6,
+      "major": true
+    },
+    {
+      "name": "Tuhou du Cloutou",
+      "kind": "pic",
+      "ele": 2568,
+      "lat": 42.87388,
+      "lon": 0.19948,
+      "day": 6,
+      "major": false
+    },
+    {
+      "name": "Hourquette de Caderole",
+      "kind": "col",
+      "ele": 2495,
+      "lat": 42.87117,
+      "lon": 0.20103,
+      "day": 6,
+      "major": true
+    },
+    {
+      "name": "Lac de la hourquette",
+      "kind": "lac",
+      "ele": null,
+      "lat": 42.87013,
+      "lon": 0.20508,
+      "day": 6,
+      "major": false
+    },
+    {
+      "name": "Col de Bastanet",
+      "kind": "col",
+      "ele": 2507,
+      "lat": 42.86717,
+      "lon": 0.20642,
+      "day": 6,
+      "major": true
+    },
+    {
+      "name": "Pic de Portarras",
+      "kind": "pic",
+      "ele": 2697,
+      "lat": 42.8665,
+      "lon": 0.21113,
+      "day": 6,
+      "major": false
+    },
+    {
+      "name": "Cauterets",
+      "lat": 42.8901,
+      "lon": -0.1126,
+      "ele": 917,
+      "day": 1,
+      "kind": "ville",
+      "major": true
+    },
+    {
+      "name": "Gavarnie",
+      "lat": 42.7355,
+      "lon": -0.0086,
+      "ele": 1365,
+      "day": 3,
+      "kind": "ville",
+      "major": true
+    },
+    {
+      "name": "Gèdre",
+      "lat": 42.7868,
+      "lon": 0.0216,
+      "ele": 1011,
+      "day": 5,
+      "kind": "ville",
+      "major": true
+    },
+    {
+      "name": "Barèges",
+      "lat": 42.8975,
+      "lon": 0.0655,
+      "ele": 1250,
+      "day": 6,
+      "kind": "ville",
+      "major": true
+    },
+    {
+      "name": "Vielle-Aure",
+      "lat": 42.8298,
+      "lon": 0.3274,
+      "ele": 800,
+      "day": 7,
+      "kind": "ville",
+      "major": true
+    },
+    {
+      "name": "Refuge des Espuguettes",
+      "kind": "refuge",
+      "ele": 2027,
+      "lat": 42.7176,
+      "lon": 0.0104,
+      "day": 4,
+      "major": true
+    },
+    {
+      "name": "Cirque de Gavarnie",
+      "kind": "lieu",
+      "ele": 1665,
+      "lat": 42.6985,
+      "lon": -0.0089,
+      "day": 4,
+      "major": true
+    },
+    {
+      "name": "Barrage d'Ossoue",
+      "kind": "lac",
+      "ele": 1834,
+      "lat": 42.7626,
+      "lon": -0.0878,
+      "day": 3,
+      "major": true,
+      "snap": 1.0
+    },
+    {
+      "name": "Vignemale",
+      "kind": "pic",
+      "ele": 3298,
+      "lat": 42.7709,
+      "lon": -0.1385,
+      "day": 2,
+      "major": true,
+      "snap": 1.6
+    }
+  ]
+}

@@ -39,7 +39,12 @@
       <p class="hero-subtitle" id="hero-subtitle"></p>
       <dl class="hero-stats" id="hero-stats"></dl>
     </div>
-    <svg id="hero-profile" class="hero-profile" preserveAspectRatio="none" viewBox="0 0 1000 120" aria-hidden="true"></svg>
+    <div class="hero-profile-wrap" id="hero-profile-wrap">
+      <svg id="hero-profile" class="hero-profile" preserveAspectRatio="none" viewBox="0 0 1000 120" aria-hidden="true"></svg>
+      <div class="hero-pois" id="hero-pois" aria-hidden="true"></div>
+      <div class="hero-cursor" id="hero-cursor" hidden><span class="hero-cursor-dot"></span></div>
+      <div class="hero-readout" id="hero-readout" hidden></div>
+    </div>
   </header>
 
   <nav class="day-tabs" id="day-tabs" aria-label="Étapes de la randonnée"></nav>
@@ -58,6 +63,7 @@
 </div>
 
 <div id="lightbox" class="lightbox" hidden>
+  <div class="lightbox-counter" id="lightbox-counter" aria-hidden="true"></div>
   <button class="lightbox-close" id="lightbox-close" aria-label="Fermer">✕</button>
   <button class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Photo précédente">‹</button>
   <img id="lightbox-img" alt="">

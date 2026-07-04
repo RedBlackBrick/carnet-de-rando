@@ -126,33 +126,33 @@ a { color: var(--pine); }
 .hero {
   position: relative;
   overflow: hidden;
-  padding: 3rem 1.5rem 0;
+  padding: 1.3rem 1.5rem 0;
   background: linear-gradient(180deg, var(--paper-alt) 0%, var(--paper) 100%);
   border-bottom: 1px solid var(--line);
 }
-.hero-inner { max-width: 900px; margin: 0 auto; text-align: center; padding-bottom: 2.5rem; }
+.hero-inner { max-width: 1080px; margin: 0 auto; text-align: center; padding-bottom: 1.1rem; }
 .eyebrow {
   font-family: var(--font-mono);
   text-transform: uppercase;
   letter-spacing: 0.16em;
-  font-size: 0.75rem;
+  font-size: 0.72rem;
   color: var(--slate);
-  margin: 0 0 0.8rem;
+  margin: 0 0 0.4rem;
 }
 .hero h1 {
   font-family: var(--font-display);
   text-transform: uppercase;
-  font-size: clamp(2.2rem, 6vw, 4rem);
+  font-size: clamp(1.7rem, 4.2vw, 2.9rem);
   letter-spacing: 0.01em;
-  line-height: 1.05;
-  margin: 0 0 0.9rem;
+  line-height: 1.04;
+  margin: 0 0 0.45rem;
   color: var(--pine);
 }
 .hero-subtitle {
-  font-size: 1.15rem;
+  font-size: 1rem;
   font-style: italic;
   color: var(--ink-soft);
-  margin: 0 0 1.6rem;
+  margin: 0 0 0.9rem;
 }
 .hero-stats {
   display: flex;
@@ -175,10 +175,97 @@ a { color: var(--pine); }
   letter-spacing: 0.1em;
   color: var(--ink-soft);
 }
+.hero-profile-wrap { position: relative; width: 100%; }
 .hero-profile {
   display: block;
   width: 100%;
   height: 90px;
+}
+
+/* ---------- Profil interactif : POIs, curseur, infobulle ---------- */
+.hero-pois { position: absolute; inset: 0; pointer-events: none; }
+.poi {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--slate);
+  border: 1.5px solid var(--paper-alt);
+  box-shadow: 0 0 0 1px rgba(34, 48, 31, 0.25);
+}
+.poi-col { background: var(--trail-red); }
+.poi-pic { background: var(--ink); }
+.poi-ville { background: var(--slate); }
+.poi-lac { background: #3b7fa6; }
+.poi-cascade { background: #4a9ec2; }
+.poi-refuge { background: var(--pine); }
+.poi-lieu { background: var(--ink-soft); }
+.poi-major { width: 9px; height: 9px; }
+.poi-active { box-shadow: 0 0 0 2px var(--trail-red); transform: translate(-50%, -50%) scale(1.5); z-index: 3; }
+.poi-line { position: absolute; width: 1px; transform: translateX(-50%); background: var(--line); }
+.poi-label {
+  position: absolute;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  color: var(--ink);
+  line-height: 1.1;
+  text-shadow: 0 0 3px var(--paper-alt), 0 0 3px var(--paper-alt), 0 1px 2px var(--paper-alt);
+}
+.hero-cursor { position: absolute; top: 0; bottom: 0; pointer-events: none; }
+.hero-cursor::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  border-left: 1px dashed var(--trail-red);
+}
+.hero-cursor-dot {
+  position: absolute;
+  left: 0;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--trail-red);
+  border: 2px solid var(--paper-alt);
+}
+.hero-readout {
+  position: absolute;
+  transform: translateX(-50%);
+  background: var(--paper-alt);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 0.25rem 0.55rem;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--ink);
+  white-space: nowrap;
+  box-shadow: 0 4px 12px rgba(34, 48, 31, 0.18);
+  z-index: 4;
+}
+.hero-readout .readout-main { font-weight: 600; }
+.hero-readout .readout-km { color: var(--ink-soft); margin-left: 0.4rem; font-weight: 400; }
+.hero-readout .readout-poi { display: block; color: var(--trail-red); margin-top: 0.1rem; }
+.hero-day {
+  position: absolute;
+  transform: translateX(-50%);
+  font-family: var(--font-mono);
+  font-size: 0.58rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--ink-soft);
+  opacity: 0.5;
+  pointer-events: none;
+}
+.hero-bus {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  font-size: 0.8rem;
+  pointer-events: none;
 }
 
 /* ---------- Day tabs ---------- */
@@ -186,18 +273,17 @@ a { color: var(--pine); }
   display: flex;
   gap: 0.6rem;
   overflow-x: auto;
-  padding: 1rem 1.5rem;
-  max-width: 1200px;
-  margin: 0 auto;
+  padding: 0.7rem 1.5rem;
   scrollbar-width: thin;
 }
 .day-tab {
   flex: none;
+  width: 11rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 0.15rem;
-  padding: 0.55rem 0.9rem;
+  gap: 0.1rem;
+  padding: 0.4rem 0.8rem;
   border: 1px solid var(--line);
   border-left: 5px solid var(--day-color, var(--pine));
   border-radius: 4px;
@@ -214,8 +300,16 @@ a { color: var(--pine); }
   color: var(--paper-alt);
   border-color: var(--day-color, var(--pine));
 }
-.day-tab .tab-label { font-weight: 600; font-size: 0.95rem; }
-.day-tab .tab-meta { font-family: var(--font-mono); font-size: 0.72rem; opacity: 0.85; }
+.day-tab .tab-index {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--ink-soft);
+}
+.day-tab.active .tab-index { color: var(--paper-alt); opacity: 0.85; }
+.day-tab .tab-label { font-weight: 600; font-size: 0.84rem; line-height: 1.12; }
+.day-tab .tab-meta { font-family: var(--font-mono); font-size: 0.72rem; opacity: 0.85; margin-top: auto; padding-top: 0.15rem; }
 .day-tab.bus-toggle { border-left-color: var(--slate); }
 .day-tab.bus-toggle.active { background: var(--slate); border-color: var(--slate); }
 
@@ -226,15 +320,19 @@ a { color: var(--pine); }
 /* ---------- Layout / map / detail ---------- */
 .layout {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 320px;
-  gap: 1rem;
-  max-width: 1200px;
+  grid-template-columns: minmax(0, 1fr) clamp(440px, 34%, 660px);
+  gap: 1.2rem;
   margin: 0 auto;
-  padding: 0 1.5rem 2rem;
+  padding: 0 1.5rem 1.2rem;
+  /* Remplit la hauteur restante sous l'en-tête → l'ensemble tient dans un écran.
+     Sur écran haut (1440p) tout entre ; sur écran court, le panneau détail
+     défile en interne au lieu de faire scroller toute la page. */
+  height: calc(100vh - 28.5rem);
+  min-height: 400px;
 }
 .map {
-  height: 68vh;
-  min-height: 420px;
+  height: 100%;
+  min-height: 0;
   border-radius: 6px;
   border: 1px solid var(--line);
   overflow: hidden;
@@ -244,8 +342,7 @@ a { color: var(--pine); }
   border: 1px solid var(--line);
   border-radius: 6px;
   padding: 1.2rem;
-  height: 68vh;
-  min-height: 420px;
+  height: 100%;
   overflow-y: auto;
 }
 .detail-empty { color: var(--ink-soft); font-style: italic; }
@@ -269,7 +366,7 @@ a { color: var(--pine); }
   color: var(--ink);
 }
 .detail-date { color: var(--ink-soft); font-size: 0.85rem; margin: 0 0 0.8rem; }
-.detail-description { margin: 0 0 1rem; }
+.detail-description { margin: 0 0 0.8rem; font-size: 0.94rem; line-height: 1.4; }
 .detail-stats {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -282,6 +379,138 @@ a { color: var(--pine); }
   border-radius: 4px;
 }
 .detail-stats span { display: block; color: var(--ink-soft); font-size: 0.68rem; text-transform: uppercase; }
+.detail-stats-extra { grid-template-columns: repeat(3, 1fr); gap: 0.45rem 0.7rem; font-size: 0.8rem; }
+
+/* ---------- Overview: liste des étapes ---------- */
+.day-list-title {
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.7rem;
+  color: var(--ink-soft);
+  margin: 0.8rem 0 0.4rem;
+}
+.day-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 0.35rem;
+}
+.day-list li { margin: 0; }
+.day-row {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  width: 100%;
+  text-align: left;
+  padding: 0.38rem 0.55rem;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--day-color, var(--pine));
+  border-radius: 4px;
+  cursor: pointer;
+  color: var(--ink);
+  font-family: var(--font-body);
+  transition: background 0.15s, transform 0.1s;
+}
+.day-row:hover { transform: translateX(2px); background: var(--paper-alt); }
+.day-row-index {
+  flex: none;
+  width: 1.9rem;
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  color: var(--day-color, var(--pine));
+}
+.day-row-body { display: flex; flex-direction: column; gap: 0.1rem; min-width: 0; }
+.day-row-title { font-weight: 600; font-size: 0.9rem; line-height: 1.2; }
+.day-row-meta { font-family: var(--font-mono); font-size: 0.7rem; color: var(--ink-soft); }
+
+/* ---------- Courbes par jour (données Garmin) ---------- */
+.day-chart { margin: 0.2rem 0 1.1rem; }
+.day-chart-head { display: flex; flex-direction: column; gap: 0.4rem; margin-bottom: 0.45rem; }
+.day-chart-title {
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.66rem;
+  color: var(--ink-soft);
+}
+.day-chart-tabs { display: flex; flex-wrap: wrap; gap: 0.3rem; }
+.dc-tab {
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  padding: 0.2rem 0.5rem;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  background: var(--paper);
+  color: var(--ink-soft);
+  cursor: pointer;
+}
+.dc-tab.active { background: var(--pine); color: var(--paper-alt); border-color: var(--pine); }
+.day-chart-plot { position: relative; }
+.day-chart-svg {
+  display: block;
+  width: 100%;
+  height: 120px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+}
+.day-chart-range {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5px 0;
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  color: var(--ink-soft);
+  text-align: right;
+  pointer-events: none;
+}
+.day-chart-axis {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  color: var(--ink-soft);
+  margin-top: 0.2rem;
+}
+.day-chart-note {
+  margin: 0.35rem 0 0;
+  font-size: 0.68rem;
+  font-style: italic;
+  color: var(--ink-soft);
+  line-height: 1.3;
+}
+
+/* ---------- Répartition marche / pause ---------- */
+.day-activity { margin: 0 0 0.6rem; }
+.day-activity-bar {
+  height: 9px;
+  border-radius: 5px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  /* fond = pauses (hachures ardoise) ; la barre pleine = marche */
+  background: repeating-linear-gradient(-45deg, rgba(74, 101, 114, 0.28) 0 4px, rgba(74, 101, 114, 0.1) 4px 8px);
+}
+.day-activity-bar span { display: block; height: 100%; background: var(--pine); }
+.day-activity-legend {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.28rem;
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  color: var(--ink-soft);
+}
+.dal-move b { color: var(--pine); }
+.dal-pause b { color: var(--slate); }
+
 .filmstrip {
   display: flex;
   gap: 0.5rem;
@@ -322,10 +551,9 @@ a { color: var(--pine); }
 .bus-date { font-family: var(--font-mono); font-size: 0.75rem; color: var(--ink-soft); }
 
 @media (max-width: 900px) {
-  .layout { grid-template-columns: 1fr; }
-  .map, .detail { height: auto; }
+  .layout { grid-template-columns: 1fr; height: auto; min-height: 0; }
   .map { height: 46vh; min-height: 320px; }
-  .detail { max-height: 50vh; }
+  .detail { height: auto; overflow: visible; }
 }
 
 /* ---------- Photo & bus map markers ---------- */
@@ -374,10 +602,11 @@ a { color: var(--pine); }
 /* ---------- Footer ---------- */
 .site-footer {
   text-align: center;
-  padding: 1.5rem;
+  padding: 0.5rem 1.5rem;
   color: var(--ink-soft);
-  font-size: 0.8rem;
+  font-size: 0.72rem;
 }
+.site-footer p { margin: 0; }
 
 /* ---------- Lightbox ---------- */
 .lightbox {
@@ -423,6 +652,16 @@ a { color: var(--pine); }
   .lightbox-minimap { width: 110px; height: 110px; bottom: 0.75rem; right: 0.75rem; }
 }
 
+.lightbox-counter {
+  position: absolute;
+  top: 1.35rem;
+  left: 1.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  color: var(--paper-alt);
+  opacity: 0.75;
+}
 .lightbox-caption { max-width: 700px; text-align: center; color: var(--paper-alt); margin-top: 1rem; }
 .lightbox-date { font-family: var(--font-mono); font-size: 0.75rem; opacity: 0.7; margin-top: 0.2rem; }
 .lightbox-meta { font-family: var(--font-mono); font-size: 0.68rem; opacity: 0.55; margin-top: 0.25rem; }
