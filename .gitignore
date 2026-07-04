@@ -1,8 +1,10 @@
 # Données brutes locales — pas commitées (photos/gpx originaux, cache géocodage)
 data/gpx/*
 data/photos/*
+data/videos/*
 !data/gpx/.gitkeep
 !data/photos/.gitkeep
+!data/videos/.gitkeep
 scripts/.geocode_cache.json
 
 # Python

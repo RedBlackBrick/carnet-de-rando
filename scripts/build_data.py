@@ -8,6 +8,7 @@ import bisect
 import json
 import math
 import re
+import subprocess
 import time
 import urllib.parse
 import urllib.request
@@ -29,6 +30,13 @@ try:
 except ImportError:
     pillow_heif = None
 
+try:
+    import imageio_ffmpeg
+
+    FFMPEG_BIN = imageio_ffmpeg.get_ffmpeg_exe()
+except ImportError:
+    FFMPEG_BIN = None
+
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 DOCS = ROOT / "docs"
@@ -40,7 +48,12 @@ THUMB_MAX_SIDE = 400
 THUMB_QUALITY = 78
 
 PHOTO_EXTENSIONS = {".jpg", ".jpeg", ".heic", ".heif"}
+VIDEO_EXTENSIONS = {".mp4", ".mov"}
 TIME_MATCH_TOLERANCE_S = 3 * 3600  # tolérance pour rattacher une photo sans GPS à la trace GPX la plus proche dans le temps
+
+VIDEO_MAX_HEIGHT = 720
+VIDEO_CRF = 28
+VIDEO_POSTER_MAX_SIDE = 400
 
 DAY_COLORS = [
     "#2f6f4f", "#b5651d", "#3a6ea5", "#a13d3d",
@@ -387,6 +400,138 @@ def build_photos(time_points, trip_timezone, captions):
 
 
 # ---------------------------------------------------------------------------
+# Vidéos
+# ---------------------------------------------------------------------------
+
+def probe_video(path: Path):
+    """Lit creation_time / position GPS / durée via la sortie -i de ffmpeg (pas besoin de ffprobe)."""
+    result = subprocess.run([FFMPEG_BIN, "-i", str(path)], capture_output=True, text=True)
+    stderr = result.stderr
+
+    lat = lon = None
+    loc_match = re.search(r"location\s*:\s*([+-]\d+\.\d+)([+-]\d+\.\d+)", stderr)
+    if loc_match:
+        lat, lon = float(loc_match.group(1)), float(loc_match.group(2))
+
+    dt = None
+    time_match = re.search(r"creation_time\s*:\s*(\S+)", stderr)
+    if time_match:
+        try:
+            dt = datetime.fromisoformat(time_match.group(1).replace("Z", "+00:00"))
+        except ValueError:
+            dt = None
+
+    duration_s = None
+    dur_match = re.search(r"Duration:\s*(\d+):(\d+):(\d+)\.(\d+)", stderr)
+    if dur_match:
+        h, m, s, cs = (int(x) for x in dur_match.groups())
+        duration_s = h * 3600 + m * 60 + s + cs / 100
+
+    return lat, lon, dt, duration_s
+
+
+def transcode_video(src: Path, out_path: Path):
+    # scale=-2:'min(H,ih)' (plutôt que -2:H avec force_original_aspect_ratio) : évite une largeur
+    # impaire sur les vidéos verticales (rotation via displaymatrix, cf. vidéos Samsung portrait).
+    subprocess.run([
+        FFMPEG_BIN, "-y", "-i", str(src),
+        "-vf", f"scale=-2:'min({VIDEO_MAX_HEIGHT},ih)'",
+        "-c:v", "libx264", "-crf", str(VIDEO_CRF), "-preset", "veryfast",
+        "-c:a", "aac", "-b:a", "96k",
+        "-movflags", "+faststart",
+        str(out_path),
+    ], capture_output=True, check=True)
+
+
+def extract_poster(src: Path, out_path: Path, at_second: float):
+    subprocess.run([
+        FFMPEG_BIN, "-y", "-ss", str(at_second), "-i", str(src),
+        "-frames:v", "1", "-vf", f"scale=-2:'min({VIDEO_POSTER_MAX_SIDE},ih)'",
+        str(out_path),
+    ], capture_output=True, check=True)
+
+
+def build_videos(time_points, trip_timezone, captions):
+    video_paths = sorted(
+        p for p in (DATA / "videos").rglob("*")
+        if p.suffix.lower() in VIDEO_EXTENSIONS and p.is_file()
+    )
+
+    out_dir = DOCS / "videos"
+    poster_dir = out_dir / "thumb"
+    for d in (out_dir, poster_dir):
+        d.mkdir(parents=True, exist_ok=True)
+    for existing in out_dir.glob("*.mp4"):
+        existing.unlink()
+    for existing in poster_dir.glob("*"):
+        existing.unlink()
+
+    if video_paths and FFMPEG_BIN is None:
+        log("  ! ffmpeg (imageio-ffmpeg) non installé, vidéos ignorées : .venv/bin/pip install -r scripts/requirements.txt")
+        return []
+
+    tz = ZoneInfo(trip_timezone) if ZoneInfo and trip_timezone else None
+
+    entries = []
+    skipped = []
+    for i, path in enumerate(video_paths, start=1):
+        try:
+            lat, lon, dt_utc, duration_s = probe_video(path)
+        except Exception as e:
+            skipped.append((path.name, f"lecture impossible ({e})"))
+            continue
+
+        source = None
+        if lat is not None and lon is not None:
+            source = "gps"
+        elif dt_utc is not None:
+            match = find_nearest_time_point(dt_utc, time_points)
+            if match:
+                lat, lon = match
+                source = "interpolated"
+
+        if lat is None:
+            skipped.append((path.name, "pas de position GPS ni de trace GPX proche dans le temps"))
+            continue
+
+        slug = re.sub(r"[^a-zA-Z0-9_-]+", "-", path.stem).strip("-").lower() or "video"
+        out_name = f"{i:04d}-{slug}.mp4"
+        poster_name = f"{i:04d}-{slug}.jpg"
+
+        try:
+            transcode_video(path, out_dir / out_name)
+            extract_poster(path, poster_dir / poster_name, at_second=min(1.0, (duration_s or 2) / 2))
+        except subprocess.CalledProcessError as e:
+            skipped.append((path.name, f"transcodage échoué ({e})"))
+            continue
+
+        date_iso = None
+        if dt_utc is not None:
+            dt_local = dt_utc.astimezone(tz) if tz else dt_utc
+            date_iso = dt_local.isoformat()
+
+        entries.append({
+            "file": f"videos/{out_name}",
+            "poster": f"videos/thumb/{poster_name}",
+            "lat": lat,
+            "lon": lon,
+            "date": date_iso,
+            "durationS": duration_s,
+            "caption": captions.get(path.name, ""),
+            "positionSource": source,
+        })
+        log(f"  - {path.name} -> {out_name} ({source})")
+
+    entries.sort(key=lambda e: e["date"] or "")
+
+    log(f"  {len(entries)} vidéo(s) géolocalisée(s), {len(skipped)} ignorée(s)")
+    for name, reason in skipped:
+        log(f"  ! {name}: {reason}")
+
+    return entries
+
+
+# ---------------------------------------------------------------------------
 # Liaisons (bus ou portions de rando non enregistrées), géocodage
 # ---------------------------------------------------------------------------
 
@@ -485,6 +630,9 @@ def main():
     log("Photos:")
     photos = build_photos(time_points, trip.get("timezone", "Europe/Paris"), captions)
 
+    log("Vidéos:")
+    videos = build_videos(time_points, trip.get("timezone", "Europe/Paris"), captions)
+
     total_distance = round(sum(t["distanceKm"] for t in tracks), 1)
     total_gain = round(sum(t["elevationGainM"] for t in tracks))
     total_duration = sum(t["durationS"] or 0 for t in tracks)
@@ -500,6 +648,7 @@ def main():
         "tracks": tracks,
         "liaisons": liaisons,
         "photos": photos,
+        "videos": videos,
         "generatedAt": datetime.now(timezone.utc).isoformat(),
     }
 
@@ -507,7 +656,7 @@ def main():
     manifest_path.parent.mkdir(parents=True, exist_ok=True)
     manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2))
     log(f"\nOK -> {manifest_path.relative_to(ROOT)}")
-    log(f"   {len(tracks)} jour(s), {total_distance} km, +{total_gain} m, {len(photos)} photo(s), {len(liaisons)} liaison(s)")
+    log(f"   {len(tracks)} jour(s), {total_distance} km, +{total_gain} m, {len(photos)} photo(s), {len(videos)} vidéo(s), {len(liaisons)} liaison(s)")
 
 
 if __name__ == "__main__":

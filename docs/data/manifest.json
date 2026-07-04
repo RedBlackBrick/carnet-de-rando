@@ -5605,5 +5605,77 @@
       "positionSource": "exif"
     }
   ],
-  "generatedAt": "2026-07-04T14:13:50.960627+00:00"
+  "videos": [
+    {
+      "file": "videos/0001-20260627_211117.mp4",
+      "poster": "videos/thumb/0001-20260627_211117.jpg",
+      "lat": 42.8712,
+      "lon": -0.1068,
+      "date": "2026-06-27T21:11:29+02:00",
+      "durationS": 10.7,
+      "caption": "",
+      "positionSource": "gps"
+    },
+    {
+      "file": "videos/0002-20260627_211144.mp4",
+      "poster": "videos/thumb/0002-20260627_211144.jpg",
+      "lat": 42.8712,
+      "lon": -0.1067,
+      "date": "2026-06-27T21:11:51+02:00",
+      "durationS": 5.7,
+      "caption": "",
+      "positionSource": "gps"
+    },
+    {
+      "file": "videos/0003-20260627_213414.mp4",
+      "poster": "videos/thumb/0003-20260627_213414.jpg",
+      "lat": 42.8709,
+      "lon": -0.1119,
+      "date": "2026-06-27T21:34:19+02:00",
+      "durationS": 4.17,
+      "caption": "",
+      "positionSource": "gps"
+    },
+    {
+      "file": "videos/0004-20260629_090938.mp4",
+      "poster": "videos/thumb/0004-20260629_090938.jpg",
+      "lat": 42.7637,
+      "lon": -0.1116,
+      "date": "2026-06-29T09:09:54+02:00",
+      "durationS": 14.96,
+      "caption": "",
+      "positionSource": "gps"
+    },
+    {
+      "file": "videos/0005-20260630_084651.mp4",
+      "poster": "videos/thumb/0005-20260630_084651.jpg",
+      "lat": 42.6972,
+      "lon": -0.0068,
+      "date": "2026-06-30T08:47:14+02:00",
+      "durationS": 21.57,
+      "caption": "",
+      "positionSource": "gps"
+    },
+    {
+      "file": "videos/0006-20260630_084818.mp4",
+      "poster": "videos/thumb/0006-20260630_084818.jpg",
+      "lat": 42.6969,
+      "lon": -0.0068,
+      "date": "2026-06-30T08:49:28+02:00",
+      "durationS": 69.35,
+      "caption": "",
+      "positionSource": "gps"
+    },
+    {
+      "file": "videos/0007-20260701_104029.mp4",
+      "poster": "videos/thumb/0007-20260701_104029.jpg",
+      "lat": 42.7231,
+      "lon": 0.0456,
+      "date": "2026-07-01T10:40:57+02:00",
+      "durationS": 26.87,
+      "caption": "",
+      "positionSource": "gps"
+    }
+  ],
+  "generatedAt": "2026-07-04T14:41:13.416144+00:00"
 }

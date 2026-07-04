@@ -1,3 +1,4 @@
 Pillow
 fitparse
+imageio-ffmpeg
 # pillow-heif  # décommenter si des photos sont en .heic (iPhone)

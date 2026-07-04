@@ -18,6 +18,11 @@ Deux méthodes :
 - Formats acceptés : `.jpg`, `.jpeg`, `.heic`.
 - Si une photo n'a pas de position GPS dans ses métadonnées, le script essaie de la positionner automatiquement en comparant son horodatage à la trace GPX la plus proche dans le temps.
 
+### Vidéos (téléphone)
+- Copier les vidéos **originales** dans `data/videos/` (`.mp4`/`.mov`).
+- Le script lit la position GPS et la date de tournage directement depuis les métadonnées vidéo (via `ffmpeg`), avec le même repli par horodatage que les photos si le GPS est absent.
+- Chaque vidéo est automatiquement compressée en 720p (H.264/AAC) pour rester légère sur le site, et une vignette est extraite pour l'affichage sur la carte et dans le carrousel du jour.
+
 ### Liaisons (bus, portions non enregistrées)
 - Compléter `data/liaisons.json` : chaque entrée a un `mode` (`"bus"` ou `"rando"` pour une portion à pied non enregistrée par la montre), une date, et un point `from`/`to`.
 - Un point peut être : `{"name": "Lieu, Ville"}` (géocodé automatiquement via OpenStreetMap), `{"lat":, "lon":}` (coordonnées explicites), ou `{"trackRef": "day-3", "point": "end"}` (réutilise le début/fin d'une trace GPX déjà présente — pratique pour enchaîner directement sur le point où une trace s'arrête, sans redonner de coordonnées).

@@ -165,14 +165,20 @@ function renderDayTabs(manifest, onSelectDay, onSelectOverview, onSelectLiaisons
   }
 }
 
-function renderDetailForDay(track, photosForDay) {
+function renderFilmstrip(mediaForDay) {
+  if (mediaForDay.length === 0) return "";
+  return `<div class="filmstrip">${mediaForDay
+    .map(
+      (m) => `<div class="film-item" data-media-index="${m._index}">
+        <img src="${m.thumb}" alt="${m.caption || ""}">
+        ${m.type === "video" ? '<span class="play-icon">▶</span>' : ""}
+      </div>`
+    )
+    .join("")}</div>`;
+}
+
+function renderDetailForDay(track, mediaForDay) {
   const el = document.getElementById("detail");
-  const photosHtml =
-    photosForDay.length > 0
-      ? `<div class="filmstrip">${photosForDay
-          .map((p, i) => `<img src="${p.thumb}" data-photo-index="${p._index}" alt="${p.caption || ""}">`)
-          .join("")}</div>`
-      : "";
   const extraStatsHtml = EXTRA_STATS.filter((s) => track[s.key] != null)
     .map((s) => `<div><span>${s.label}</span>${s.fmt(track[s.key])}</div>`)
     .join("");
@@ -188,10 +194,10 @@ function renderDetailForDay(track, photosForDay) {
       <div><span>Durée</span>${formatDuration(track.durationS)}</div>
     </div>
     ${extraStatsHtml ? `<div class="detail-stats detail-stats-extra">${extraStatsHtml}</div>` : ""}
-    ${photosHtml}
+    ${renderFilmstrip(mediaForDay)}
   `;
-  el.querySelectorAll("img[data-photo-index]").forEach((img) => {
-    img.addEventListener("click", () => openLightbox(parseInt(img.dataset.photoIndex, 10)));
+  el.querySelectorAll("[data-media-index]").forEach((item) => {
+    item.addEventListener("click", () => openLightbox(parseInt(item.dataset.mediaIndex, 10)));
   });
 }
 
@@ -205,6 +211,7 @@ function renderDetailOverview(manifest) {
       <div><span>Dénivelé total</span>+${manifest.stats.totalElevationGainM} m</div>
       <div><span>Jours</span>${manifest.stats.dayCount}</div>
       <div><span>Photos</span>${manifest.photos.length}</div>
+      <div><span>Vidéos</span>${manifest.videos.length}</div>
     </div>
   `;
 }
@@ -227,28 +234,49 @@ function renderDetailLiaisons(manifest) {
   `;
 }
 
-let allPhotos = [];
+let allMedia = [];
 function openLightbox(index) {
   const lb = document.getElementById("lightbox");
-  const photo = allPhotos[index];
-  if (!photo) return;
-  document.getElementById("lightbox-img").src = photo.file;
-  document.getElementById("lightbox-img").alt = photo.caption || "";
-  document.getElementById("lightbox-caption-text").textContent = photo.caption || "";
-  document.getElementById("lightbox-date").textContent = photo.date ? formatDate(photo.date) : "";
+  const media = allMedia[index];
+  if (!media) return;
+  const img = document.getElementById("lightbox-img");
+  const video = document.getElementById("lightbox-video");
+
+  if (media.type === "video") {
+    video.src = media.file;
+    video.poster = media.thumb;
+    video.hidden = false;
+    img.hidden = true;
+    img.removeAttribute("src");
+  } else {
+    img.src = media.file;
+    img.alt = media.caption || "";
+    img.hidden = false;
+    video.hidden = true;
+    video.pause();
+    video.removeAttribute("src");
+    video.load();
+  }
+
+  document.getElementById("lightbox-caption-text").textContent = media.caption || "";
+  document.getElementById("lightbox-date").textContent = media.date ? formatDate(media.date) : "";
   lb.dataset.index = index;
   lb.hidden = false;
 }
 
 function setupLightbox() {
   const lb = document.getElementById("lightbox");
-  const close = () => (lb.hidden = true);
+  const video = document.getElementById("lightbox-video");
+  const close = () => {
+    lb.hidden = true;
+    video.pause();
+  };
   document.getElementById("lightbox-close").addEventListener("click", close);
   lb.addEventListener("click", (e) => { if (e.target === lb) close(); });
   document.getElementById("lightbox-prev").addEventListener("click", () => step(-1));
   document.getElementById("lightbox-next").addEventListener("click", () => step(1));
   function step(dir) {
-    const idx = (parseInt(lb.dataset.index, 10) + dir + allPhotos.length) % allPhotos.length;
+    const idx = (parseInt(lb.dataset.index, 10) + dir + allMedia.length) % allMedia.length;
     openLightbox(idx);
   }
   document.addEventListener("keydown", (e) => {
@@ -265,7 +293,12 @@ async function init() {
   const manifest = await fetch("data/manifest.json").then((r) => r.json());
   renderHero(manifest);
 
-  allPhotos = manifest.photos.map((p, i) => ({ ...p, _index: i }));
+  allMedia = [
+    ...manifest.photos.map((p) => ({ ...p, type: "photo" })),
+    ...manifest.videos.map((v) => ({ ...v, type: "video", thumb: v.poster })),
+  ];
+  allMedia.sort((a, b) => (a.date || "").localeCompare(b.date || ""));
+  allMedia.forEach((m, i) => (m._index = i));
 
   const map = L.map("map", { scrollWheelZoom: false });
 
@@ -284,7 +317,7 @@ async function init() {
       { maxZoom: 19, attribution: "Imagerie © Esri, Maxar, Earthstar Geographics" }
     ),
   };
-  baseLayers["Relief (topo)"].addTo(map);
+  baseLayers["Plan"].addTo(map);
   L.control.layers(baseLayers, null, { position: "topright" }).addTo(map);
 
   const tracksWithPoints = [];
@@ -321,24 +354,27 @@ async function init() {
   });
 
   const cluster = L.markerClusterGroup({ maxClusterRadius: 40 });
-  allPhotos.forEach((photo) => {
+  allMedia.forEach((media) => {
     const icon = L.divIcon({
       className: "",
-      html: `<div class="photo-marker" style="background-image:url('${photo.thumb}')"></div>`,
+      html:
+        media.type === "video"
+          ? `<div class="photo-marker video-marker" style="background-image:url('${media.thumb}')"><span class="play-icon">▶</span></div>`
+          : `<div class="photo-marker" style="background-image:url('${media.thumb}')"></div>`,
       iconSize: [38, 38],
     });
-    const marker = L.marker([photo.lat, photo.lon], { icon });
-    marker.on("click", () => openLightbox(photo._index));
+    const marker = L.marker([media.lat, media.lon], { icon });
+    marker.on("click", () => openLightbox(media._index));
     cluster.addLayer(marker);
-    allBounds.push([photo.lat, photo.lon]);
+    allBounds.push([media.lat, media.lon]);
   });
   map.addLayer(cluster);
 
   if (allBounds.length) map.fitBounds(allBounds, { padding: [30, 30] });
 
-  function photosForTrack(track) {
+  function mediaForTrack(track) {
     if (!track.date) return [];
-    return allPhotos.filter((p) => p.date && p.date.slice(0, 10) === track.date);
+    return allMedia.filter((m) => m.date && m.date.slice(0, 10) === track.date);
   }
 
   function resetOpacity(activeId) {
@@ -353,7 +389,7 @@ async function init() {
       resetOpacity(track.id);
       const layer = trackLayers[track.id];
       if (layer) map.fitBounds(layer.getBounds(), { padding: [40, 40] });
-      renderDetailForDay(track, photosForTrack(track));
+      renderDetailForDay(track, mediaForTrack(track));
     },
     () => {
       resetOpacity(null);
