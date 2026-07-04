@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx version="1.1" creator="fit_to_gpx.py" xmlns="http://www.topografix.com/GPX/1/1">
-<trk><name>Barèges Randonnée</name><trkseg>
+<trk><name>Barèges Randonnée</name><extensions><avgHr>104</avgHr><maxHr>148</maxHr><calories>3045</calories><avgCadence>19</avgCadence><maxCadence>220</maxCadence><minTemp>20</minTemp><maxTemp>32</maxTemp><trainingEffect>2.6</trainingEffect><ascentM>1670</ascentM><descentM>598</descentM><movingTimeS>11945</movingTimeS></extensions><trkseg>
 <trkpt lat="42.8962089" lon="0.0626453"><ele>1230.4</ele><time>2026-07-02T07:46:04Z</time></trkpt>
 <trkpt lat="42.8962058" lon="0.0626709"><ele>1230.4</ele><time>2026-07-02T07:46:05Z</time></trkpt>
 <trkpt lat="42.8962172" lon="0.0627060"><ele>1230.2</ele><time>2026-07-02T07:46:07Z</time></trkpt>

@@ -5,18 +5,22 @@ Mini-site statique présentant une randonnée de plusieurs jours : traces GPX su
 ## 1. Récupérer les données
 
 ### Traces GPX (montre Garmin)
-1. Aller sur [connect.garmin.com](https://connect.garmin.com), se connecter.
-2. Ouvrir chaque activité de la randonnée (en général une par jour).
-3. Menu `...` (en haut à droite de l'activité) → **Exporter en GPX**.
-4. Déposer les fichiers `.gpx` téléchargés dans `data/gpx/` (un fichier par jour, nom libre).
+Deux méthodes :
+- **Simple** : sur [connect.garmin.com](https://connect.garmin.com), ouvrir chaque activité → menu `...` → **Exporter en GPX** → déposer les fichiers dans `data/gpx/`. Cette méthode ne fournit que la trace (pas de FC/calories/cadence).
+- **Complète (recommandée)** : sur chaque activité, menu `...` → **Exporter l'original** (télécharge un `.zip` contenant le `.fit` natif de la montre), puis convertir avec :
+  ```bash
+  .venv/bin/python scripts/fit_to_gpx.py --csv ~/Téléchargements/Activities.csv ~/Téléchargements/*.zip
+  ```
+  Le `--csv` (export CSV de la liste des activités) est optionnel mais permet de récupérer automatiquement le titre de chaque activité. Cette méthode embarque aussi FC, calories, cadence, température, dénivelé exact et temps de mouvement dans le GPX généré (lus ensuite par `build_data.py`).
 
 ### Photos (téléphone)
 - Copier les photos **originales** (pas de version compressée envoyée par messagerie/WhatsApp, ça supprime la position GPS) dans `data/photos/`.
 - Formats acceptés : `.jpg`, `.jpeg`, `.heic`.
 - Si une photo n'a pas de position GPS dans ses métadonnées, le script essaie de la positionner automatiquement en comparant son horodatage à la trace GPX la plus proche dans le temps.
 
-### Trajets en bus
-- Il n'y a pas de GPX pour les bus. Compléter `data/bus.json` avec, pour chaque trajet : lieu de départ, lieu d'arrivée, date. Les coordonnées peuvent rester à `null`, le script les retrouve automatiquement à partir du nom de lieu (géocodage OpenStreetMap).
+### Liaisons (bus, portions non enregistrées)
+- Compléter `data/liaisons.json` : chaque entrée a un `mode` (`"bus"` ou `"rando"` pour une portion à pied non enregistrée par la montre), une date, et un point `from`/`to`.
+- Un point peut être : `{"name": "Lieu, Ville"}` (géocodé automatiquement via OpenStreetMap), `{"lat":, "lon":}` (coordonnées explicites), ou `{"trackRef": "day-3", "point": "end"}` (réutilise le début/fin d'une trace GPX déjà présente — pratique pour enchaîner directement sur le point où une trace s'arrête, sans redonner de coordonnées).
 
 ### Texte de présentation
 - Compléter `data/trip.json` : titre, dates, et un petit texte par jour (facultatif).
@@ -29,7 +33,11 @@ python3 scripts/build_data.py
 
 Le script est ré-exécutable à volonté (idempotent) au fur et à mesure que tu ajoutes des photos/traces. Il régénère `docs/data/manifest.json` et les photos compressées dans `docs/photos/`.
 
-Dépendances Python : `pip install Pillow pillow-heif` (pillow-heif seulement si des photos sont en `.heic`).
+Dépendances Python (dans un venv du projet) :
+```bash
+python3 -m venv .venv
+.venv/bin/pip install -r scripts/requirements.txt
+```
 
 ## 3. Prévisualiser en local
 

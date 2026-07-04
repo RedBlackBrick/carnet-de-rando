@@ -1,0 +1,34 @@
+[
+  {
+    "id": "liaison-1",
+    "mode": "bus",
+    "date": "2026-06-27",
+    "from": { "name": "Lourdes, France" },
+    "to": { "trackRef": "day-1", "point": "start" },
+    "note": "Bus avant le début de la rando"
+  },
+  {
+    "id": "liaison-2",
+    "mode": "rando",
+    "date": "2026-06-29",
+    "from": { "trackRef": "day-3", "point": "end", "name": "Fin de la trace du jour 3" },
+    "to": { "trackRef": "day-4", "point": "start", "name": "Camping de Gavarnie" },
+    "note": "Portion à pied non enregistrée par la montre, jusqu'au camping de Gavarnie"
+  },
+  {
+    "id": "liaison-3",
+    "mode": "bus",
+    "date": "2026-07-01",
+    "from": { "trackRef": "day-5", "point": "end", "name": "Gèdre" },
+    "to": { "name": "Camping Les Cascades, Luz-Saint-Sauveur, France" },
+    "note": "Bus de Gèdre au camping"
+  },
+  {
+    "id": "liaison-4",
+    "mode": "bus",
+    "date": "2026-07-02",
+    "from": { "name": "Camping Les Cascades, Luz-Saint-Sauveur, France" },
+    "to": { "trackRef": "day-6", "point": "start" },
+    "note": "Bus du camping à Barèges"
+  }
+]

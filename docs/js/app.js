@@ -1,5 +1,22 @@
 const COLORS = { pine: "#3C5C3F", slate: "#4A6572", trailRed: "#C1442D" };
 
+const EXTRA_STATS = [
+  { key: "avgHr", label: "FC moyenne", fmt: (v) => `${v} bpm` },
+  { key: "maxHr", label: "FC max", fmt: (v) => `${v} bpm` },
+  { key: "movingTimeS", label: "Temps de mouvement", fmt: formatDuration },
+  { key: "calories", label: "Calories", fmt: (v) => `${v} kcal` },
+  { key: "avgCadence", label: "Cadence moy.", fmt: (v) => `${v} ppm` },
+  { key: "maxCadence", label: "Cadence max", fmt: (v) => `${v} ppm` },
+  { key: "minTemp", label: "Température min", fmt: (v) => `${v}°C` },
+  { key: "maxTemp", label: "Température max", fmt: (v) => `${v}°C` },
+  { key: "trainingEffect", label: "Effet d'entraînement", fmt: (v) => v },
+];
+
+const LIAISON_STYLES = {
+  bus: { color: COLORS.slate, dashArray: "6 8", icon: "🚌", label: "Bus" },
+  rando: { color: COLORS.trailRed, dashArray: "2 6", icon: "🥾", label: "Rando non enregistrée" },
+};
+
 function maybeInit() {
   if (sessionStorage.getItem("randoUnlocked") === "1") {
     init();
@@ -104,7 +121,7 @@ function renderElevationProfile(tracksWithPoints) {
   `;
 }
 
-function renderDayTabs(manifest, onSelectDay, onSelectOverview, onSelectBuses) {
+function renderDayTabs(manifest, onSelectDay, onSelectOverview, onSelectLiaisons) {
   const nav = document.getElementById("day-tabs");
   const buttons = [];
 
@@ -131,16 +148,16 @@ function renderDayTabs(manifest, onSelectDay, onSelectOverview, onSelectBuses) {
     buttons.push(btn);
   });
 
-  if (manifest.buses.length > 0) {
-    const busBtn = document.createElement("button");
-    busBtn.className = "day-tab bus-toggle";
-    busBtn.innerHTML = `<span class="tab-label">🚌 Bus</span><span class="tab-meta">${manifest.buses.length} trajet(s)</span>`;
-    busBtn.addEventListener("click", () => {
-      setActive(busBtn);
-      onSelectBuses();
+  if (manifest.liaisons.length > 0) {
+    const liaisonBtn = document.createElement("button");
+    liaisonBtn.className = "day-tab bus-toggle";
+    liaisonBtn.innerHTML = `<span class="tab-label">🚌🥾 Liaisons</span><span class="tab-meta">${manifest.liaisons.length} trajet(s)</span>`;
+    liaisonBtn.addEventListener("click", () => {
+      setActive(liaisonBtn);
+      onSelectLiaisons();
     });
-    nav.appendChild(busBtn);
-    buttons.push(busBtn);
+    nav.appendChild(liaisonBtn);
+    buttons.push(liaisonBtn);
   }
 
   function setActive(target) {
@@ -156,6 +173,9 @@ function renderDetailForDay(track, photosForDay) {
           .map((p, i) => `<img src="${p.thumb}" data-photo-index="${p._index}" alt="${p.caption || ""}">`)
           .join("")}</div>`
       : "";
+  const extraStatsHtml = EXTRA_STATS.filter((s) => track[s.key] != null)
+    .map((s) => `<div><span>${s.label}</span>${s.fmt(track[s.key])}</div>`)
+    .join("");
   el.innerHTML = `
     <span class="detail-badge" style="--day-color:${track.color}">${track.label}</span>
     <h2>${track.label}</h2>
@@ -167,6 +187,7 @@ function renderDetailForDay(track, photosForDay) {
       <div><span>Dénivelé -</span>${track.elevationLossM} m</div>
       <div><span>Durée</span>${formatDuration(track.durationS)}</div>
     </div>
+    ${extraStatsHtml ? `<div class="detail-stats detail-stats-extra">${extraStatsHtml}</div>` : ""}
     ${photosHtml}
   `;
   el.querySelectorAll("img[data-photo-index]").forEach((img) => {
@@ -188,18 +209,19 @@ function renderDetailOverview(manifest) {
   `;
 }
 
-function renderDetailBuses(manifest) {
+function renderDetailLiaisons(manifest) {
   const el = document.getElementById("detail");
   el.innerHTML = `
-    <h2>Trajets en bus</h2>
+    <h2>Liaisons</h2>
     <ul class="bus-list">
-      ${manifest.buses
-        .map(
-          (b) => `<li>
-            <div class="bus-route">${b.from.name} → ${b.to.name}</div>
-            <div class="bus-date">${formatDate(b.date)}${b.note ? " · " + b.note : ""}</div>
-          </li>`
-        )
+      ${manifest.liaisons
+        .map((l) => {
+          const style = LIAISON_STYLES[l.mode] || LIAISON_STYLES.bus;
+          return `<li>
+            <div class="bus-route">${style.icon} ${l.from.name} → ${l.to.name}</div>
+            <div class="bus-date">${style.label} · ${formatDate(l.date)}${l.note ? " · " + l.note : ""}</div>
+          </li>`;
+        })
         .join("")}
     </ul>
   `;
@@ -246,11 +268,24 @@ async function init() {
   allPhotos = manifest.photos.map((p, i) => ({ ...p, _index: i }));
 
   const map = L.map("map", { scrollWheelZoom: false });
-  L.tileLayer("https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png", {
-    maxZoom: 17,
-    attribution:
-      'Fond de carte © <a href="https://opentopomap.org">OpenTopoMap</a> (CC-BY-SA), données © OpenStreetMap',
-  }).addTo(map);
+
+  const baseLayers = {
+    "Relief (topo)": L.tileLayer("https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png", {
+      maxZoom: 17,
+      attribution:
+        'Fond de carte © <a href="https://opentopomap.org">OpenTopoMap</a> (CC-BY-SA), données © OpenStreetMap',
+    }),
+    "Plan": L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      maxZoom: 19,
+      attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    }),
+    "Satellite": L.tileLayer(
+      "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+      { maxZoom: 19, attribution: "Imagerie © Esri, Maxar, Earthstar Geographics" }
+    ),
+  };
+  baseLayers["Relief (topo)"].addTo(map);
+  L.control.layers(baseLayers, null, { position: "topright" }).addTo(map);
 
   const tracksWithPoints = [];
   const trackLayers = {};
@@ -271,16 +306,17 @@ async function init() {
 
   renderElevationProfile(tracksWithPoints);
 
-  const busLayers = [];
-  manifest.buses.forEach((bus) => {
-    const from = [bus.from.lat, bus.from.lon];
-    const to = [bus.to.lat, bus.to.lon];
-    const line = L.polyline([from, to], { color: COLORS.slate, weight: 3, dashArray: "6 8" }).addTo(map);
+  const liaisonLayers = [];
+  manifest.liaisons.forEach((liaison) => {
+    const style = LIAISON_STYLES[liaison.mode] || LIAISON_STYLES.bus;
+    const from = [liaison.from.lat, liaison.from.lon];
+    const to = [liaison.to.lat, liaison.to.lon];
+    const line = L.polyline([from, to], { color: style.color, weight: 3, dashArray: style.dashArray }).addTo(map);
     const mid = [(from[0] + to[0]) / 2, (from[1] + to[1]) / 2];
     L.marker(mid, {
-      icon: L.divIcon({ className: "", html: '<div class="bus-marker">🚌</div>', iconSize: [26, 26] }),
-    }).addTo(map).bindPopup(`${bus.from.name} → ${bus.to.name}`);
-    busLayers.push(line);
+      icon: L.divIcon({ className: "", html: `<div class="bus-marker">${style.icon}</div>`, iconSize: [26, 26] }),
+    }).addTo(map).bindPopup(`${style.label} · ${liaison.from.name} → ${liaison.to.name}`);
+    liaisonLayers.push(line);
     allBounds.push(from, to);
   });
 
@@ -326,11 +362,11 @@ async function init() {
     },
     () => {
       resetOpacity(null);
-      if (busLayers.length) {
-        const group = L.featureGroup(busLayers);
+      if (liaisonLayers.length) {
+        const group = L.featureGroup(liaisonLayers);
         map.fitBounds(group.getBounds(), { padding: [40, 40] });
       }
-      renderDetailBuses(manifest);
+      renderDetailLiaisons(manifest);
     }
   );
 

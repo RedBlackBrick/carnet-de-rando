@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx version="1.1" creator="fit_to_gpx.py" xmlns="http://www.topografix.com/GPX/1/1">
-<trk><name>Gavarnie-Gèdre Randonnée</name><trkseg>
+<trk><name>Gavarnie-Gèdre Randonnée</name><extensions><avgHr>96</avgHr><maxHr>158</maxHr><calories>1513</calories><avgCadence>17</avgCadence><maxCadence>224</maxCadence><minTemp>19</minTemp><maxTemp>36</maxTemp><trainingEffect>2.7</trainingEffect><ascentM>886</ascentM><descentM>267</descentM><movingTimeS>6015</movingTimeS></extensions><trkseg>
 <trkpt lat="42.7279573" lon="-0.0072427"><ele>1389.6</ele><time>2026-06-30T05:12:03Z</time></trkpt>
 <trkpt lat="42.7279441" lon="-0.0072566"><ele>1389.2</ele><time>2026-06-30T05:12:06Z</time></trkpt>
 <trkpt lat="42.7278957" lon="-0.0073038"><ele>1389.4</ele><time>2026-06-30T05:12:12Z</time></trkpt>

@@ -102,6 +102,26 @@ def parse_gpx_time(text):
     return datetime.fromisoformat(text.replace("Z", "+00:00"))
 
 
+def parse_extensions(trk_el, ns):
+    """Lit le bloc <extensions> écrit par fit_to_gpx.py (FC, calories, cadence, dénivelé exact...)."""
+    ext_el = trk_el.find("g:extensions", ns)
+    if ext_el is None:
+        return {}
+    result = {}
+    for child in ext_el:
+        tag = child.tag.split("}")[-1]
+        if child.text is None:
+            continue
+        try:
+            value = float(child.text)
+            if value.is_integer():
+                value = int(value)
+        except ValueError:
+            value = child.text
+        result[tag] = value
+    return result
+
+
 def parse_gpx(path: Path):
     tree = ET.parse(path)
     root = tree.getroot()
@@ -125,7 +145,12 @@ def parse_gpx(path: Path):
     for a, b in zip(points, points[1:]):
         distance_m += haversine_m(a["lat"], a["lon"], b["lat"], b["lon"])
 
-    gain_m, loss_m = elevation_gain_loss(points)
+    trk_el = root.find(".//g:trk", ns)
+    extensions = parse_extensions(trk_el, ns) if trk_el is not None else {}
+    if "ascentM" in extensions and "descentM" in extensions:
+        gain_m, loss_m = extensions["ascentM"], extensions["descentM"]
+    else:
+        gain_m, loss_m = elevation_gain_loss(points)
 
     times = [p["time"] for p in points if p["time"] is not None]
     start_time = min(times) if times else None
@@ -144,13 +169,21 @@ def parse_gpx(path: Path):
         "start_time": start_time,
         "end_time": end_time,
         "bounds": [[min(lats), min(lons)], [max(lats), max(lons)]],
+        "extensions": extensions,
     }
+
+
+EXTENSION_FIELDS = [
+    "avgHr", "maxHr", "calories", "avgCadence", "maxCadence",
+    "minTemp", "maxTemp", "trainingEffect", "movingTimeS",
+]
 
 
 def build_tracks(trip_days_by_date):
     gpx_files = sorted((DATA / "gpx").glob("*.gpx"))
     tracks = []
     all_time_points = []  # (timestamp, lat, lon) across every track, for photo fallback matching
+    track_endpoints = {}  # id -> {"start": {...}, "end": {...}} pour résoudre les liaisons
 
     out_gpx_dir = DOCS / "data" / "gpx"
     out_gpx_dir.mkdir(parents=True, exist_ok=True)
@@ -168,20 +201,22 @@ def build_tracks(trip_days_by_date):
     parsed.sort(key=lambda pair: pair[1]["start_time"] or datetime.min.replace(tzinfo=timezone.utc))
 
     for idx, (gpx_path, info) in enumerate(parsed):
-        dest_name = f"day-{idx + 1}.gpx"
+        track_id = f"day-{idx + 1}"
+        dest_name = f"{track_id}.gpx"
         (out_gpx_dir / dest_name).write_bytes(gpx_path.read_bytes())
 
         date_str = info["start_time"].date().isoformat() if info["start_time"] else None
         day_meta = trip_days_by_date.get(date_str, {})
+        label = day_meta.get("title") or f"Jour {idx + 1}"
 
         for p in info["points"]:
             if p["time"] is not None:
                 all_time_points.append((p["time"], p["lat"], p["lon"]))
 
-        tracks.append({
-            "id": f"day-{idx + 1}",
+        track = {
+            "id": track_id,
             "file": f"data/gpx/{dest_name}",
-            "label": day_meta.get("title") or f"Jour {idx + 1}",
+            "label": label,
             "description": day_meta.get("description", ""),
             "date": date_str,
             "color": DAY_COLORS[idx % len(DAY_COLORS)],
@@ -192,11 +227,22 @@ def build_tracks(trip_days_by_date):
             "startTime": info["start_time"].isoformat() if info["start_time"] else None,
             "endTime": info["end_time"].isoformat() if info["end_time"] else None,
             "bounds": info["bounds"],
-        })
+        }
+        for field in EXTENSION_FIELDS:
+            if field in info["extensions"]:
+                track[field] = info["extensions"][field]
+        tracks.append(track)
+
+        first_pt, last_pt = info["points"][0], info["points"][-1]
+        track_endpoints[track_id] = {
+            "start": {"lat": first_pt["lat"], "lon": first_pt["lon"], "label": label},
+            "end": {"lat": last_pt["lat"], "lon": last_pt["lon"], "label": label},
+        }
+
         log(f"  - {gpx_path.name} -> {dest_name}: {info['distance_km']} km, +{info['elevation_gain_m']}m")
 
     all_time_points.sort(key=lambda t: t[0])
-    return tracks, all_time_points
+    return tracks, all_time_points, track_endpoints
 
 
 # ---------------------------------------------------------------------------
@@ -340,7 +386,7 @@ def build_photos(time_points, trip_timezone, captions):
 
 
 # ---------------------------------------------------------------------------
-# Bus (géocodage)
+# Liaisons (bus ou portions de rando non enregistrées), géocodage
 # ---------------------------------------------------------------------------
 
 def load_geocode_cache():
@@ -377,25 +423,44 @@ def geocode(name, cache):
     return coords
 
 
-def build_buses():
-    bus_path = DATA / "bus.json"
-    if not bus_path.exists():
+def resolve_point(spec, track_endpoints, cache):
+    """Résout un point de liaison : référence à une trace GPX, coordonnées explicites, ou géocodage par nom."""
+    spec = dict(spec or {})
+    if "trackRef" in spec:
+        endpoint = track_endpoints.get(spec["trackRef"], {}).get(spec.get("point", "start"))
+        if not endpoint:
+            return None
+        return {"name": spec.get("name") or endpoint["label"], "lat": endpoint["lat"], "lon": endpoint["lon"]}
+    if spec.get("lat") is not None and spec.get("lon") is not None:
+        return {"name": spec.get("name", ""), "lat": spec["lat"], "lon": spec["lon"]}
+    if spec.get("name"):
+        coords = geocode(spec["name"], cache)
+        if coords:
+            return {"name": spec["name"], "lat": coords["lat"], "lon": coords["lon"]}
+    return None
+
+
+def build_liaisons(track_endpoints):
+    liaisons_path = DATA / "liaisons.json"
+    if not liaisons_path.exists():
         return []
-    raw = json.loads(bus_path.read_text())
+    raw = json.loads(liaisons_path.read_text())
     cache = load_geocode_cache()
     resolved = []
     for leg in raw:
-        for endpoint in ("from", "to"):
-            point = leg.get(endpoint) or {}
-            if point.get("lat") is None or point.get("lon") is None:
-                coords = geocode(point.get("name", ""), cache)
-                if coords:
-                    point["lat"], point["lon"] = coords["lat"], coords["lon"]
-            leg[endpoint] = point
-        if leg["from"].get("lat") is not None and leg["to"].get("lat") is not None:
-            resolved.append(leg)
+        from_point = resolve_point(leg.get("from"), track_endpoints, cache)
+        to_point = resolve_point(leg.get("to"), track_endpoints, cache)
+        if from_point and to_point:
+            resolved.append({
+                "id": leg.get("id"),
+                "mode": leg.get("mode", "bus"),
+                "date": leg.get("date"),
+                "note": leg.get("note", ""),
+                "from": from_point,
+                "to": to_point,
+            })
         else:
-            log(f"  ! trajet bus '{leg.get('id')}' ignoré (coordonnées introuvables)")
+            log(f"  ! liaison '{leg.get('id')}' ignorée (point introuvable)")
     save_geocode_cache(cache)
     return resolved
 
@@ -411,10 +476,10 @@ def main():
     trip_days_by_date = {d["date"]: d for d in trip.get("days", []) if d.get("date")}
 
     log("Traces GPX:")
-    tracks, time_points = build_tracks(trip_days_by_date)
+    tracks, time_points, track_endpoints = build_tracks(trip_days_by_date)
 
-    log("Trajets bus:")
-    buses = build_buses()
+    log("Liaisons (bus / rando non enregistrée):")
+    liaisons = build_liaisons(track_endpoints)
 
     log("Photos:")
     photos = build_photos(time_points, trip.get("timezone", "Europe/Paris"), captions)
@@ -432,7 +497,7 @@ def main():
             "dayCount": len(tracks),
         },
         "tracks": tracks,
-        "buses": buses,
+        "liaisons": liaisons,
         "photos": photos,
         "generatedAt": datetime.now(timezone.utc).isoformat(),
     }
@@ -441,7 +506,7 @@ def main():
     manifest_path.parent.mkdir(parents=True, exist_ok=True)
     manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2))
     log(f"\nOK -> {manifest_path.relative_to(ROOT)}")
-    log(f"   {len(tracks)} jour(s), {total_distance} km, +{total_gain} m, {len(photos)} photo(s), {len(buses)} trajet(s) bus")
+    log(f"   {len(tracks)} jour(s), {total_distance} km, +{total_gain} m, {len(photos)} photo(s), {len(liaisons)} liaison(s)")
 
 
 if __name__ == "__main__":

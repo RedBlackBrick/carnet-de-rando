@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx version="1.1" creator="fit_to_gpx.py" xmlns="http://www.topografix.com/GPX/1/1">
-<trk><name>Cauterets Randonnée</name><trkseg>
+<trk><name>Cauterets Randonnée</name><extensions><avgHr>131</avgHr><maxHr>168</maxHr><calories>1718</calories><avgCadence>12</avgCadence><maxCadence>208</maxCadence><minTemp>26</minTemp><maxTemp>33</maxTemp><trainingEffect>4.9</trainingEffect><ascentM>695</ascentM><descentM>134</descentM><movingTimeS>3296</movingTimeS></extensions><trkseg>
 <trkpt lat="42.8902273" lon="-0.1130593"><ele>935.4</ele><time>2026-06-27T18:01:47Z</time></trkpt>
 <trkpt lat="42.8902198" lon="-0.1130523"><ele>931.8</ele><time>2026-06-27T18:01:48Z</time></trkpt>
 <trkpt lat="42.8901836" lon="-0.1129819"><ele>932.8</ele><time>2026-06-27T18:01:53Z</time></trkpt>

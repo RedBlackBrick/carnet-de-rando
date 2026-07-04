@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx version="1.1" creator="fit_to_gpx.py" xmlns="http://www.topografix.com/GPX/1/1">
-<trk><name>Vielle-Aure Randonnée</name><trkseg>
+<trk><name>Vielle-Aure Randonnée</name><extensions><avgHr>92</avgHr><maxHr>135</maxHr><calories>1474</calories><avgCadence>24</avgCadence><maxCadence>202</maxCadence><minTemp>19</minTemp><maxTemp>38</maxTemp><trainingEffect>1.4</trainingEffect><ascentM>197</ascentM><descentM>1702</descentM><movingTimeS>11713</movingTimeS></extensions><trkseg>
 <trkpt lat="42.8575332" lon="0.2076042"><ele>2302.6</ele><time>2026-07-03T05:53:55Z</time></trkpt>
 <trkpt lat="42.8575331" lon="0.2076038"><ele>2302.6</ele><time>2026-07-03T05:53:56Z</time></trkpt>
 <trkpt lat="42.8575325" lon="0.2076013"><ele>2302.4</ele><time>2026-07-03T05:54:00Z</time></trkpt>

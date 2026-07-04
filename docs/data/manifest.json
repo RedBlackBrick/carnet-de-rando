@@ -53,7 +53,7 @@
   },
   "stats": {
     "totalDistanceKm": 107.2,
-    "totalElevationGainM": 5636,
+    "totalElevationGainM": 5602,
     "totalDurationS": 182472.0,
     "dayCount": 7
   },
@@ -66,7 +66,7 @@
       "date": "2026-06-27",
       "color": "#2f6f4f",
       "distanceKm": 9.79,
-      "elevationGainM": 724,
+      "elevationGainM": 695,
       "elevationLossM": 134,
       "durationS": 15549.0,
       "startTime": "2026-06-27T18:01:47+00:00",
@@ -80,7 +80,16 @@
           42.8902273,
           -0.1055514
         ]
-      ]
+      ],
+      "avgHr": 131,
+      "maxHr": 168,
+      "calories": 1718,
+      "avgCadence": 12,
+      "maxCadence": 208,
+      "minTemp": 26,
+      "maxTemp": 33,
+      "trainingEffect": 4.9,
+      "movingTimeS": 3296
     },
     {
       "id": "day-2",
@@ -90,8 +99,8 @@
       "date": "2026-06-28",
       "color": "#b5651d",
       "distanceKm": 13.77,
-      "elevationGainM": 1313,
-      "elevationLossM": 183,
+      "elevationGainM": 1295,
+      "elevationLossM": 165,
       "durationS": 29514.0,
       "startTime": "2026-06-28T04:44:26+00:00",
       "endTime": "2026-06-28T12:56:20+00:00",
@@ -104,7 +113,16 @@
           42.851042,
           -0.1243584
         ]
-      ]
+      ],
+      "avgHr": 121,
+      "maxHr": 164,
+      "calories": 2847,
+      "avgCadence": 9,
+      "maxCadence": 234,
+      "minTemp": 20,
+      "maxTemp": 34,
+      "trainingEffect": 4.6,
+      "movingTimeS": 7178
     },
     {
       "id": "day-3",
@@ -114,8 +132,8 @@
       "date": "2026-06-29",
       "color": "#3a6ea5",
       "distanceKm": 16.26,
-      "elevationGainM": 278,
-      "elevationLossM": 1416,
+      "elevationGainM": 315,
+      "elevationLossM": 1446,
       "durationS": 27547.0,
       "startTime": "2026-06-29T05:00:09+00:00",
       "endTime": "2026-06-29T12:39:16+00:00",
@@ -128,7 +146,16 @@
           42.7792139,
           -0.0223107
         ]
-      ]
+      ],
+      "avgHr": 100,
+      "maxHr": 151,
+      "calories": 2012,
+      "avgCadence": 18,
+      "maxCadence": 186,
+      "minTemp": 21,
+      "maxTemp": 34,
+      "trainingEffect": 2.1,
+      "movingTimeS": 10584
     },
     {
       "id": "day-4",
@@ -138,8 +165,8 @@
       "date": "2026-06-30",
       "color": "#a13d3d",
       "distanceKm": 11.94,
-      "elevationGainM": 904,
-      "elevationLossM": 271,
+      "elevationGainM": 886,
+      "elevationLossM": 267,
       "durationS": 20875.0,
       "startTime": "2026-06-30T05:12:03+00:00",
       "endTime": "2026-06-30T10:59:58+00:00",
@@ -152,7 +179,16 @@
           42.7279573,
           0.0125011
         ]
-      ]
+      ],
+      "avgHr": 96,
+      "maxHr": 158,
+      "calories": 1513,
+      "avgCadence": 17,
+      "maxCadence": 224,
+      "minTemp": 19,
+      "maxTemp": 36,
+      "trainingEffect": 2.7,
+      "movingTimeS": 6015
     },
     {
       "id": "day-5",
@@ -162,8 +198,8 @@
       "date": "2026-07-01",
       "color": "#6b5b95",
       "distanceKm": 17.36,
-      "elevationGainM": 569,
-      "elevationLossM": 1569,
+      "elevationGainM": 544,
+      "elevationLossM": 1564,
       "durationS": 29554.0,
       "startTime": "2026-07-01T05:11:18+00:00",
       "endTime": "2026-07-01T13:23:52+00:00",
@@ -176,7 +212,16 @@
           42.7869779,
           0.0504782
         ]
-      ]
+      ],
+      "avgHr": 98,
+      "maxHr": 154,
+      "calories": 2155,
+      "avgCadence": 24,
+      "maxCadence": 194,
+      "minTemp": 22,
+      "maxTemp": 34,
+      "trainingEffect": 3,
+      "movingTimeS": 11428
     },
     {
       "id": "day-6",
@@ -186,8 +231,8 @@
       "date": "2026-07-02",
       "color": "#4c7a3f",
       "distanceKm": 21.3,
-      "elevationGainM": 1669,
-      "elevationLossM": 594,
+      "elevationGainM": 1670,
+      "elevationLossM": 598,
       "durationS": 36564.0,
       "startTime": "2026-07-02T07:46:04+00:00",
       "endTime": "2026-07-02T17:55:28+00:00",
@@ -200,7 +245,16 @@
           42.9037008,
           0.2076246
         ]
-      ]
+      ],
+      "avgHr": 104,
+      "maxHr": 148,
+      "calories": 3045,
+      "avgCadence": 19,
+      "maxCadence": 220,
+      "minTemp": 20,
+      "maxTemp": 32,
+      "trainingEffect": 2.6,
+      "movingTimeS": 11945
     },
     {
       "id": "day-7",
@@ -210,8 +264,8 @@
       "date": "2026-07-03",
       "color": "#c1875a",
       "distanceKm": 16.8,
-      "elevationGainM": 179,
-      "elevationLossM": 1682,
+      "elevationGainM": 197,
+      "elevationLossM": 1702,
       "durationS": 22869.0,
       "startTime": "2026-07-03T05:53:55+00:00",
       "endTime": "2026-07-03T12:15:04+00:00",
@@ -224,10 +278,84 @@
           42.8575332,
           0.3274977
         ]
-      ]
+      ],
+      "avgHr": 92,
+      "maxHr": 135,
+      "calories": 1474,
+      "avgCadence": 24,
+      "maxCadence": 202,
+      "minTemp": 19,
+      "maxTemp": 38,
+      "trainingEffect": 1.4,
+      "movingTimeS": 11713
     }
   ],
-  "buses": [],
+  "liaisons": [
+    {
+      "id": "liaison-1",
+      "mode": "bus",
+      "date": "2026-06-27",
+      "note": "Bus avant le début de la rando",
+      "from": {
+        "name": "Lourdes, France",
+        "lat": 43.0940904,
+        "lon": -0.0464975
+      },
+      "to": {
+        "name": "Cauterets",
+        "lat": 42.8902273,
+        "lon": -0.1130593
+      }
+    },
+    {
+      "id": "liaison-2",
+      "mode": "rando",
+      "date": "2026-06-29",
+      "note": "Portion à pied non enregistrée par la montre, jusqu'au camping de Gavarnie",
+      "from": {
+        "name": "Fin de la trace du jour 3",
+        "lat": 42.7394919,
+        "lon": -0.0223588
+      },
+      "to": {
+        "name": "Camping de Gavarnie",
+        "lat": 42.7279573,
+        "lon": -0.0072427
+      }
+    },
+    {
+      "id": "liaison-3",
+      "mode": "bus",
+      "date": "2026-07-01",
+      "note": "Bus de Gèdre au camping",
+      "from": {
+        "name": "Gèdre",
+        "lat": 42.7867706,
+        "lon": 0.0215661
+      },
+      "to": {
+        "name": "Camping Les Cascades, Luz-Saint-Sauveur, France",
+        "lat": 42.8695871,
+        "lon": -0.0021618
+      }
+    },
+    {
+      "id": "liaison-4",
+      "mode": "bus",
+      "date": "2026-07-02",
+      "note": "Bus du camping à Barèges",
+      "from": {
+        "name": "Camping Les Cascades, Luz-Saint-Sauveur, France",
+        "lat": 42.8695871,
+        "lon": -0.0021618
+      },
+      "to": {
+        "name": "Barèges",
+        "lat": 42.8962089,
+        "lon": 0.0626453
+      }
+    }
+  ],
   "photos": [],
-  "generatedAt": "2026-07-04T12:36:20.957254+00:00"
+  "generatedAt": "2026-07-04T12:55:26.629408+00:00"
 }
