@@ -356,6 +356,5254 @@
       }
     }
   ],
-  "photos": [],
-  "generatedAt": "2026-07-04T12:55:26.629408+00:00"
+  "photos": [
+    {
+      "file": "photos/full/0002-20260627_150145.jpg",
+      "thumb": "photos/thumb/0002-20260627_150145.jpg",
+      "lat": 43.2400372,
+      "lon": 0.06911739972222222,
+      "date": "2026-06-27T15:01:46+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0003-20260627_150146.jpg",
+      "thumb": "photos/thumb/0003-20260627_150146.jpg",
+      "lat": 43.2400372,
+      "lon": 0.06911739972222222,
+      "date": "2026-06-27T15:01:47+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0004-20260627_150157.jpg",
+      "thumb": "photos/thumb/0004-20260627_150157.jpg",
+      "lat": 43.2400188,
+      "lon": 0.06924339972222222,
+      "date": "2026-06-27T15:01:57+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0005-20260627_150430.jpg",
+      "thumb": "photos/thumb/0005-20260627_150430.jpg",
+      "lat": 43.2403089,
+      "lon": 0.0696176,
+      "date": "2026-06-27T15:04:30+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0006-20260627_150612.jpg",
+      "thumb": "photos/thumb/0006-20260627_150612.jpg",
+      "lat": 43.24016329972223,
+      "lon": 0.0686523,
+      "date": "2026-06-27T15:06:12+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0007-20260627_150639.jpg",
+      "thumb": "photos/thumb/0007-20260627_150639.jpg",
+      "lat": 43.2402117,
+      "lon": 0.06879939972222222,
+      "date": "2026-06-27T15:06:40+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0008-20260627_150641.jpg",
+      "thumb": "photos/thumb/0008-20260627_150641.jpg",
+      "lat": 43.2402117,
+      "lon": 0.06879939972222222,
+      "date": "2026-06-27T15:06:42+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0010-20260627_150642.jpg",
+      "thumb": "photos/thumb/0010-20260627_150642.jpg",
+      "lat": 43.2402117,
+      "lon": 0.06879939972222222,
+      "date": "2026-06-27T15:06:42+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0009-20260627_150642-0.jpg",
+      "thumb": "photos/thumb/0009-20260627_150642-0.jpg",
+      "lat": 43.2402117,
+      "lon": 0.06879939972222222,
+      "date": "2026-06-27T15:06:43+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0011-20260627_152855.jpg",
+      "thumb": "photos/thumb/0011-20260627_152855.jpg",
+      "lat": 43.099639199722226,
+      "lon": -0.0443034,
+      "date": "2026-06-27T15:28:55+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0012-20260627_153149.jpg",
+      "thumb": "photos/thumb/0012-20260627_153149.jpg",
+      "lat": 43.098216899722225,
+      "lon": -0.0455946,
+      "date": "2026-06-27T15:31:49+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0013-20260627_153152.jpg",
+      "thumb": "photos/thumb/0013-20260627_153152.jpg",
+      "lat": 43.098216899722225,
+      "lon": -0.0455946,
+      "date": "2026-06-27T15:31:52+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0014-20260627_153715.jpg",
+      "thumb": "photos/thumb/0014-20260627_153715.jpg",
+      "lat": 43.096592899722225,
+      "lon": -0.045602299722222225,
+      "date": "2026-06-27T15:37:15+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0015-20260627_160518.jpg",
+      "thumb": "photos/thumb/0015-20260627_160518.jpg",
+      "lat": 43.096608199722226,
+      "lon": -0.055080999722222225,
+      "date": "2026-06-27T16:05:19+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0016-20260627_160522.jpg",
+      "thumb": "photos/thumb/0016-20260627_160522.jpg",
+      "lat": 43.0966254,
+      "lon": -0.05511829972222222,
+      "date": "2026-06-27T16:05:22+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0017-20260627_161103.jpg",
+      "thumb": "photos/thumb/0017-20260627_161103.jpg",
+      "lat": 43.0975668,
+      "lon": -0.0563227,
+      "date": "2026-06-27T16:11:03+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0018-20260627_161105.jpg",
+      "thumb": "photos/thumb/0018-20260627_161105.jpg",
+      "lat": 43.097566899722224,
+      "lon": -0.056349099722222226,
+      "date": "2026-06-27T16:11:06+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0019-20260627_161227.jpg",
+      "thumb": "photos/thumb/0019-20260627_161227.jpg",
+      "lat": 43.0979071,
+      "lon": -0.057313099722222226,
+      "date": "2026-06-27T16:12:27+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0020-20260627_161231.jpg",
+      "thumb": "photos/thumb/0020-20260627_161231.jpg",
+      "lat": 43.0979168,
+      "lon": -0.057298599722222225,
+      "date": "2026-06-27T16:12:32+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0021-20260627_161403.jpg",
+      "thumb": "photos/thumb/0021-20260627_161403.jpg",
+      "lat": 43.097765899722226,
+      "lon": -0.05854989972222223,
+      "date": "2026-06-27T16:14:03+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0022-20260627_161412.jpg",
+      "thumb": "photos/thumb/0022-20260627_161412.jpg",
+      "lat": 43.097768199722225,
+      "lon": -0.058547799722222224,
+      "date": "2026-06-27T16:14:12+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0023-20260627_161415.jpg",
+      "thumb": "photos/thumb/0023-20260627_161415.jpg",
+      "lat": 43.097768199722225,
+      "lon": -0.058547799722222224,
+      "date": "2026-06-27T16:14:15+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0024-20260627_162450.jpg",
+      "thumb": "photos/thumb/0024-20260627_162450.jpg",
+      "lat": 43.0976098,
+      "lon": -0.059953399722222224,
+      "date": "2026-06-27T16:24:50+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0025-20260627_162457.jpg",
+      "thumb": "photos/thumb/0025-20260627_162457.jpg",
+      "lat": 43.09782069972223,
+      "lon": -0.05984809972222223,
+      "date": "2026-06-27T16:24:57+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0026-20260627_162606.jpg",
+      "thumb": "photos/thumb/0026-20260627_162606.jpg",
+      "lat": 43.097987799722226,
+      "lon": -0.059648699722222226,
+      "date": "2026-06-27T16:26:06+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0027-20260627_162608.jpg",
+      "thumb": "photos/thumb/0027-20260627_162608.jpg",
+      "lat": 43.0979887,
+      "lon": -0.0596481,
+      "date": "2026-06-27T16:26:09+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0028-20260627_200338.jpg",
+      "thumb": "photos/thumb/0028-20260627_200338.jpg",
+      "lat": 42.88942289972222,
+      "lon": -0.11236049972222223,
+      "date": "2026-06-27T20:03:38+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0029-20260627_200342.jpg",
+      "thumb": "photos/thumb/0029-20260627_200342.jpg",
+      "lat": 42.889420899722225,
+      "lon": -0.11236099972222223,
+      "date": "2026-06-27T20:03:42+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0030-20260627_203610.jpg",
+      "thumb": "photos/thumb/0030-20260627_203610.jpg",
+      "lat": 42.883719999722224,
+      "lon": -0.10949169972222222,
+      "date": "2026-06-27T20:36:10+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0031-20260627_203618.jpg",
+      "thumb": "photos/thumb/0031-20260627_203618.jpg",
+      "lat": 42.8837533,
+      "lon": -0.10922019972222223,
+      "date": "2026-06-27T20:36:18+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0032-20260627_211107.jpg",
+      "thumb": "photos/thumb/0032-20260627_211107.jpg",
+      "lat": 42.871236199722226,
+      "lon": -0.10689369972222224,
+      "date": "2026-06-27T21:11:07+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0033-20260627_211109.jpg",
+      "thumb": "photos/thumb/0033-20260627_211109.jpg",
+      "lat": 42.8712352,
+      "lon": -0.1068912,
+      "date": "2026-06-27T21:11:09+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0034-20260627_211113.jpg",
+      "thumb": "photos/thumb/0034-20260627_211113.jpg",
+      "lat": 42.87123749972222,
+      "lon": -0.10687419972222223,
+      "date": "2026-06-27T21:11:13+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0035-20260627_212501.jpg",
+      "thumb": "photos/thumb/0035-20260627_212501.jpg",
+      "lat": 42.872022299722225,
+      "lon": -0.10945949972222223,
+      "date": "2026-06-27T21:25:02+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0036-20260627_212503.jpg",
+      "thumb": "photos/thumb/0036-20260627_212503.jpg",
+      "lat": 42.872049699722226,
+      "lon": -0.10944789972222223,
+      "date": "2026-06-27T21:25:03+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0037-20260627_212506.jpg",
+      "thumb": "photos/thumb/0037-20260627_212506.jpg",
+      "lat": 42.8719942,
+      "lon": -0.10954709972222224,
+      "date": "2026-06-27T21:25:06+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0038-20260627_212536.jpg",
+      "thumb": "photos/thumb/0038-20260627_212536.jpg",
+      "lat": 42.8722312,
+      "lon": -0.10952859972222223,
+      "date": "2026-06-27T21:25:36+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0039-20260627_213408.jpg",
+      "thumb": "photos/thumb/0039-20260627_213408.jpg",
+      "lat": 42.8708657,
+      "lon": -0.1120421,
+      "date": "2026-06-27T21:34:08+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0040-20260627_213409.jpg",
+      "thumb": "photos/thumb/0040-20260627_213409.jpg",
+      "lat": 42.8708657,
+      "lon": -0.1120421,
+      "date": "2026-06-27T21:34:09+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0041-20260627_213509.jpg",
+      "thumb": "photos/thumb/0041-20260627_213509.jpg",
+      "lat": 42.870632899722224,
+      "lon": -0.11215949972222222,
+      "date": "2026-06-27T21:35:09+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0042-20260627_213510.jpg",
+      "thumb": "photos/thumb/0042-20260627_213510.jpg",
+      "lat": 42.870614699722225,
+      "lon": -0.11212449972222223,
+      "date": "2026-06-27T21:35:10+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0043-20260627_213513.jpg",
+      "thumb": "photos/thumb/0043-20260627_213513.jpg",
+      "lat": 42.870614699722225,
+      "lon": -0.11212449972222223,
+      "date": "2026-06-27T21:35:13+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0044-20260627_215343.jpg",
+      "thumb": "photos/thumb/0044-20260627_215343.jpg",
+      "lat": 42.8670765,
+      "lon": -0.11601769972222223,
+      "date": "2026-06-27T21:53:43+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0045-20260627_215345.jpg",
+      "thumb": "photos/thumb/0045-20260627_215345.jpg",
+      "lat": 42.86710109972222,
+      "lon": -0.1158716,
+      "date": "2026-06-27T21:53:46+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0046-20260627_215351.jpg",
+      "thumb": "photos/thumb/0046-20260627_215351.jpg",
+      "lat": 42.8671086,
+      "lon": -0.11573679972222223,
+      "date": "2026-06-27T21:53:52+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0047-20260627_215429.jpg",
+      "thumb": "photos/thumb/0047-20260627_215429.jpg",
+      "lat": 42.8672028,
+      "lon": -0.11576899972222222,
+      "date": "2026-06-27T21:54:30+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0048-20260627_215431.jpg",
+      "thumb": "photos/thumb/0048-20260627_215431.jpg",
+      "lat": 42.8671238,
+      "lon": -0.1158002,
+      "date": "2026-06-27T21:54:31+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0049-20260628_064215.jpg",
+      "thumb": "photos/thumb/0049-20260628_064215.jpg",
+      "lat": 42.8503443,
+      "lon": -0.1407484,
+      "date": "2026-06-28T06:42:16+02:00",
+      "caption": "",
+      "positionSource": "interpolated"
+    },
+    {
+      "file": "photos/full/0050-20260628_064834.jpg",
+      "thumb": "photos/thumb/0050-20260628_064834.jpg",
+      "lat": 42.8508903,
+      "lon": -0.1402473,
+      "date": "2026-06-28T06:48:34+02:00",
+      "caption": "",
+      "positionSource": "interpolated"
+    },
+    {
+      "file": "photos/full/0051-20260628_064835.jpg",
+      "thumb": "photos/thumb/0051-20260628_064835.jpg",
+      "lat": 42.8508903,
+      "lon": -0.1402473,
+      "date": "2026-06-28T06:48:35+02:00",
+      "caption": "",
+      "positionSource": "interpolated"
+    },
+    {
+      "file": "photos/full/0052-20260628_064838.jpg",
+      "thumb": "photos/thumb/0052-20260628_064838.jpg",
+      "lat": 42.8509181,
+      "lon": -0.1402284,
+      "date": "2026-06-28T06:48:38+02:00",
+      "caption": "",
+      "positionSource": "interpolated"
+    },
+    {
+      "file": "photos/full/0053-20260628_065449.jpg",
+      "thumb": "photos/thumb/0053-20260628_065449.jpg",
+      "lat": 42.850238,
+      "lon": -0.1383591,
+      "date": "2026-06-28T06:54:49+02:00",
+      "caption": "",
+      "positionSource": "interpolated"
+    },
+    {
+      "file": "photos/full/0054-20260628_065452.jpg",
+      "thumb": "photos/thumb/0054-20260628_065452.jpg",
+      "lat": 42.850238,
+      "lon": -0.1383591,
+      "date": "2026-06-28T06:54:52+02:00",
+      "caption": "",
+      "positionSource": "interpolated"
+    },
+    {
+      "file": "photos/full/0055-20260628_065453.jpg",
+      "thumb": "photos/thumb/0055-20260628_065453.jpg",
+      "lat": 42.850238,
+      "lon": -0.1383591,
+      "date": "2026-06-28T06:54:53+02:00",
+      "caption": "",
+      "positionSource": "interpolated"
+    },
+    {
+      "file": "photos/full/0056-20260628_065504.jpg",
+      "thumb": "photos/thumb/0056-20260628_065504.jpg",
+      "lat": 42.8502384,
+      "lon": -0.1383659,
+      "date": "2026-06-28T06:55:04+02:00",
+      "caption": "",
+      "positionSource": "interpolated"
+    },
+    {
+      "file": "photos/full/0057-20260628_072654.jpg",
+      "thumb": "photos/thumb/0057-20260628_072654.jpg",
+      "lat": 42.8413248,
+      "lon": -0.1389537,
+      "date": "2026-06-28T07:26:54+02:00",
+      "caption": "",
+      "positionSource": "interpolated"
+    },
+    {
+      "file": "photos/full/0058-20260628_072658.jpg",
+      "thumb": "photos/thumb/0058-20260628_072658.jpg",
+      "lat": 42.8413256,
+      "lon": -0.1389551,
+      "date": "2026-06-28T07:26:58+02:00",
+      "caption": "",
+      "positionSource": "interpolated"
+    },
+    {
+      "file": "photos/full/0059-20260628_072701.jpg",
+      "thumb": "photos/thumb/0059-20260628_072701.jpg",
+      "lat": 42.8413404,
+      "lon": -0.1389537,
+      "date": "2026-06-28T07:27:01+02:00",
+      "caption": "",
+      "positionSource": "interpolated"
+    },
+    {
+      "file": "photos/full/0060-20260628_072952.jpg",
+      "thumb": "photos/thumb/0060-20260628_072952.jpg",
+      "lat": 42.8406927,
+      "lon": -0.1384079,
+      "date": "2026-06-28T07:29:53+02:00",
+      "caption": "",
+      "positionSource": "interpolated"
+    },
+    {
+      "file": "photos/full/0061-20260628_073551.jpg",
+      "thumb": "photos/thumb/0061-20260628_073551.jpg",
+      "lat": 42.8382286,
+      "lon": -0.1387804,
+      "date": "2026-06-28T07:35:51+02:00",
+      "caption": "",
+      "positionSource": "interpolated"
+    },
+    {
+      "file": "photos/full/0062-20260628_073554.jpg",
+      "thumb": "photos/thumb/0062-20260628_073554.jpg",
+      "lat": 42.8382675,
+      "lon": -0.1387273,
+      "date": "2026-06-28T07:35:55+02:00",
+      "caption": "",
+      "positionSource": "interpolated"
+    },
+    {
+      "file": "photos/full/0063-20260628_074357.jpg",
+      "thumb": "photos/thumb/0063-20260628_074357.jpg",
+      "lat": 42.83456,
+      "lon": -0.1391856,
+      "date": "2026-06-28T07:43:57+02:00",
+      "caption": "",
+      "positionSource": "interpolated"
+    },
+    {
+      "file": "photos/full/0064-20260628_074400.jpg",
+      "thumb": "photos/thumb/0064-20260628_074400.jpg",
+      "lat": 42.8345599,
+      "lon": -0.1391861,
+      "date": "2026-06-28T07:44:00+02:00",
+      "caption": "",
+      "positionSource": "interpolated"
+    },
+    {
+      "file": "photos/full/0065-20260628_075013.jpg",
+      "thumb": "photos/thumb/0065-20260628_075013.jpg",
+      "lat": 42.8344797,
+      "lon": -0.1415281,
+      "date": "2026-06-28T07:50:13+02:00",
+      "caption": "",
+      "positionSource": "interpolated"
+    },
+    {
+      "file": "photos/full/0066-20260628_075015.jpg",
+      "thumb": "photos/thumb/0066-20260628_075015.jpg",
+      "lat": 42.834487,
+      "lon": -0.141528,
+      "date": "2026-06-28T07:50:16+02:00",
+      "caption": "",
+      "positionSource": "interpolated"
+    },
+    {
+      "file": "photos/full/0067-20260628_075021.jpg",
+      "thumb": "photos/thumb/0067-20260628_075021.jpg",
+      "lat": 42.834487,
+      "lon": -0.141528,
+      "date": "2026-06-28T07:50:21+02:00",
+      "caption": "",
+      "positionSource": "interpolated"
+    },
+    {
+      "file": "photos/full/0068-20260628_080736.jpg",
+      "thumb": "photos/thumb/0068-20260628_080736.jpg",
+      "lat": 42.8282535,
+      "lon": -0.1406917,
+      "date": "2026-06-28T08:07:36+02:00",
+      "caption": "",
+      "positionSource": "interpolated"
+    },
+    {
+      "file": "photos/full/0069-20260628_080739.jpg",
+      "thumb": "photos/thumb/0069-20260628_080739.jpg",
+      "lat": 42.8282535,
+      "lon": -0.1406917,
+      "date": "2026-06-28T08:07:39+02:00",
+      "caption": "",
+      "positionSource": "interpolated"
+    },
+    {
+      "file": "photos/full/0070-20260628_080740.jpg",
+      "thumb": "photos/thumb/0070-20260628_080740.jpg",
+      "lat": 42.8282542,
+      "lon": -0.1406917,
+      "date": "2026-06-28T08:07:41+02:00",
+      "caption": "",
+      "positionSource": "interpolated"
+    },
+    {
+      "file": "photos/full/0071-20260628_080743.jpg",
+      "thumb": "photos/thumb/0071-20260628_080743.jpg",
+      "lat": 42.8282542,
+      "lon": -0.1406917,
+      "date": "2026-06-28T08:07:43+02:00",
+      "caption": "",
+      "positionSource": "interpolated"
+    },
+    {
+      "file": "photos/full/0072-20260628_081505.jpg",
+      "thumb": "photos/thumb/0072-20260628_081505.jpg",
+      "lat": 42.8259605,
+      "lon": -0.1399752,
+      "date": "2026-06-28T08:15:05+02:00",
+      "caption": "",
+      "positionSource": "interpolated"
+    },
+    {
+      "file": "photos/full/0073-20260628_081507.jpg",
+      "thumb": "photos/thumb/0073-20260628_081507.jpg",
+      "lat": 42.825994199722224,
+      "lon": -0.1400268,
+      "date": "2026-06-28T08:15:07+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0074-20260628_082258.jpg",
+      "thumb": "photos/thumb/0074-20260628_082258.jpg",
+      "lat": 42.82381649972223,
+      "lon": -0.138883,
+      "date": "2026-06-28T08:22:58+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0075-20260628_082301.jpg",
+      "thumb": "photos/thumb/0075-20260628_082301.jpg",
+      "lat": 42.823821799722225,
+      "lon": -0.1388928,
+      "date": "2026-06-28T08:23:02+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0076-20260628_082306.jpg",
+      "thumb": "photos/thumb/0076-20260628_082306.jpg",
+      "lat": 42.823821799722225,
+      "lon": -0.1388928,
+      "date": "2026-06-28T08:23:07+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0077-20260628_082310.jpg",
+      "thumb": "photos/thumb/0077-20260628_082310.jpg",
+      "lat": 42.823821799722225,
+      "lon": -0.1388928,
+      "date": "2026-06-28T08:23:10+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0078-20260628_082311.jpg",
+      "thumb": "photos/thumb/0078-20260628_082311.jpg",
+      "lat": 42.823821799722225,
+      "lon": -0.1388928,
+      "date": "2026-06-28T08:23:11+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0079-20260628_082322.jpg",
+      "thumb": "photos/thumb/0079-20260628_082322.jpg",
+      "lat": 42.8238009,
+      "lon": -0.13884389972222222,
+      "date": "2026-06-28T08:23:22+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0080-20260628_084023.jpg",
+      "thumb": "photos/thumb/0080-20260628_084023.jpg",
+      "lat": 42.818682199722225,
+      "lon": -0.1376204,
+      "date": "2026-06-28T08:40:23+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0081-20260628_084025.jpg",
+      "thumb": "photos/thumb/0081-20260628_084025.jpg",
+      "lat": 42.8186856,
+      "lon": -0.13761799972222222,
+      "date": "2026-06-28T08:40:25+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0082-20260628_085940.jpg",
+      "thumb": "photos/thumb/0082-20260628_085940.jpg",
+      "lat": 42.81555989972222,
+      "lon": -0.1375000997222222,
+      "date": "2026-06-28T08:59:41+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0083-20260628_085943.jpg",
+      "thumb": "photos/thumb/0083-20260628_085943.jpg",
+      "lat": 42.81340039972222,
+      "lon": -0.13780999972222222,
+      "date": "2026-06-28T08:59:44+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0084-20260628_090151.jpg",
+      "thumb": "photos/thumb/0084-20260628_090151.jpg",
+      "lat": 42.813394699999996,
+      "lon": -0.13780539972222222,
+      "date": "2026-06-28T09:01:51+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0085-20260628_090156.jpg",
+      "thumb": "photos/thumb/0085-20260628_090156.jpg",
+      "lat": 42.813394699999996,
+      "lon": -0.13780539972222222,
+      "date": "2026-06-28T09:01:56+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0086-20260628_092313.jpg",
+      "thumb": "photos/thumb/0086-20260628_092313.jpg",
+      "lat": 42.810316,
+      "lon": -0.1375829,
+      "date": "2026-06-28T09:23:13+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0087-20260628_092314.jpg",
+      "thumb": "photos/thumb/0087-20260628_092314.jpg",
+      "lat": 42.809115299999995,
+      "lon": -0.1367082,
+      "date": "2026-06-28T09:23:14+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0088-20260628_092316.jpg",
+      "thumb": "photos/thumb/0088-20260628_092316.jpg",
+      "lat": 42.8091115,
+      "lon": -0.1367072,
+      "date": "2026-06-28T09:23:16+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0089-20260628_092318.jpg",
+      "thumb": "photos/thumb/0089-20260628_092318.jpg",
+      "lat": 42.8091115,
+      "lon": -0.1367072,
+      "date": "2026-06-28T09:23:18+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0090-20260628_092746.jpg",
+      "thumb": "photos/thumb/0090-20260628_092746.jpg",
+      "lat": 42.80756819972222,
+      "lon": -0.1365927997222222,
+      "date": "2026-06-28T09:27:46+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0091-20260628_092748.jpg",
+      "thumb": "photos/thumb/0091-20260628_092748.jpg",
+      "lat": 42.807459099999996,
+      "lon": -0.13664199999999999,
+      "date": "2026-06-28T09:27:49+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0092-20260628_092752.jpg",
+      "thumb": "photos/thumb/0092-20260628_092752.jpg",
+      "lat": 42.807459099999996,
+      "lon": -0.13664199999999999,
+      "date": "2026-06-28T09:27:52+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0093-20260628_092754.jpg",
+      "thumb": "photos/thumb/0093-20260628_092754.jpg",
+      "lat": 42.807459099999996,
+      "lon": -0.13664199999999999,
+      "date": "2026-06-28T09:27:54+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0094-20260628_092756.jpg",
+      "thumb": "photos/thumb/0094-20260628_092756.jpg",
+      "lat": 42.807459099999996,
+      "lon": -0.13664199999999999,
+      "date": "2026-06-28T09:27:57+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0095-20260628_094538.jpg",
+      "thumb": "photos/thumb/0095-20260628_094538.jpg",
+      "lat": 42.80278539972222,
+      "lon": -0.13798759972222222,
+      "date": "2026-06-28T09:45:38+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0096-20260628_094542.jpg",
+      "thumb": "photos/thumb/0096-20260628_094542.jpg",
+      "lat": 42.80278539972222,
+      "lon": -0.13798759972222222,
+      "date": "2026-06-28T09:45:42+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0097-20260628_094548.jpg",
+      "thumb": "photos/thumb/0097-20260628_094548.jpg",
+      "lat": 42.80278539972222,
+      "lon": -0.13798759972222222,
+      "date": "2026-06-28T09:45:48+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0098-20260628_094634.jpg",
+      "thumb": "photos/thumb/0098-20260628_094634.jpg",
+      "lat": 42.802813799999996,
+      "lon": -0.137941,
+      "date": "2026-06-28T09:46:34+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0099-20260628_094639.jpg",
+      "thumb": "photos/thumb/0099-20260628_094639.jpg",
+      "lat": 42.802813799999996,
+      "lon": -0.137941,
+      "date": "2026-06-28T09:46:39+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0100-20260628_094640.jpg",
+      "thumb": "photos/thumb/0100-20260628_094640.jpg",
+      "lat": 42.802813799999996,
+      "lon": -0.137941,
+      "date": "2026-06-28T09:46:40+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0101-20260628_094902.jpg",
+      "thumb": "photos/thumb/0101-20260628_094902.jpg",
+      "lat": 42.80198819972222,
+      "lon": -0.1387235,
+      "date": "2026-06-28T09:49:02+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0102-20260628_094905.jpg",
+      "thumb": "photos/thumb/0102-20260628_094905.jpg",
+      "lat": 42.80198819972222,
+      "lon": -0.1387235,
+      "date": "2026-06-28T09:49:05+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0103-20260628_094908.jpg",
+      "thumb": "photos/thumb/0103-20260628_094908.jpg",
+      "lat": 42.80198819972222,
+      "lon": -0.1387235,
+      "date": "2026-06-28T09:49:08+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0104-20260628_094911.jpg",
+      "thumb": "photos/thumb/0104-20260628_094911.jpg",
+      "lat": 42.80198819972222,
+      "lon": -0.1387235,
+      "date": "2026-06-28T09:49:11+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0105-20260628_102619.jpg",
+      "thumb": "photos/thumb/0105-20260628_102619.jpg",
+      "lat": 42.79488359972222,
+      "lon": -0.14254649972222222,
+      "date": "2026-06-28T10:26:19+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0106-20260628_102621.jpg",
+      "thumb": "photos/thumb/0106-20260628_102621.jpg",
+      "lat": 42.79487519972222,
+      "lon": -0.14257159972222222,
+      "date": "2026-06-28T10:26:21+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0107-20260628_102622.jpg",
+      "thumb": "photos/thumb/0107-20260628_102622.jpg",
+      "lat": 42.79487519972222,
+      "lon": -0.14257159972222222,
+      "date": "2026-06-28T10:26:22+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0108-20260628_102757.jpg",
+      "thumb": "photos/thumb/0108-20260628_102757.jpg",
+      "lat": 42.7944716,
+      "lon": -0.14228289972222222,
+      "date": "2026-06-28T10:27:58+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0109-20260628_102801.jpg",
+      "thumb": "photos/thumb/0109-20260628_102801.jpg",
+      "lat": 42.79422809972222,
+      "lon": -0.14245259999999998,
+      "date": "2026-06-28T10:28:01+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0110-20260628_103052.jpg",
+      "thumb": "photos/thumb/0110-20260628_103052.jpg",
+      "lat": 42.79295909972222,
+      "lon": -0.14173949972222222,
+      "date": "2026-06-28T10:30:52+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0111-20260628_103053.jpg",
+      "thumb": "photos/thumb/0111-20260628_103053.jpg",
+      "lat": 42.79300159972222,
+      "lon": -0.14173489972222222,
+      "date": "2026-06-28T10:30:53+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0112-20260628_103054.jpg",
+      "thumb": "photos/thumb/0112-20260628_103054.jpg",
+      "lat": 42.7930098,
+      "lon": -0.14174049972222222,
+      "date": "2026-06-28T10:30:54+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0113-20260628_103056.jpg",
+      "thumb": "photos/thumb/0113-20260628_103056.jpg",
+      "lat": 42.7930098,
+      "lon": -0.14174049972222222,
+      "date": "2026-06-28T10:30:56+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0114-20260628_103059.jpg",
+      "thumb": "photos/thumb/0114-20260628_103059.jpg",
+      "lat": 42.7930098,
+      "lon": -0.14174049972222222,
+      "date": "2026-06-28T10:30:59+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0115-20260628_115042.jpg",
+      "thumb": "photos/thumb/0115-20260628_115042.jpg",
+      "lat": 42.7886656,
+      "lon": -0.1380604,
+      "date": "2026-06-28T11:50:43+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0116-20260628_115045.jpg",
+      "thumb": "photos/thumb/0116-20260628_115045.jpg",
+      "lat": 42.788655299999995,
+      "lon": -0.1380555,
+      "date": "2026-06-28T11:50:45+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0117-20260628_115250.jpg",
+      "thumb": "photos/thumb/0117-20260628_115250.jpg",
+      "lat": 42.7886698,
+      "lon": -0.1380607,
+      "date": "2026-06-28T11:52:50+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0118-20260628_115253.jpg",
+      "thumb": "photos/thumb/0118-20260628_115253.jpg",
+      "lat": 42.7886698,
+      "lon": -0.1380607,
+      "date": "2026-06-28T11:52:54+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0119-20260628_124428.jpg",
+      "thumb": "photos/thumb/0119-20260628_124428.jpg",
+      "lat": 42.79051539972222,
+      "lon": -0.13328619972222222,
+      "date": "2026-06-28T12:44:28+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0120-20260628_124429.jpg",
+      "thumb": "photos/thumb/0120-20260628_124429.jpg",
+      "lat": 42.79051539972222,
+      "lon": -0.13328619972222222,
+      "date": "2026-06-28T12:44:29+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0121-20260628_124432.jpg",
+      "thumb": "photos/thumb/0121-20260628_124432.jpg",
+      "lat": 42.79051539972222,
+      "lon": -0.13328619972222222,
+      "date": "2026-06-28T12:44:33+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0122-20260628_131147.jpg",
+      "thumb": "photos/thumb/0122-20260628_131147.jpg",
+      "lat": 42.789594199999996,
+      "lon": -0.13238169972222222,
+      "date": "2026-06-28T13:11:47+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0123-20260628_131201.jpg",
+      "thumb": "photos/thumb/0123-20260628_131201.jpg",
+      "lat": 42.78955069972222,
+      "lon": -0.13238099972222223,
+      "date": "2026-06-28T13:12:01+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0124-20260628_132917.jpg",
+      "thumb": "photos/thumb/0124-20260628_132917.jpg",
+      "lat": 42.78838859972222,
+      "lon": -0.13290889972222222,
+      "date": "2026-06-28T13:29:17+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0125-20260628_132919.jpg",
+      "thumb": "photos/thumb/0125-20260628_132919.jpg",
+      "lat": 42.78839099972222,
+      "lon": -0.13290999972222223,
+      "date": "2026-06-28T13:29:19+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0126-20260628_133026.jpg",
+      "thumb": "photos/thumb/0126-20260628_133026.jpg",
+      "lat": 42.78807669972222,
+      "lon": -0.13257469972222222,
+      "date": "2026-06-28T13:30:27+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0127-20260628_133336.jpg",
+      "thumb": "photos/thumb/0127-20260628_133336.jpg",
+      "lat": 42.787424699999995,
+      "lon": -0.1331187,
+      "date": "2026-06-28T13:33:36+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0128-20260628_133337.jpg",
+      "thumb": "photos/thumb/0128-20260628_133337.jpg",
+      "lat": 42.7874148,
+      "lon": -0.13308339972222222,
+      "date": "2026-06-28T13:33:38+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0129-20260628_133637.jpg",
+      "thumb": "photos/thumb/0129-20260628_133637.jpg",
+      "lat": 42.786305299999995,
+      "lon": -0.13327259972222222,
+      "date": "2026-06-28T13:36:37+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0130-20260628_133640.jpg",
+      "thumb": "photos/thumb/0130-20260628_133640.jpg",
+      "lat": 42.786305299999995,
+      "lon": -0.13327259972222222,
+      "date": "2026-06-28T13:36:40+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0131-20260628_133643.jpg",
+      "thumb": "photos/thumb/0131-20260628_133643.jpg",
+      "lat": 42.78629939972222,
+      "lon": -0.1333657,
+      "date": "2026-06-28T13:36:43+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0132-20260628_133752.jpg",
+      "thumb": "photos/thumb/0132-20260628_133752.jpg",
+      "lat": 42.78595109972222,
+      "lon": -0.13359769999999999,
+      "date": "2026-06-28T13:37:52+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0133-20260628_133938.jpg",
+      "thumb": "photos/thumb/0133-20260628_133938.jpg",
+      "lat": 42.78728579972222,
+      "lon": -0.1332366,
+      "date": "2026-06-28T13:39:38+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0134-20260628_133940.jpg",
+      "thumb": "photos/thumb/0134-20260628_133940.jpg",
+      "lat": 42.78542889972222,
+      "lon": -0.13407939972222221,
+      "date": "2026-06-28T13:39:40+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0135-20260628_133945.jpg",
+      "thumb": "photos/thumb/0135-20260628_133945.jpg",
+      "lat": 42.78542889972222,
+      "lon": -0.13407939972222221,
+      "date": "2026-06-28T13:39:45+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0136-20260628_133956.jpg",
+      "thumb": "photos/thumb/0136-20260628_133956.jpg",
+      "lat": 42.785432,
+      "lon": -0.13408649972222222,
+      "date": "2026-06-28T13:39:56+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0137-20260628_134436.jpg",
+      "thumb": "photos/thumb/0137-20260628_134436.jpg",
+      "lat": 42.784467199999995,
+      "lon": -0.13451559999999999,
+      "date": "2026-06-28T13:44:36+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0138-20260628_134438.jpg",
+      "thumb": "photos/thumb/0138-20260628_134438.jpg",
+      "lat": 42.78450459972222,
+      "lon": -0.13449369972222222,
+      "date": "2026-06-28T13:44:39+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0139-20260628_135010.jpg",
+      "thumb": "photos/thumb/0139-20260628_135010.jpg",
+      "lat": 42.78312439972222,
+      "lon": -0.1344622,
+      "date": "2026-06-28T13:50:10+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0140-20260628_135013.jpg",
+      "thumb": "photos/thumb/0140-20260628_135013.jpg",
+      "lat": 42.78318699972222,
+      "lon": -0.1344711,
+      "date": "2026-06-28T13:50:13+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0141-20260628_135156.jpg",
+      "thumb": "photos/thumb/0141-20260628_135156.jpg",
+      "lat": 42.7831775,
+      "lon": -0.1344344,
+      "date": "2026-06-28T13:51:56+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0142-20260628_135158.jpg",
+      "thumb": "photos/thumb/0142-20260628_135158.jpg",
+      "lat": 42.78320409972222,
+      "lon": -0.13444349972222222,
+      "date": "2026-06-28T13:51:59+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0143-20260628_142114.jpg",
+      "thumb": "photos/thumb/0143-20260628_142114.jpg",
+      "lat": 42.7798059,
+      "lon": -0.1320084,
+      "date": "2026-06-28T14:21:14+02:00",
+      "caption": "",
+      "positionSource": "interpolated"
+    },
+    {
+      "file": "photos/full/0144-20260628_142117.jpg",
+      "thumb": "photos/thumb/0144-20260628_142117.jpg",
+      "lat": 42.779809899722224,
+      "lon": -0.1319641,
+      "date": "2026-06-28T14:21:17+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0145-20260628_143109.jpg",
+      "thumb": "photos/thumb/0145-20260628_143109.jpg",
+      "lat": 42.779408599722224,
+      "lon": -0.13095039972222222,
+      "date": "2026-06-28T14:31:09+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0146-20260628_143125.jpg",
+      "thumb": "photos/thumb/0146-20260628_143125.jpg",
+      "lat": 42.779429199999996,
+      "lon": -0.13095719972222222,
+      "date": "2026-06-28T14:31:25+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0147-20260628_143219.jpg",
+      "thumb": "photos/thumb/0147-20260628_143219.jpg",
+      "lat": 42.7794243,
+      "lon": -0.13097259972222222,
+      "date": "2026-06-28T14:32:20+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0148-20260628_144006.jpg",
+      "thumb": "photos/thumb/0148-20260628_144006.jpg",
+      "lat": 42.77941059972222,
+      "lon": -0.1308834,
+      "date": "2026-06-28T14:40:06+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0149-20260628_144922.jpg",
+      "thumb": "photos/thumb/0149-20260628_144922.jpg",
+      "lat": 42.7798876,
+      "lon": -0.12750049972222222,
+      "date": "2026-06-28T14:49:22+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0150-20260628_150847.jpg",
+      "thumb": "photos/thumb/0150-20260628_150847.jpg",
+      "lat": 42.779297299999996,
+      "lon": -0.1239712,
+      "date": "2026-06-28T15:08:47+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0151-20260628_150852.jpg",
+      "thumb": "photos/thumb/0151-20260628_150852.jpg",
+      "lat": 42.779297299999996,
+      "lon": -0.1239712,
+      "date": "2026-06-28T15:08:52+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0152-20260629_065934.jpg",
+      "thumb": "photos/thumb/0152-20260629_065934.jpg",
+      "lat": 42.7791873,
+      "lon": -0.1240606,
+      "date": "2026-06-29T06:59:34+02:00",
+      "caption": "",
+      "positionSource": "interpolated"
+    },
+    {
+      "file": "photos/full/0153-20260629_065938.jpg",
+      "thumb": "photos/thumb/0153-20260629_065938.jpg",
+      "lat": 42.7791873,
+      "lon": -0.1240606,
+      "date": "2026-06-29T06:59:39+02:00",
+      "caption": "",
+      "positionSource": "interpolated"
+    },
+    {
+      "file": "photos/full/0154-20260629_065940.jpg",
+      "thumb": "photos/thumb/0154-20260629_065940.jpg",
+      "lat": 42.7791873,
+      "lon": -0.1240606,
+      "date": "2026-06-29T06:59:41+02:00",
+      "caption": "",
+      "positionSource": "interpolated"
+    },
+    {
+      "file": "photos/full/0155-20260629_073556.jpg",
+      "thumb": "photos/thumb/0155-20260629_073556.jpg",
+      "lat": 42.7749458,
+      "lon": -0.1164416,
+      "date": "2026-06-29T07:35:56+02:00",
+      "caption": "",
+      "positionSource": "interpolated"
+    },
+    {
+      "file": "photos/full/0156-20260629_073559.jpg",
+      "thumb": "photos/thumb/0156-20260629_073559.jpg",
+      "lat": 42.7749464,
+      "lon": -0.1164437,
+      "date": "2026-06-29T07:35:59+02:00",
+      "caption": "",
+      "positionSource": "interpolated"
+    },
+    {
+      "file": "photos/full/0157-20260629_073607.jpg",
+      "thumb": "photos/thumb/0157-20260629_073607.jpg",
+      "lat": 42.7749465,
+      "lon": -0.1164436,
+      "date": "2026-06-29T07:36:11+02:00",
+      "caption": "",
+      "positionSource": "interpolated"
+    },
+    {
+      "file": "photos/full/0158-20260629_073923.jpg",
+      "thumb": "photos/thumb/0158-20260629_073923.jpg",
+      "lat": 42.7744669,
+      "lon": -0.11686699972222223,
+      "date": "2026-06-29T07:39:23+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0159-20260629_074456.jpg",
+      "thumb": "photos/thumb/0159-20260629_074456.jpg",
+      "lat": 42.77364409972222,
+      "lon": -0.11696869972222222,
+      "date": "2026-06-29T07:44:56+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0160-20260629_074500.jpg",
+      "thumb": "photos/thumb/0160-20260629_074500.jpg",
+      "lat": 42.77364409972222,
+      "lon": -0.11696869972222222,
+      "date": "2026-06-29T07:45:01+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0161-20260629_074753.jpg",
+      "thumb": "photos/thumb/0161-20260629_074753.jpg",
+      "lat": 42.7736389,
+      "lon": -0.1185496,
+      "date": "2026-06-29T07:47:54+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0162-20260629_074757.jpg",
+      "thumb": "photos/thumb/0162-20260629_074757.jpg",
+      "lat": 42.7736145,
+      "lon": -0.11853669972222222,
+      "date": "2026-06-29T07:47:58+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0164-20260629_075100.jpg",
+      "thumb": "photos/thumb/0164-20260629_075100.jpg",
+      "lat": 42.77325489972222,
+      "lon": -0.11901839972222222,
+      "date": "2026-06-29T07:51:00+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0163-20260629_075100-0.jpg",
+      "thumb": "photos/thumb/0163-20260629_075100-0.jpg",
+      "lat": 42.77325489972222,
+      "lon": -0.11901839972222222,
+      "date": "2026-06-29T07:51:01+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0165-20260629_075403.jpg",
+      "thumb": "photos/thumb/0165-20260629_075403.jpg",
+      "lat": 42.772460099999996,
+      "lon": -0.11912739972222222,
+      "date": "2026-06-29T07:54:04+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0166-20260629_075924.jpg",
+      "thumb": "photos/thumb/0166-20260629_075924.jpg",
+      "lat": 42.7716402,
+      "lon": -0.1183233,
+      "date": "2026-06-29T07:59:24+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0167-20260629_075927.jpg",
+      "thumb": "photos/thumb/0167-20260629_075927.jpg",
+      "lat": 42.7716823,
+      "lon": -0.11837069972222222,
+      "date": "2026-06-29T07:59:27+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0168-20260629_075936.jpg",
+      "thumb": "photos/thumb/0168-20260629_075936.jpg",
+      "lat": 42.7716823,
+      "lon": -0.11837069972222222,
+      "date": "2026-06-29T07:59:46+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0169-20260629_080003.jpg",
+      "thumb": "photos/thumb/0169-20260629_080003.jpg",
+      "lat": 42.77164429972222,
+      "lon": -0.1184448,
+      "date": "2026-06-29T08:00:04+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0170-20260629_081058.jpg",
+      "thumb": "photos/thumb/0170-20260629_081058.jpg",
+      "lat": 42.7710341,
+      "lon": -0.11835439972222223,
+      "date": "2026-06-29T08:10:58+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0171-20260629_081100.jpg",
+      "thumb": "photos/thumb/0171-20260629_081100.jpg",
+      "lat": 42.7710341,
+      "lon": -0.11835439972222223,
+      "date": "2026-06-29T08:11:00+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0172-20260629_081105.jpg",
+      "thumb": "photos/thumb/0172-20260629_081105.jpg",
+      "lat": 42.7710341,
+      "lon": -0.11835439972222223,
+      "date": "2026-06-29T08:11:05+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0173-20260629_081122.jpg",
+      "thumb": "photos/thumb/0173-20260629_081122.jpg",
+      "lat": 42.7710341,
+      "lon": -0.11835439972222223,
+      "date": "2026-06-29T08:11:22+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0174-20260629_082923.jpg",
+      "thumb": "photos/thumb/0174-20260629_082923.jpg",
+      "lat": 42.7701702,
+      "lon": -0.1180886,
+      "date": "2026-06-29T08:29:23+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0175-20260629_082924.jpg",
+      "thumb": "photos/thumb/0175-20260629_082924.jpg",
+      "lat": 42.7701702,
+      "lon": -0.1180886,
+      "date": "2026-06-29T08:29:24+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0176-20260629_082928.jpg",
+      "thumb": "photos/thumb/0176-20260629_082928.jpg",
+      "lat": 42.7701702,
+      "lon": -0.1180886,
+      "date": "2026-06-29T08:29:28+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0177-20260629_082929.jpg",
+      "thumb": "photos/thumb/0177-20260629_082929.jpg",
+      "lat": 42.7701702,
+      "lon": -0.1180886,
+      "date": "2026-06-29T08:29:29+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0178-20260629_082930.jpg",
+      "thumb": "photos/thumb/0178-20260629_082930.jpg",
+      "lat": 42.7701702,
+      "lon": -0.1180886,
+      "date": "2026-06-29T08:29:30+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0179-20260629_084037.jpg",
+      "thumb": "photos/thumb/0179-20260629_084037.jpg",
+      "lat": 42.76967679972222,
+      "lon": -0.11820049972222223,
+      "date": "2026-06-29T08:40:37+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0180-20260629_084038.jpg",
+      "thumb": "photos/thumb/0180-20260629_084038.jpg",
+      "lat": 42.76822479972222,
+      "lon": -0.1186615,
+      "date": "2026-06-29T08:40:39+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0181-20260629_084759.jpg",
+      "thumb": "photos/thumb/0181-20260629_084759.jpg",
+      "lat": 42.7672048,
+      "lon": -0.1160979,
+      "date": "2026-06-29T08:47:59+02:00",
+      "caption": "",
+      "positionSource": "interpolated"
+    },
+    {
+      "file": "photos/full/0182-20260629_084801.jpg",
+      "thumb": "photos/thumb/0182-20260629_084801.jpg",
+      "lat": 42.7672401,
+      "lon": -0.11610099972222224,
+      "date": "2026-06-29T08:48:01+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0183-20260629_084802.jpg",
+      "thumb": "photos/thumb/0183-20260629_084802.jpg",
+      "lat": 42.7672388,
+      "lon": -0.11610969972222224,
+      "date": "2026-06-29T08:48:03+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0184-20260629_085808.jpg",
+      "thumb": "photos/thumb/0184-20260629_085808.jpg",
+      "lat": 42.7656822,
+      "lon": -0.11256399972222222,
+      "date": "2026-06-29T08:58:08+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0185-20260629_085812.jpg",
+      "thumb": "photos/thumb/0185-20260629_085812.jpg",
+      "lat": 42.7656822,
+      "lon": -0.11256399972222222,
+      "date": "2026-06-29T08:58:12+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0186-20260629_085817.jpg",
+      "thumb": "photos/thumb/0186-20260629_085817.jpg",
+      "lat": 42.7656822,
+      "lon": -0.11256399972222222,
+      "date": "2026-06-29T08:58:17+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0187-20260629_085846.jpg",
+      "thumb": "photos/thumb/0187-20260629_085846.jpg",
+      "lat": 42.7654846,
+      "lon": -0.11251179972222222,
+      "date": "2026-06-29T08:58:46+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0188-20260629_090053.jpg",
+      "thumb": "photos/thumb/0188-20260629_090053.jpg",
+      "lat": 42.7650688,
+      "lon": -0.11242849972222223,
+      "date": "2026-06-29T09:00:53+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0189-20260629_090139.jpg",
+      "thumb": "photos/thumb/0189-20260629_090139.jpg",
+      "lat": 42.7649477,
+      "lon": -0.11248839972222223,
+      "date": "2026-06-29T09:01:39+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0190-20260629_090934.jpg",
+      "thumb": "photos/thumb/0190-20260629_090934.jpg",
+      "lat": 42.7637505,
+      "lon": -0.11176789972222223,
+      "date": "2026-06-29T09:09:35+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0191-20260629_091526.jpg",
+      "thumb": "photos/thumb/0191-20260629_091526.jpg",
+      "lat": 42.7629649,
+      "lon": -0.1095296,
+      "date": "2026-06-29T09:15:26+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0192-20260629_091651.jpg",
+      "thumb": "photos/thumb/0192-20260629_091651.jpg",
+      "lat": 42.7628648,
+      "lon": -0.10891049972222222,
+      "date": "2026-06-29T09:16:52+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0193-20260629_091654.jpg",
+      "thumb": "photos/thumb/0193-20260629_091654.jpg",
+      "lat": 42.7628648,
+      "lon": -0.10891049972222222,
+      "date": "2026-06-29T09:16:54+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0194-20260629_092548.jpg",
+      "thumb": "photos/thumb/0194-20260629_092548.jpg",
+      "lat": 42.759913599722225,
+      "lon": -0.1051384,
+      "date": "2026-06-29T09:25:48+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0196-20260629_093143.jpg",
+      "thumb": "photos/thumb/0196-20260629_093143.jpg",
+      "lat": 42.7580849,
+      "lon": -0.10123909972222223,
+      "date": "2026-06-29T09:31:43+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0195-20260629_093143-0.jpg",
+      "thumb": "photos/thumb/0195-20260629_093143-0.jpg",
+      "lat": 42.75809459972222,
+      "lon": -0.10122359972222222,
+      "date": "2026-06-29T09:31:44+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0197-20260629_093146.jpg",
+      "thumb": "photos/thumb/0197-20260629_093146.jpg",
+      "lat": 42.75808539972222,
+      "lon": -0.10127909972222222,
+      "date": "2026-06-29T09:31:46+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0198-20260629_093148.jpg",
+      "thumb": "photos/thumb/0198-20260629_093148.jpg",
+      "lat": 42.75808539972222,
+      "lon": -0.10127909972222222,
+      "date": "2026-06-29T09:31:48+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0199-20260629_093740.jpg",
+      "thumb": "photos/thumb/0199-20260629_093740.jpg",
+      "lat": 42.757132499722225,
+      "lon": -0.097825,
+      "date": "2026-06-29T09:37:40+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0200-20260629_093748.jpg",
+      "thumb": "photos/thumb/0200-20260629_093748.jpg",
+      "lat": 42.7570635,
+      "lon": -0.097856,
+      "date": "2026-06-29T09:38:00+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0201-20260629_094544.jpg",
+      "thumb": "photos/thumb/0201-20260629_094544.jpg",
+      "lat": 42.756686199722225,
+      "lon": -0.095169,
+      "date": "2026-06-29T09:45:44+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0202-20260629_094554.jpg",
+      "thumb": "photos/thumb/0202-20260629_094554.jpg",
+      "lat": 42.756669199722225,
+      "lon": -0.095162,
+      "date": "2026-06-29T09:45:54+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0203-20260629_101018.jpg",
+      "thumb": "photos/thumb/0203-20260629_101018.jpg",
+      "lat": 42.7554534,
+      "lon": -0.0955495,
+      "date": "2026-06-29T10:10:18+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0204-20260629_101022.jpg",
+      "thumb": "photos/thumb/0204-20260629_101022.jpg",
+      "lat": 42.755451299722225,
+      "lon": -0.09554879999999999,
+      "date": "2026-06-29T10:10:22+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0205-20260629_101411.jpg",
+      "thumb": "photos/thumb/0205-20260629_101411.jpg",
+      "lat": 42.7537157,
+      "lon": -0.0950303,
+      "date": "2026-06-29T10:14:12+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0206-20260629_102007.jpg",
+      "thumb": "photos/thumb/0206-20260629_102007.jpg",
+      "lat": 42.7519028,
+      "lon": -0.09334339999999999,
+      "date": "2026-06-29T10:20:07+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0207-20260629_102009.jpg",
+      "thumb": "photos/thumb/0207-20260629_102009.jpg",
+      "lat": 42.7519337,
+      "lon": -0.0933517,
+      "date": "2026-06-29T10:20:09+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0208-20260629_111422.jpg",
+      "thumb": "photos/thumb/0208-20260629_111422.jpg",
+      "lat": 42.7426624,
+      "lon": -0.0731121,
+      "date": "2026-06-29T11:14:23+02:00",
+      "caption": "",
+      "positionSource": "interpolated"
+    },
+    {
+      "file": "photos/full/0209-20260629_113803.jpg",
+      "thumb": "photos/thumb/0209-20260629_113803.jpg",
+      "lat": 42.739628099722225,
+      "lon": -0.0726557,
+      "date": "2026-06-29T11:38:03+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0211-20260629_113805.jpg",
+      "thumb": "photos/thumb/0211-20260629_113805.jpg",
+      "lat": 42.739628099722225,
+      "lon": -0.0726557,
+      "date": "2026-06-29T11:38:05+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0210-20260629_113805-0.jpg",
+      "thumb": "photos/thumb/0210-20260629_113805-0.jpg",
+      "lat": 42.739964999722226,
+      "lon": -0.0725597,
+      "date": "2026-06-29T11:38:06+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0212-20260629_113806.jpg",
+      "thumb": "photos/thumb/0212-20260629_113806.jpg",
+      "lat": 42.739637899722226,
+      "lon": -0.0726643,
+      "date": "2026-06-29T11:38:07+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0213-20260629_113810.jpg",
+      "thumb": "photos/thumb/0213-20260629_113810.jpg",
+      "lat": 42.7396103,
+      "lon": -0.0726629,
+      "date": "2026-06-29T11:38:10+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0214-20260629_113812.jpg",
+      "thumb": "photos/thumb/0214-20260629_113812.jpg",
+      "lat": 42.7396103,
+      "lon": -0.0726629,
+      "date": "2026-06-29T11:38:12+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0215-20260629_113813.jpg",
+      "thumb": "photos/thumb/0215-20260629_113813.jpg",
+      "lat": 42.7396103,
+      "lon": -0.0726629,
+      "date": "2026-06-29T11:38:14+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0216-20260629_113826.jpg",
+      "thumb": "photos/thumb/0216-20260629_113826.jpg",
+      "lat": 42.7396103,
+      "lon": -0.0726629,
+      "date": "2026-06-29T11:38:26+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0217-20260629_113827.jpg",
+      "thumb": "photos/thumb/0217-20260629_113827.jpg",
+      "lat": 42.7396103,
+      "lon": -0.0726629,
+      "date": "2026-06-29T11:38:27+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0218-20260629_113833.jpg",
+      "thumb": "photos/thumb/0218-20260629_113833.jpg",
+      "lat": 42.7396103,
+      "lon": -0.0726629,
+      "date": "2026-06-29T11:38:33+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0219-20260629_114351.jpg",
+      "thumb": "photos/thumb/0219-20260629_114351.jpg",
+      "lat": 42.737381999722224,
+      "lon": -0.0707316,
+      "date": "2026-06-29T11:43:51+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0220-20260629_114354.jpg",
+      "thumb": "photos/thumb/0220-20260629_114354.jpg",
+      "lat": 42.737405,
+      "lon": -0.07069509972222222,
+      "date": "2026-06-29T11:43:54+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0221-20260629_115355.jpg",
+      "thumb": "photos/thumb/0221-20260629_115355.jpg",
+      "lat": 42.7412781,
+      "lon": -0.06787619972222222,
+      "date": "2026-06-29T11:53:55+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0222-20260629_115357.jpg",
+      "thumb": "photos/thumb/0222-20260629_115357.jpg",
+      "lat": 42.74123,
+      "lon": -0.0678649,
+      "date": "2026-06-29T11:53:57+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0223-20260629_131951.jpg",
+      "thumb": "photos/thumb/0223-20260629_131951.jpg",
+      "lat": 42.73998759972223,
+      "lon": -0.0314824,
+      "date": "2026-06-29T13:19:51+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0224-20260629_131954.jpg",
+      "thumb": "photos/thumb/0224-20260629_131954.jpg",
+      "lat": 42.739957599722224,
+      "lon": -0.031500599722222224,
+      "date": "2026-06-29T13:19:55+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0225-20260629_131957.jpg",
+      "thumb": "photos/thumb/0225-20260629_131957.jpg",
+      "lat": 42.739957599722224,
+      "lon": -0.0314908,
+      "date": "2026-06-29T13:19:57+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0001-171db0b3-7554-4cd1-987d-dd57971411dc.jpg",
+      "thumb": "photos/thumb/0001-171db0b3-7554-4cd1-987d-dd57971411dc.jpg",
+      "lat": 42.7395016,
+      "lon": -0.0223612,
+      "date": "2026-06-29T14:05:58+02:00",
+      "caption": "",
+      "positionSource": "interpolated"
+    },
+    {
+      "file": "photos/full/0226-20260629_153444.jpg",
+      "thumb": "photos/thumb/0226-20260629_153444.jpg",
+      "lat": 42.732874199722225,
+      "lon": -0.0095823,
+      "date": "2026-06-29T15:34:44+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0227-20260629_153447.jpg",
+      "thumb": "photos/thumb/0227-20260629_153447.jpg",
+      "lat": 42.732874199722225,
+      "lon": -0.0095823,
+      "date": "2026-06-29T15:34:47+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0228-20260629_181549.jpg",
+      "thumb": "photos/thumb/0228-20260629_181549.jpg",
+      "lat": 42.7280317,
+      "lon": -0.0074816,
+      "date": "2026-06-29T18:15:50+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0229-20260629_181554.jpg",
+      "thumb": "photos/thumb/0229-20260629_181554.jpg",
+      "lat": 42.7280317,
+      "lon": -0.0074816,
+      "date": "2026-06-29T18:15:54+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0230-20260629_184318.jpg",
+      "thumb": "photos/thumb/0230-20260629_184318.jpg",
+      "lat": 42.72975399972223,
+      "lon": -0.008889299722222223,
+      "date": "2026-06-29T18:43:18+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0231-20260629_184346.jpg",
+      "thumb": "photos/thumb/0231-20260629_184346.jpg",
+      "lat": 42.7280798,
+      "lon": -0.0068159,
+      "date": "2026-06-29T18:43:54+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0232-20260629_184905.jpg",
+      "thumb": "photos/thumb/0232-20260629_184905.jpg",
+      "lat": 42.72775899972223,
+      "lon": -0.0078565,
+      "date": "2026-06-29T18:49:05+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0233-20260629_185852.jpg",
+      "thumb": "photos/thumb/0233-20260629_185852.jpg",
+      "lat": 42.733182499722226,
+      "lon": -0.0093389,
+      "date": "2026-06-29T18:58:53+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0234-20260629_192519.jpg",
+      "thumb": "photos/thumb/0234-20260629_192519.jpg",
+      "lat": 42.733401,
+      "lon": -0.008975499999999999,
+      "date": "2026-06-29T19:25:19+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0235-20260630_071141.jpg",
+      "thumb": "photos/thumb/0235-20260630_071141.jpg",
+      "lat": 42.727977,
+      "lon": -0.0079669,
+      "date": "2026-06-30T07:11:41+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0236-20260630_071145.jpg",
+      "thumb": "photos/thumb/0236-20260630_071145.jpg",
+      "lat": 42.727977,
+      "lon": -0.0079669,
+      "date": "2026-06-30T07:11:46+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0237-20260630_071149.jpg",
+      "thumb": "photos/thumb/0237-20260630_071149.jpg",
+      "lat": 42.727977,
+      "lon": -0.0079669,
+      "date": "2026-06-30T07:11:50+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0238-20260630_071606.jpg",
+      "thumb": "photos/thumb/0238-20260630_071606.jpg",
+      "lat": 42.7268891,
+      "lon": -0.0075057000000000006,
+      "date": "2026-06-30T07:16:06+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0239-20260630_071609.jpg",
+      "thumb": "photos/thumb/0239-20260630_071609.jpg",
+      "lat": 42.7268891,
+      "lon": -0.0075057000000000006,
+      "date": "2026-06-30T07:16:09+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0240-20260630_072720.jpg",
+      "thumb": "photos/thumb/0240-20260630_072720.jpg",
+      "lat": 42.7201152,
+      "lon": -0.0082623,
+      "date": "2026-06-30T07:27:20+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0241-20260630_072722.jpg",
+      "thumb": "photos/thumb/0241-20260630_072722.jpg",
+      "lat": 42.72008149972223,
+      "lon": -0.0082427,
+      "date": "2026-06-30T07:27:22+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0242-20260630_073003.jpg",
+      "thumb": "photos/thumb/0242-20260630_073003.jpg",
+      "lat": 42.7201878,
+      "lon": -0.0080493,
+      "date": "2026-06-30T07:30:03+02:00",
+      "caption": "",
+      "positionSource": "interpolated"
+    },
+    {
+      "file": "photos/full/0243-20260630_073008.jpg",
+      "thumb": "photos/thumb/0243-20260630_073008.jpg",
+      "lat": 42.7201827,
+      "lon": -0.0081007,
+      "date": "2026-06-30T07:30:08+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0244-20260630_073613.jpg",
+      "thumb": "photos/thumb/0244-20260630_073613.jpg",
+      "lat": 42.717131199722225,
+      "lon": -0.0071443,
+      "date": "2026-06-30T07:36:14+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0245-20260630_073615.jpg",
+      "thumb": "photos/thumb/0245-20260630_073615.jpg",
+      "lat": 42.717131199722225,
+      "lon": -0.0071443,
+      "date": "2026-06-30T07:36:16+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0246-20260630_080138.jpg",
+      "thumb": "photos/thumb/0246-20260630_080138.jpg",
+      "lat": 42.7054483,
+      "lon": -0.0093856,
+      "date": "2026-06-30T08:01:38+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0247-20260630_080225.jpg",
+      "thumb": "photos/thumb/0247-20260630_080225.jpg",
+      "lat": 42.7054302,
+      "lon": -0.008950600000000001,
+      "date": "2026-06-30T08:02:25+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0248-20260630_082600.jpg",
+      "thumb": "photos/thumb/0248-20260630_082600.jpg",
+      "lat": 42.7020933,
+      "lon": -0.006596,
+      "date": "2026-06-30T08:26:00+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0249-20260630_083200.jpg",
+      "thumb": "photos/thumb/0249-20260630_083200.jpg",
+      "lat": 42.7007174,
+      "lon": -0.0064789,
+      "date": "2026-06-30T08:32:00+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0250-20260630_083309.jpg",
+      "thumb": "photos/thumb/0250-20260630_083309.jpg",
+      "lat": 42.7007107,
+      "lon": -0.0064708,
+      "date": "2026-06-30T08:33:09+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0251-20260630_083312.jpg",
+      "thumb": "photos/thumb/0251-20260630_083312.jpg",
+      "lat": 42.7007107,
+      "lon": -0.0064708,
+      "date": "2026-06-30T08:33:12+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0252-20260630_083906.jpg",
+      "thumb": "photos/thumb/0252-20260630_083906.jpg",
+      "lat": 42.699519699999996,
+      "lon": -0.006858,
+      "date": "2026-06-30T08:39:06+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0253-20260630_084649.jpg",
+      "thumb": "photos/thumb/0253-20260630_084649.jpg",
+      "lat": 42.69720319972222,
+      "lon": -0.0068682,
+      "date": "2026-06-30T08:46:49+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0254-20260630_085207.jpg",
+      "thumb": "photos/thumb/0254-20260630_085207.jpg",
+      "lat": 42.69600859972222,
+      "lon": -0.0071039,
+      "date": "2026-06-30T08:52:07+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0255-20260630_085210.jpg",
+      "thumb": "photos/thumb/0255-20260630_085210.jpg",
+      "lat": 42.696064099999994,
+      "lon": -0.0071254000000000005,
+      "date": "2026-06-30T08:52:11+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0256-20260630_085605.jpg",
+      "thumb": "photos/thumb/0256-20260630_085605.jpg",
+      "lat": 42.69509849999999,
+      "lon": -0.0070304,
+      "date": "2026-06-30T08:56:05+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0257-20260630_085609.jpg",
+      "thumb": "photos/thumb/0257-20260630_085609.jpg",
+      "lat": 42.69509849999999,
+      "lon": -0.0070304,
+      "date": "2026-06-30T08:56:09+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0258-20260630_085618.jpg",
+      "thumb": "photos/thumb/0258-20260630_085618.jpg",
+      "lat": 42.69509849999999,
+      "lon": -0.0070304,
+      "date": "2026-06-30T08:56:18+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0259-20260630_085628.jpg",
+      "thumb": "photos/thumb/0259-20260630_085628.jpg",
+      "lat": 42.69509849999999,
+      "lon": -0.0070304,
+      "date": "2026-06-30T08:56:30+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0260-20260630_085635.jpg",
+      "thumb": "photos/thumb/0260-20260630_085635.jpg",
+      "lat": 42.69509849999999,
+      "lon": -0.0070304,
+      "date": "2026-06-30T08:56:47+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0261-20260630_085954.jpg",
+      "thumb": "photos/thumb/0261-20260630_085954.jpg",
+      "lat": 42.69497009972222,
+      "lon": -0.0065503,
+      "date": "2026-06-30T08:59:54+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0262-20260630_085955.jpg",
+      "thumb": "photos/thumb/0262-20260630_085955.jpg",
+      "lat": 42.69497009972222,
+      "lon": -0.0065503,
+      "date": "2026-06-30T08:59:55+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0263-20260630_085956.jpg",
+      "thumb": "photos/thumb/0263-20260630_085956.jpg",
+      "lat": 42.69497009972222,
+      "lon": -0.0065503,
+      "date": "2026-06-30T08:59:57+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0264-20260630_090012.jpg",
+      "thumb": "photos/thumb/0264-20260630_090012.jpg",
+      "lat": 42.69497009972222,
+      "lon": -0.0065503,
+      "date": "2026-06-30T09:00:24+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0265-20260630_090128.jpg",
+      "thumb": "photos/thumb/0265-20260630_090128.jpg",
+      "lat": 42.694873599999994,
+      "lon": -0.0062165,
+      "date": "2026-06-30T09:01:28+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0266-20260630_090135.jpg",
+      "thumb": "photos/thumb/0266-20260630_090135.jpg",
+      "lat": 42.694924799999995,
+      "lon": -0.006291199999999999,
+      "date": "2026-06-30T09:01:35+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0267-20260630_090245.jpg",
+      "thumb": "photos/thumb/0267-20260630_090245.jpg",
+      "lat": 42.69471829972222,
+      "lon": -0.0062029,
+      "date": "2026-06-30T09:02:54+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0268-20260630_090259.jpg",
+      "thumb": "photos/thumb/0268-20260630_090259.jpg",
+      "lat": 42.69471829972222,
+      "lon": -0.0062029,
+      "date": "2026-06-30T09:03:10+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0269-20260630_091432.jpg",
+      "thumb": "photos/thumb/0269-20260630_091432.jpg",
+      "lat": 42.69756009972222,
+      "lon": -0.0068492,
+      "date": "2026-06-30T09:14:32+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0270-20260630_091434.jpg",
+      "thumb": "photos/thumb/0270-20260630_091434.jpg",
+      "lat": 42.69756009972222,
+      "lon": -0.0068492,
+      "date": "2026-06-30T09:14:35+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0271-20260630_091552.jpg",
+      "thumb": "photos/thumb/0271-20260630_091552.jpg",
+      "lat": 42.69604079972222,
+      "lon": -0.0069128,
+      "date": "2026-06-30T09:15:52+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0272-20260630_092059.jpg",
+      "thumb": "photos/thumb/0272-20260630_092059.jpg",
+      "lat": 42.69953029972222,
+      "lon": -0.0069653,
+      "date": "2026-06-30T09:20:59+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0273-20260630_092113.jpg",
+      "thumb": "photos/thumb/0273-20260630_092113.jpg",
+      "lat": 42.699526299999995,
+      "lon": -0.0069213,
+      "date": "2026-06-30T09:21:13+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0274-20260630_092126.jpg",
+      "thumb": "photos/thumb/0274-20260630_092126.jpg",
+      "lat": 42.69950849999999,
+      "lon": -0.0069347,
+      "date": "2026-06-30T09:21:36+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0275-20260630_092410.jpg",
+      "thumb": "photos/thumb/0275-20260630_092410.jpg",
+      "lat": 42.69957289972222,
+      "lon": -0.006957199999999999,
+      "date": "2026-06-30T09:24:10+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0276-20260630_093505.jpg",
+      "thumb": "photos/thumb/0276-20260630_093505.jpg",
+      "lat": 42.701956699722224,
+      "lon": -0.0061311000000000004,
+      "date": "2026-06-30T09:35:05+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0277-20260630_093507.jpg",
+      "thumb": "photos/thumb/0277-20260630_093507.jpg",
+      "lat": 42.7019828,
+      "lon": -0.006083000000000001,
+      "date": "2026-06-30T09:35:07+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0278-20260630_101742.jpg",
+      "thumb": "photos/thumb/0278-20260630_101742.jpg",
+      "lat": 42.7065449,
+      "lon": -0.007025,
+      "date": "2026-06-30T10:17:42+02:00",
+      "caption": "",
+      "positionSource": "interpolated"
+    },
+    {
+      "file": "photos/full/0279-20260630_101745.jpg",
+      "thumb": "photos/thumb/0279-20260630_101745.jpg",
+      "lat": 42.7065945,
+      "lon": -0.0070332,
+      "date": "2026-06-30T10:17:46+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0280-20260630_101748.jpg",
+      "thumb": "photos/thumb/0280-20260630_101748.jpg",
+      "lat": 42.70649519972223,
+      "lon": -0.0069324,
+      "date": "2026-06-30T10:17:49+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0281-20260630_101750.jpg",
+      "thumb": "photos/thumb/0281-20260630_101750.jpg",
+      "lat": 42.70649519972223,
+      "lon": -0.0069324,
+      "date": "2026-06-30T10:17:50+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0282-20260630_102150.jpg",
+      "thumb": "photos/thumb/0282-20260630_102150.jpg",
+      "lat": 42.7077454,
+      "lon": -0.0055284,
+      "date": "2026-06-30T10:21:50+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0283-20260630_102151.jpg",
+      "thumb": "photos/thumb/0283-20260630_102151.jpg",
+      "lat": 42.7077959,
+      "lon": -0.0055856000000000005,
+      "date": "2026-06-30T10:21:51+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0284-20260630_102155.jpg",
+      "thumb": "photos/thumb/0284-20260630_102155.jpg",
+      "lat": 42.7077959,
+      "lon": -0.0055856000000000005,
+      "date": "2026-06-30T10:21:55+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0285-20260630_102330.jpg",
+      "thumb": "photos/thumb/0285-20260630_102330.jpg",
+      "lat": 42.727921799722225,
+      "lon": -0.0085977,
+      "date": "2026-06-30T10:23:30+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0286-20260630_102331.jpg",
+      "thumb": "photos/thumb/0286-20260630_102331.jpg",
+      "lat": 42.727921799722225,
+      "lon": -0.0085977,
+      "date": "2026-06-30T10:23:32+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0287-20260630_102341.jpg",
+      "thumb": "photos/thumb/0287-20260630_102341.jpg",
+      "lat": 42.727921799722225,
+      "lon": -0.0085977,
+      "date": "2026-06-30T10:23:41+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0288-20260630_102625.jpg",
+      "thumb": "photos/thumb/0288-20260630_102625.jpg",
+      "lat": 42.727921799722225,
+      "lon": -0.0083064,
+      "date": "2026-06-30T10:26:25+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0289-20260630_102626.jpg",
+      "thumb": "photos/thumb/0289-20260630_102626.jpg",
+      "lat": 42.708852399722225,
+      "lon": -0.0045461,
+      "date": "2026-06-30T10:26:26+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0290-20260630_103133.jpg",
+      "thumb": "photos/thumb/0290-20260630_103133.jpg",
+      "lat": 42.727921799722225,
+      "lon": -0.0085977,
+      "date": "2026-06-30T10:31:33+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0291-20260630_103409.jpg",
+      "thumb": "photos/thumb/0291-20260630_103409.jpg",
+      "lat": 42.710901999722225,
+      "lon": -0.0029065,
+      "date": "2026-06-30T10:34:09+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0292-20260630_103437.jpg",
+      "thumb": "photos/thumb/0292-20260630_103437.jpg",
+      "lat": 42.7109109,
+      "lon": -0.0029196,
+      "date": "2026-06-30T10:34:37+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0293-20260630_103438.jpg",
+      "thumb": "photos/thumb/0293-20260630_103438.jpg",
+      "lat": 42.7109457,
+      "lon": -0.0029148,
+      "date": "2026-06-30T10:34:38+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0294-20260630_103442.jpg",
+      "thumb": "photos/thumb/0294-20260630_103442.jpg",
+      "lat": 42.7109424,
+      "lon": -0.0029114,
+      "date": "2026-06-30T10:34:43+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0295-20260630_105357.jpg",
+      "thumb": "photos/thumb/0295-20260630_105357.jpg",
+      "lat": 42.712039699722226,
+      "lon": -0.0094723,
+      "date": "2026-06-30T10:53:57+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0296-20260630_105415.jpg",
+      "thumb": "photos/thumb/0296-20260630_105415.jpg",
+      "lat": 42.7166116,
+      "lon": -0.0012175999999999999,
+      "date": "2026-06-30T10:54:15+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0297-20260630_105441.jpg",
+      "thumb": "photos/thumb/0297-20260630_105441.jpg",
+      "lat": 42.7166116,
+      "lon": -0.0012175999999999999,
+      "date": "2026-06-30T10:54:41+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0298-20260630_105443.jpg",
+      "thumb": "photos/thumb/0298-20260630_105443.jpg",
+      "lat": 42.7165844,
+      "lon": -0.0011725,
+      "date": "2026-06-30T10:54:43+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0299-20260630_105445.jpg",
+      "thumb": "photos/thumb/0299-20260630_105445.jpg",
+      "lat": 42.7165703,
+      "lon": -0.0011756000000000002,
+      "date": "2026-06-30T10:54:46+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0300-20260630_105446.jpg",
+      "thumb": "photos/thumb/0300-20260630_105446.jpg",
+      "lat": 42.7165703,
+      "lon": -0.0011756000000000002,
+      "date": "2026-06-30T10:54:47+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0301-20260630_110734.jpg",
+      "thumb": "photos/thumb/0301-20260630_110734.jpg",
+      "lat": 42.7197211,
+      "lon": 0.0004572,
+      "date": "2026-06-30T11:07:34+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0302-20260630_110737.jpg",
+      "thumb": "photos/thumb/0302-20260630_110737.jpg",
+      "lat": 42.7197211,
+      "lon": 0.0004572,
+      "date": "2026-06-30T11:07:37+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0303-20260630_121111.jpg",
+      "thumb": "photos/thumb/0303-20260630_121111.jpg",
+      "lat": 42.71976659972223,
+      "lon": 0.0034156,
+      "date": "2026-06-30T12:11:11+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0304-20260630_121115.jpg",
+      "thumb": "photos/thumb/0304-20260630_121115.jpg",
+      "lat": 42.719475199722226,
+      "lon": 0.0042759,
+      "date": "2026-06-30T12:11:16+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0305-20260630_121206.jpg",
+      "thumb": "photos/thumb/0305-20260630_121206.jpg",
+      "lat": 42.71940839972223,
+      "lon": 0.0046404,
+      "date": "2026-06-30T12:12:06+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0306-20260630_121208.jpg",
+      "thumb": "photos/thumb/0306-20260630_121208.jpg",
+      "lat": 42.7194045,
+      "lon": 0.0046553,
+      "date": "2026-06-30T12:12:08+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0307-20260630_122148.jpg",
+      "thumb": "photos/thumb/0307-20260630_122148.jpg",
+      "lat": 42.7358581,
+      "lon": -0.026674299999999998,
+      "date": "2026-06-30T12:21:48+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0308-20260630_122151.jpg",
+      "thumb": "photos/thumb/0308-20260630_122151.jpg",
+      "lat": 42.72187519972223,
+      "lon": 0.0060081,
+      "date": "2026-06-30T12:21:58+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0309-20260630_122300.jpg",
+      "thumb": "photos/thumb/0309-20260630_122300.jpg",
+      "lat": 42.722177,
+      "lon": 0.005938499999999999,
+      "date": "2026-06-30T12:23:00+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0310-20260630_122302.jpg",
+      "thumb": "photos/thumb/0310-20260630_122302.jpg",
+      "lat": 42.722177,
+      "lon": 0.005938499999999999,
+      "date": "2026-06-30T12:23:02+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0311-20260630_122311.jpg",
+      "thumb": "photos/thumb/0311-20260630_122311.jpg",
+      "lat": 42.722177,
+      "lon": 0.005938499999999999,
+      "date": "2026-06-30T12:23:11+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0312-20260630_122827.jpg",
+      "thumb": "photos/thumb/0312-20260630_122827.jpg",
+      "lat": 42.72298359972223,
+      "lon": 0.0059188,
+      "date": "2026-06-30T12:28:27+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0313-20260630_122831.jpg",
+      "thumb": "photos/thumb/0313-20260630_122831.jpg",
+      "lat": 42.7229803,
+      "lon": 0.0059183,
+      "date": "2026-06-30T12:28:31+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0314-20260630_123452.jpg",
+      "thumb": "photos/thumb/0314-20260630_123452.jpg",
+      "lat": 42.7225486,
+      "lon": 0.0070904,
+      "date": "2026-06-30T12:34:52+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0315-20260630_124236.jpg",
+      "thumb": "photos/thumb/0315-20260630_124236.jpg",
+      "lat": 42.721000699722225,
+      "lon": 0.0104555,
+      "date": "2026-06-30T12:42:36+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0316-20260630_124239.jpg",
+      "thumb": "photos/thumb/0316-20260630_124239.jpg",
+      "lat": 42.720994599722225,
+      "lon": 0.010488899999999999,
+      "date": "2026-06-30T12:42:39+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0317-20260630_124242.jpg",
+      "thumb": "photos/thumb/0317-20260630_124242.jpg",
+      "lat": 42.7210006,
+      "lon": 0.0104932,
+      "date": "2026-06-30T12:42:43+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0318-20260630_124338.jpg",
+      "thumb": "photos/thumb/0318-20260630_124338.jpg",
+      "lat": 42.7210059,
+      "lon": 0.0104865,
+      "date": "2026-06-30T12:43:38+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0319-20260630_155608.jpg",
+      "thumb": "photos/thumb/0319-20260630_155608.jpg",
+      "lat": 42.7195795,
+      "lon": 0.012555,
+      "date": "2026-06-30T15:56:08+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0320-20260630_155614.jpg",
+      "thumb": "photos/thumb/0320-20260630_155614.jpg",
+      "lat": 42.7195795,
+      "lon": 0.012555,
+      "date": "2026-06-30T15:56:15+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0321-20260701_065941.jpg",
+      "thumb": "photos/thumb/0321-20260701_065941.jpg",
+      "lat": 42.7199701,
+      "lon": 0.0124755,
+      "date": "2026-07-01T06:59:42+02:00",
+      "caption": "",
+      "positionSource": "interpolated"
+    },
+    {
+      "file": "photos/full/0322-20260701_065947.jpg",
+      "thumb": "photos/thumb/0322-20260701_065947.jpg",
+      "lat": 42.7199701,
+      "lon": 0.0124755,
+      "date": "2026-07-01T06:59:48+02:00",
+      "caption": "",
+      "positionSource": "interpolated"
+    },
+    {
+      "file": "photos/full/0323-20260701_074853.jpg",
+      "thumb": "photos/thumb/0323-20260701_074853.jpg",
+      "lat": 42.7202848,
+      "lon": 0.024129499999999998,
+      "date": "2026-07-01T07:48:53+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0324-20260701_074855.jpg",
+      "thumb": "photos/thumb/0324-20260701_074855.jpg",
+      "lat": 42.7202646,
+      "lon": 0.0241965,
+      "date": "2026-07-01T07:48:56+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0325-20260701_081251.jpg",
+      "thumb": "photos/thumb/0325-20260701_081251.jpg",
+      "lat": 42.7184225,
+      "lon": 0.0265655,
+      "date": "2026-07-01T08:12:52+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0326-20260701_081253.jpg",
+      "thumb": "photos/thumb/0326-20260701_081253.jpg",
+      "lat": 42.7184163,
+      "lon": 0.0265518,
+      "date": "2026-07-01T08:12:54+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0327-20260701_081255.jpg",
+      "thumb": "photos/thumb/0327-20260701_081255.jpg",
+      "lat": 42.7184163,
+      "lon": 0.0265518,
+      "date": "2026-07-01T08:12:55+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0328-20260701_085731.jpg",
+      "thumb": "photos/thumb/0328-20260701_085731.jpg",
+      "lat": 42.71555779972223,
+      "lon": 0.0281467,
+      "date": "2026-07-01T08:57:31+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0329-20260701_095603.jpg",
+      "thumb": "photos/thumb/0329-20260701_095603.jpg",
+      "lat": 42.7149714,
+      "lon": 0.0402353,
+      "date": "2026-07-01T09:56:03+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0330-20260701_103003.jpg",
+      "thumb": "photos/thumb/0330-20260701_103003.jpg",
+      "lat": 42.72315079972223,
+      "lon": 0.045627799999999996,
+      "date": "2026-07-01T10:30:03+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0331-20260701_103008.jpg",
+      "thumb": "photos/thumb/0331-20260701_103008.jpg",
+      "lat": 42.7231315,
+      "lon": 0.04561699972222222,
+      "date": "2026-07-01T10:30:08+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0332-20260701_103026.jpg",
+      "thumb": "photos/thumb/0332-20260701_103026.jpg",
+      "lat": 42.723176899722226,
+      "lon": 0.0455934,
+      "date": "2026-07-01T10:30:26+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0333-20260701_103727.jpg",
+      "thumb": "photos/thumb/0333-20260701_103727.jpg",
+      "lat": 42.7231856,
+      "lon": 0.045632,
+      "date": "2026-07-01T10:37:27+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0334-20260701_104104.jpg",
+      "thumb": "photos/thumb/0334-20260701_104104.jpg",
+      "lat": 42.723142,
+      "lon": 0.0455941,
+      "date": "2026-07-01T10:41:05+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0335-20260701_104318.jpg",
+      "thumb": "photos/thumb/0335-20260701_104318.jpg",
+      "lat": 42.7241299,
+      "lon": 0.0457646,
+      "date": "2026-07-01T10:43:19+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0336-20260701_104321.jpg",
+      "thumb": "photos/thumb/0336-20260701_104321.jpg",
+      "lat": 42.7242375,
+      "lon": 0.0457358,
+      "date": "2026-07-01T10:43:21+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0337-20260701_104610.jpg",
+      "thumb": "photos/thumb/0337-20260701_104610.jpg",
+      "lat": 42.7259022,
+      "lon": 0.045737899722222225,
+      "date": "2026-07-01T10:46:10+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0338-20260701_104613.jpg",
+      "thumb": "photos/thumb/0338-20260701_104613.jpg",
+      "lat": 42.7259377,
+      "lon": 0.0457623,
+      "date": "2026-07-01T10:46:13+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0339-20260701_104905.jpg",
+      "thumb": "photos/thumb/0339-20260701_104905.jpg",
+      "lat": 42.727589199722225,
+      "lon": 0.0459287,
+      "date": "2026-07-01T10:49:06+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0340-20260701_104914.jpg",
+      "thumb": "photos/thumb/0340-20260701_104914.jpg",
+      "lat": 42.72759119972223,
+      "lon": 0.0459412,
+      "date": "2026-07-01T10:49:14+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0341-20260701_104918.jpg",
+      "thumb": "photos/thumb/0341-20260701_104918.jpg",
+      "lat": 42.72759119972223,
+      "lon": 0.0459412,
+      "date": "2026-07-01T10:49:18+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0342-20260701_104919.jpg",
+      "thumb": "photos/thumb/0342-20260701_104919.jpg",
+      "lat": 42.72759119972223,
+      "lon": 0.0459412,
+      "date": "2026-07-01T10:49:19+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0343-20260701_104920.jpg",
+      "thumb": "photos/thumb/0343-20260701_104920.jpg",
+      "lat": 42.72759119972223,
+      "lon": 0.0459412,
+      "date": "2026-07-01T10:49:20+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0344-20260701_104922.jpg",
+      "thumb": "photos/thumb/0344-20260701_104922.jpg",
+      "lat": 42.72759119972223,
+      "lon": 0.0459412,
+      "date": "2026-07-01T10:49:22+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0345-20260701_104923.jpg",
+      "thumb": "photos/thumb/0345-20260701_104923.jpg",
+      "lat": 42.72759119972223,
+      "lon": 0.0459412,
+      "date": "2026-07-01T10:49:24+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0346-20260701_105125.jpg",
+      "thumb": "photos/thumb/0346-20260701_105125.jpg",
+      "lat": 42.728566299722225,
+      "lon": 0.045863,
+      "date": "2026-07-01T10:51:25+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0347-20260701_105126.jpg",
+      "thumb": "photos/thumb/0347-20260701_105126.jpg",
+      "lat": 42.7285309,
+      "lon": 0.045866699999999996,
+      "date": "2026-07-01T10:51:26+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0348-20260701_105130.jpg",
+      "thumb": "photos/thumb/0348-20260701_105130.jpg",
+      "lat": 42.7285344,
+      "lon": 0.0458794,
+      "date": "2026-07-01T10:51:30+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0349-20260701_105132.jpg",
+      "thumb": "photos/thumb/0349-20260701_105132.jpg",
+      "lat": 42.7285344,
+      "lon": 0.0458794,
+      "date": "2026-07-01T10:51:32+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0350-20260701_105143.jpg",
+      "thumb": "photos/thumb/0350-20260701_105143.jpg",
+      "lat": 42.7285344,
+      "lon": 0.0458794,
+      "date": "2026-07-01T10:51:43+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0351-20260701_105144.jpg",
+      "thumb": "photos/thumb/0351-20260701_105144.jpg",
+      "lat": 42.7285344,
+      "lon": 0.0458794,
+      "date": "2026-07-01T10:51:44+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0352-20260701_105146.jpg",
+      "thumb": "photos/thumb/0352-20260701_105146.jpg",
+      "lat": 42.7285344,
+      "lon": 0.0458794,
+      "date": "2026-07-01T10:51:46+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0353-20260701_105211.jpg",
+      "thumb": "photos/thumb/0353-20260701_105211.jpg",
+      "lat": 42.728534,
+      "lon": 0.0458404,
+      "date": "2026-07-01T10:52:11+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0354-20260701_105217.jpg",
+      "thumb": "photos/thumb/0354-20260701_105217.jpg",
+      "lat": 42.728534,
+      "lon": 0.0458404,
+      "date": "2026-07-01T10:52:17+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0355-20260701_105348.jpg",
+      "thumb": "photos/thumb/0355-20260701_105348.jpg",
+      "lat": 42.7290019,
+      "lon": 0.0459209,
+      "date": "2026-07-01T10:53:48+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0356-20260701_105404.jpg",
+      "thumb": "photos/thumb/0356-20260701_105404.jpg",
+      "lat": 42.729023599722225,
+      "lon": 0.0459288,
+      "date": "2026-07-01T10:54:05+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0357-20260701_105410.jpg",
+      "thumb": "photos/thumb/0357-20260701_105410.jpg",
+      "lat": 42.729023599722225,
+      "lon": 0.0459288,
+      "date": "2026-07-01T10:54:10+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0358-20260701_105413.jpg",
+      "thumb": "photos/thumb/0358-20260701_105413.jpg",
+      "lat": 42.729023599722225,
+      "lon": 0.0459288,
+      "date": "2026-07-01T10:54:15+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0359-20260701_105418.jpg",
+      "thumb": "photos/thumb/0359-20260701_105418.jpg",
+      "lat": 42.729023599722225,
+      "lon": 0.0459288,
+      "date": "2026-07-01T10:54:18+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0360-20260701_105618.jpg",
+      "thumb": "photos/thumb/0360-20260701_105618.jpg",
+      "lat": 42.730093699722225,
+      "lon": 0.0462218,
+      "date": "2026-07-01T10:56:18+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0361-20260701_105623.jpg",
+      "thumb": "photos/thumb/0361-20260701_105623.jpg",
+      "lat": 42.730093699722225,
+      "lon": 0.0462218,
+      "date": "2026-07-01T10:56:23+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0362-20260701_105629.jpg",
+      "thumb": "photos/thumb/0362-20260701_105629.jpg",
+      "lat": 42.730093699722225,
+      "lon": 0.0462218,
+      "date": "2026-07-01T10:56:29+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0363-20260701_105630.jpg",
+      "thumb": "photos/thumb/0363-20260701_105630.jpg",
+      "lat": 42.730093699722225,
+      "lon": 0.0462218,
+      "date": "2026-07-01T10:56:31+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0364-20260701_105634.jpg",
+      "thumb": "photos/thumb/0364-20260701_105634.jpg",
+      "lat": 42.730093699722225,
+      "lon": 0.0462218,
+      "date": "2026-07-01T10:56:34+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0365-20260701_105635.jpg",
+      "thumb": "photos/thumb/0365-20260701_105635.jpg",
+      "lat": 42.730093699722225,
+      "lon": 0.0462218,
+      "date": "2026-07-01T10:56:35+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0366-20260701_105636.jpg",
+      "thumb": "photos/thumb/0366-20260701_105636.jpg",
+      "lat": 42.730093699722225,
+      "lon": 0.0462218,
+      "date": "2026-07-01T10:56:37+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0367-20260701_105638.jpg",
+      "thumb": "photos/thumb/0367-20260701_105638.jpg",
+      "lat": 42.730093699722225,
+      "lon": 0.0462218,
+      "date": "2026-07-01T10:56:38+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0368-20260701_105641.jpg",
+      "thumb": "photos/thumb/0368-20260701_105641.jpg",
+      "lat": 42.730093699722225,
+      "lon": 0.0462218,
+      "date": "2026-07-01T10:56:41+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0369-20260701_105642.jpg",
+      "thumb": "photos/thumb/0369-20260701_105642.jpg",
+      "lat": 42.730093699722225,
+      "lon": 0.0462218,
+      "date": "2026-07-01T10:56:43+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0370-20260701_105644.jpg",
+      "thumb": "photos/thumb/0370-20260701_105644.jpg",
+      "lat": 42.730093699722225,
+      "lon": 0.0462218,
+      "date": "2026-07-01T10:56:45+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0371-20260701_105732.jpg",
+      "thumb": "photos/thumb/0371-20260701_105732.jpg",
+      "lat": 42.730055299722224,
+      "lon": 0.046165499722222225,
+      "date": "2026-07-01T10:57:33+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0372-20260701_105738.jpg",
+      "thumb": "photos/thumb/0372-20260701_105738.jpg",
+      "lat": 42.730055299722224,
+      "lon": 0.046165499722222225,
+      "date": "2026-07-01T10:57:38+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0373-20260701_105744.jpg",
+      "thumb": "photos/thumb/0373-20260701_105744.jpg",
+      "lat": 42.730055299722224,
+      "lon": 0.046165499722222225,
+      "date": "2026-07-01T10:57:44+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0374-20260701_105944.jpg",
+      "thumb": "photos/thumb/0374-20260701_105944.jpg",
+      "lat": 42.7301021,
+      "lon": 0.0462216,
+      "date": "2026-07-01T10:59:45+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0375-20260701_110125.jpg",
+      "thumb": "photos/thumb/0375-20260701_110125.jpg",
+      "lat": 42.730127699722225,
+      "lon": 0.046183799722222224,
+      "date": "2026-07-01T11:01:25+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0376-20260701_110131.jpg",
+      "thumb": "photos/thumb/0376-20260701_110131.jpg",
+      "lat": 42.730127699722225,
+      "lon": 0.046183799722222224,
+      "date": "2026-07-01T11:01:31+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0377-20260701_110136.jpg",
+      "thumb": "photos/thumb/0377-20260701_110136.jpg",
+      "lat": 42.730127699722225,
+      "lon": 0.046183799722222224,
+      "date": "2026-07-01T11:01:36+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0378-20260701_112358.jpg",
+      "thumb": "photos/thumb/0378-20260701_112358.jpg",
+      "lat": 42.7363605,
+      "lon": 0.0463587,
+      "date": "2026-07-01T11:23:58+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0379-20260701_112359.jpg",
+      "thumb": "photos/thumb/0379-20260701_112359.jpg",
+      "lat": 42.7363605,
+      "lon": 0.0463587,
+      "date": "2026-07-01T11:23:59+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0380-20260701_112453.jpg",
+      "thumb": "photos/thumb/0380-20260701_112453.jpg",
+      "lat": 42.736924299722226,
+      "lon": 0.0459966,
+      "date": "2026-07-01T11:24:53+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0381-20260701_112457.jpg",
+      "thumb": "photos/thumb/0381-20260701_112457.jpg",
+      "lat": 42.7369356,
+      "lon": 0.0460007,
+      "date": "2026-07-01T11:24:57+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0382-20260701_112458.jpg",
+      "thumb": "photos/thumb/0382-20260701_112458.jpg",
+      "lat": 42.7369356,
+      "lon": 0.0460007,
+      "date": "2026-07-01T11:24:58+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0383-20260701_112500.jpg",
+      "thumb": "photos/thumb/0383-20260701_112500.jpg",
+      "lat": 42.7369356,
+      "lon": 0.0460007,
+      "date": "2026-07-01T11:25:00+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0384-20260701_112502.jpg",
+      "thumb": "photos/thumb/0384-20260701_112502.jpg",
+      "lat": 42.7369356,
+      "lon": 0.0460007,
+      "date": "2026-07-01T11:25:02+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0385-20260701_112503.jpg",
+      "thumb": "photos/thumb/0385-20260701_112503.jpg",
+      "lat": 42.7369356,
+      "lon": 0.0460007,
+      "date": "2026-07-01T11:25:03+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0386-20260701_112504.jpg",
+      "thumb": "photos/thumb/0386-20260701_112504.jpg",
+      "lat": 42.7369356,
+      "lon": 0.0460007,
+      "date": "2026-07-01T11:25:04+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0387-20260701_112509.jpg",
+      "thumb": "photos/thumb/0387-20260701_112509.jpg",
+      "lat": 42.7369356,
+      "lon": 0.0460007,
+      "date": "2026-07-01T11:25:09+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0388-20260701_112736.jpg",
+      "thumb": "photos/thumb/0388-20260701_112736.jpg",
+      "lat": 42.738181099722226,
+      "lon": 0.046348599722222224,
+      "date": "2026-07-01T11:27:37+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0389-20260701_112750.jpg",
+      "thumb": "photos/thumb/0389-20260701_112750.jpg",
+      "lat": 42.73817689972223,
+      "lon": 0.0462594,
+      "date": "2026-07-01T11:27:50+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0390-20260701_113225.jpg",
+      "thumb": "photos/thumb/0390-20260701_113225.jpg",
+      "lat": 42.740598599722226,
+      "lon": 0.04589499972222222,
+      "date": "2026-07-01T11:32:25+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0391-20260701_113227.jpg",
+      "thumb": "photos/thumb/0391-20260701_113227.jpg",
+      "lat": 42.7406129,
+      "lon": 0.045907,
+      "date": "2026-07-01T11:32:27+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0392-20260701_114003.jpg",
+      "thumb": "photos/thumb/0392-20260701_114003.jpg",
+      "lat": 42.7452168,
+      "lon": 0.046548,
+      "date": "2026-07-01T11:40:06+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0393-20260701_114008.jpg",
+      "thumb": "photos/thumb/0393-20260701_114008.jpg",
+      "lat": 42.7452168,
+      "lon": 0.046548,
+      "date": "2026-07-01T11:40:14+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0394-20260701_114232.jpg",
+      "thumb": "photos/thumb/0394-20260701_114232.jpg",
+      "lat": 42.746338199722224,
+      "lon": 0.04657209972222222,
+      "date": "2026-07-01T11:42:32+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0395-20260701_114236.jpg",
+      "thumb": "photos/thumb/0395-20260701_114236.jpg",
+      "lat": 42.746338199722224,
+      "lon": 0.04657209972222222,
+      "date": "2026-07-01T11:42:36+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0396-20260701_114542.jpg",
+      "thumb": "photos/thumb/0396-20260701_114542.jpg",
+      "lat": 42.7479598,
+      "lon": 0.046854,
+      "date": "2026-07-01T11:45:42+02:00",
+      "caption": "",
+      "positionSource": "interpolated"
+    },
+    {
+      "file": "photos/full/0397-20260701_114551.jpg",
+      "thumb": "photos/thumb/0397-20260701_114551.jpg",
+      "lat": 42.747926499722226,
+      "lon": 0.0469721,
+      "date": "2026-07-01T11:45:51+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0398-20260701_114715.jpg",
+      "thumb": "photos/thumb/0398-20260701_114715.jpg",
+      "lat": 42.7485269,
+      "lon": 0.047055,
+      "date": "2026-07-01T11:47:16+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0399-20260701_114718.jpg",
+      "thumb": "photos/thumb/0399-20260701_114718.jpg",
+      "lat": 42.74850849972222,
+      "lon": 0.0470374,
+      "date": "2026-07-01T11:47:18+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0400-20260701_114725.jpg",
+      "thumb": "photos/thumb/0400-20260701_114725.jpg",
+      "lat": 42.74850849972222,
+      "lon": 0.0470374,
+      "date": "2026-07-01T11:47:31+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0401-20260701_114952.jpg",
+      "thumb": "photos/thumb/0401-20260701_114952.jpg",
+      "lat": 42.7496519,
+      "lon": 0.047147099722222224,
+      "date": "2026-07-01T11:49:52+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0402-20260701_114956.jpg",
+      "thumb": "photos/thumb/0402-20260701_114956.jpg",
+      "lat": 42.7496519,
+      "lon": 0.047147099722222224,
+      "date": "2026-07-01T11:49:56+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0403-20260701_114957.jpg",
+      "thumb": "photos/thumb/0403-20260701_114957.jpg",
+      "lat": 42.7496519,
+      "lon": 0.047147099722222224,
+      "date": "2026-07-01T11:49:57+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0404-20260701_115001.jpg",
+      "thumb": "photos/thumb/0404-20260701_115001.jpg",
+      "lat": 42.7496519,
+      "lon": 0.047147099722222224,
+      "date": "2026-07-01T11:50:01+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0405-20260701_115009.jpg",
+      "thumb": "photos/thumb/0405-20260701_115009.jpg",
+      "lat": 42.7496519,
+      "lon": 0.047147099722222224,
+      "date": "2026-07-01T11:50:09+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0406-20260701_115112.jpg",
+      "thumb": "photos/thumb/0406-20260701_115112.jpg",
+      "lat": 42.7500404,
+      "lon": 0.0470471,
+      "date": "2026-07-01T11:51:12+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0407-20260701_115115.jpg",
+      "thumb": "photos/thumb/0407-20260701_115115.jpg",
+      "lat": 42.750032599722225,
+      "lon": 0.0470652,
+      "date": "2026-07-01T11:51:15+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0408-20260701_115116.jpg",
+      "thumb": "photos/thumb/0408-20260701_115116.jpg",
+      "lat": 42.750032599722225,
+      "lon": 0.0470652,
+      "date": "2026-07-01T11:51:16+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0409-20260701_115126.jpg",
+      "thumb": "photos/thumb/0409-20260701_115126.jpg",
+      "lat": 42.750032599722225,
+      "lon": 0.0470652,
+      "date": "2026-07-01T11:51:26+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0410-20260701_115200.jpg",
+      "thumb": "photos/thumb/0410-20260701_115200.jpg",
+      "lat": 42.7502124,
+      "lon": 0.0471328,
+      "date": "2026-07-01T11:52:00+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0411-20260701_115202.jpg",
+      "thumb": "photos/thumb/0411-20260701_115202.jpg",
+      "lat": 42.750210199722225,
+      "lon": 0.0471375,
+      "date": "2026-07-01T11:52:02+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0412-20260701_120446.jpg",
+      "thumb": "photos/thumb/0412-20260701_120446.jpg",
+      "lat": 42.75319329972222,
+      "lon": 0.050473799722222226,
+      "date": "2026-07-01T12:04:47+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0413-20260701_120449.jpg",
+      "thumb": "photos/thumb/0413-20260701_120449.jpg",
+      "lat": 42.75319329972222,
+      "lon": 0.050473799722222226,
+      "date": "2026-07-01T12:04:49+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0414-20260701_132315.jpg",
+      "thumb": "photos/thumb/0414-20260701_132315.jpg",
+      "lat": 42.7573355,
+      "lon": 0.046792899722222225,
+      "date": "2026-07-01T13:23:15+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0415-20260701_132318.jpg",
+      "thumb": "photos/thumb/0415-20260701_132318.jpg",
+      "lat": 42.7573355,
+      "lon": 0.046792899722222225,
+      "date": "2026-07-01T13:23:18+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0416-20260701_132459.jpg",
+      "thumb": "photos/thumb/0416-20260701_132459.jpg",
+      "lat": 42.7582432,
+      "lon": 0.0465372,
+      "date": "2026-07-01T13:24:59+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0417-20260701_134743.jpg",
+      "thumb": "photos/thumb/0417-20260701_134743.jpg",
+      "lat": 42.76861809972222,
+      "lon": 0.0360226,
+      "date": "2026-07-01T13:47:43+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0418-20260701_143837.jpg",
+      "thumb": "photos/thumb/0418-20260701_143837.jpg",
+      "lat": 42.78073669972222,
+      "lon": 0.024496899722222222,
+      "date": "2026-07-01T14:38:37+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0419-20260701_202440.jpg",
+      "thumb": "photos/thumb/0419-20260701_202440.jpg",
+      "lat": 42.872993899722225,
+      "lon": -0.0030542,
+      "date": "2026-07-01T20:24:40+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0420-20260702_095430.jpg",
+      "thumb": "photos/thumb/0420-20260702_095430.jpg",
+      "lat": 42.897919799722224,
+      "lon": 0.0676086,
+      "date": "2026-07-02T09:54:30+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0421-20260702_100722.jpg",
+      "thumb": "photos/thumb/0421-20260702_100722.jpg",
+      "lat": 42.9002671,
+      "lon": 0.07443289972222222,
+      "date": "2026-07-02T10:07:22+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0422-20260702_101435.jpg",
+      "thumb": "photos/thumb/0422-20260702_101435.jpg",
+      "lat": 42.90194449972222,
+      "lon": 0.07793649999999999,
+      "date": "2026-07-02T10:14:36+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0423-20260702_102850.jpg",
+      "thumb": "photos/thumb/0423-20260702_102850.jpg",
+      "lat": 42.9033248,
+      "lon": 0.08809919999999999,
+      "date": "2026-07-02T10:28:50+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0424-20260702_103946.jpg",
+      "thumb": "photos/thumb/0424-20260702_103946.jpg",
+      "lat": 42.903424,
+      "lon": 0.0974278,
+      "date": "2026-07-02T10:39:47+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0425-20260702_110650.jpg",
+      "thumb": "photos/thumb/0425-20260702_110650.jpg",
+      "lat": 42.900452099999995,
+      "lon": 0.10450119972222223,
+      "date": "2026-07-02T11:06:50+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0426-20260702_111031.jpg",
+      "thumb": "photos/thumb/0426-20260702_111031.jpg",
+      "lat": 42.89861729972222,
+      "lon": 0.10562599972222222,
+      "date": "2026-07-02T11:10:31+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0427-20260702_111034.jpg",
+      "thumb": "photos/thumb/0427-20260702_111034.jpg",
+      "lat": 42.89860209972222,
+      "lon": 0.10561989972222223,
+      "date": "2026-07-02T11:10:34+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0428-20260702_113306.jpg",
+      "thumb": "photos/thumb/0428-20260702_113306.jpg",
+      "lat": 42.903168,
+      "lon": 0.10286399972222222,
+      "date": "2026-07-02T11:33:06+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0429-20260702_113308.jpg",
+      "thumb": "photos/thumb/0429-20260702_113308.jpg",
+      "lat": 42.89079819972222,
+      "lon": 0.10716109972222222,
+      "date": "2026-07-02T11:33:08+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0430-20260702_114240.jpg",
+      "thumb": "photos/thumb/0430-20260702_114240.jpg",
+      "lat": 42.8860656,
+      "lon": 0.10830819972222222,
+      "date": "2026-07-02T11:42:40+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0431-20260702_114242.jpg",
+      "thumb": "photos/thumb/0431-20260702_114242.jpg",
+      "lat": 42.886226,
+      "lon": 0.10839719972222223,
+      "date": "2026-07-02T11:42:42+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0432-20260702_114746.jpg",
+      "thumb": "photos/thumb/0432-20260702_114746.jpg",
+      "lat": 42.885065599722225,
+      "lon": 0.1100002,
+      "date": "2026-07-02T11:47:46+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0433-20260702_114748.jpg",
+      "thumb": "photos/thumb/0433-20260702_114748.jpg",
+      "lat": 42.88461459972222,
+      "lon": 0.11041989972222223,
+      "date": "2026-07-02T11:47:48+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0434-20260702_120026.jpg",
+      "thumb": "photos/thumb/0434-20260702_120026.jpg",
+      "lat": 42.8829216,
+      "lon": 0.11302749972222223,
+      "date": "2026-07-02T12:00:27+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0435-20260702_120028.jpg",
+      "thumb": "photos/thumb/0435-20260702_120028.jpg",
+      "lat": 42.882929599722225,
+      "lon": 0.11341969972222223,
+      "date": "2026-07-02T12:00:28+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0436-20260702_120603.jpg",
+      "thumb": "photos/thumb/0436-20260702_120603.jpg",
+      "lat": 42.87819329972222,
+      "lon": 0.11660009972222223,
+      "date": "2026-07-02T12:06:03+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0437-20260702_120605.jpg",
+      "thumb": "photos/thumb/0437-20260702_120605.jpg",
+      "lat": 42.882767899722225,
+      "lon": 0.11451539972222223,
+      "date": "2026-07-02T12:06:05+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0438-20260702_120606.jpg",
+      "thumb": "photos/thumb/0438-20260702_120606.jpg",
+      "lat": 42.882663,
+      "lon": 0.11586659972222223,
+      "date": "2026-07-02T12:06:06+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0439-20260702_120750.jpg",
+      "thumb": "photos/thumb/0439-20260702_120750.jpg",
+      "lat": 42.882655999722225,
+      "lon": 0.116732,
+      "date": "2026-07-02T12:07:51+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0440-20260702_120752.jpg",
+      "thumb": "photos/thumb/0440-20260702_120752.jpg",
+      "lat": 42.8825445,
+      "lon": 0.1165926,
+      "date": "2026-07-02T12:07:52+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0441-20260702_120753.jpg",
+      "thumb": "photos/thumb/0441-20260702_120753.jpg",
+      "lat": 42.8825614,
+      "lon": 0.11653819972222224,
+      "date": "2026-07-02T12:07:53+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0442-20260702_121023.jpg",
+      "thumb": "photos/thumb/0442-20260702_121023.jpg",
+      "lat": 42.8826557,
+      "lon": 0.11565599972222224,
+      "date": "2026-07-02T12:10:23+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0443-20260702_121024.jpg",
+      "thumb": "photos/thumb/0443-20260702_121024.jpg",
+      "lat": 42.8823829,
+      "lon": 0.11771149972222222,
+      "date": "2026-07-02T12:10:25+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0444-20260702_121026.jpg",
+      "thumb": "photos/thumb/0444-20260702_121026.jpg",
+      "lat": 42.882444399722225,
+      "lon": 0.11765559972222223,
+      "date": "2026-07-02T12:10:26+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0445-20260702_121032.jpg",
+      "thumb": "photos/thumb/0445-20260702_121032.jpg",
+      "lat": 42.882444399722225,
+      "lon": 0.11765559972222223,
+      "date": "2026-07-02T12:10:33+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0446-20260702_121041.jpg",
+      "thumb": "photos/thumb/0446-20260702_121041.jpg",
+      "lat": 42.882444399722225,
+      "lon": 0.11765559972222223,
+      "date": "2026-07-02T12:10:42+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0447-20260702_121516.jpg",
+      "thumb": "photos/thumb/0447-20260702_121516.jpg",
+      "lat": 42.8821984,
+      "lon": 0.11925689972222223,
+      "date": "2026-07-02T12:15:16+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0448-20260702_121519.jpg",
+      "thumb": "photos/thumb/0448-20260702_121519.jpg",
+      "lat": 42.8821457,
+      "lon": 0.1193319,
+      "date": "2026-07-02T12:15:19+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0449-20260702_121824.jpg",
+      "thumb": "photos/thumb/0449-20260702_121824.jpg",
+      "lat": 42.8824023,
+      "lon": 0.1175212,
+      "date": "2026-07-02T12:18:24+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0450-20260702_121826.jpg",
+      "thumb": "photos/thumb/0450-20260702_121826.jpg",
+      "lat": 42.8817986,
+      "lon": 0.12030409972222222,
+      "date": "2026-07-02T12:18:26+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0451-20260702_122140.jpg",
+      "thumb": "photos/thumb/0451-20260702_122140.jpg",
+      "lat": 42.882389699722225,
+      "lon": 0.1217487,
+      "date": "2026-07-02T12:21:40+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0452-20260702_122411.jpg",
+      "thumb": "photos/thumb/0452-20260702_122411.jpg",
+      "lat": 42.882341699722225,
+      "lon": 0.1218038,
+      "date": "2026-07-02T12:24:11+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0453-20260702_122416.jpg",
+      "thumb": "photos/thumb/0453-20260702_122416.jpg",
+      "lat": 42.8822903,
+      "lon": 0.12182249972222223,
+      "date": "2026-07-02T12:24:22+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0454-20260702_124415.jpg",
+      "thumb": "photos/thumb/0454-20260702_124415.jpg",
+      "lat": 42.882395799722225,
+      "lon": 0.12193819972222222,
+      "date": "2026-07-02T12:44:15+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0455-20260702_124416.jpg",
+      "thumb": "photos/thumb/0455-20260702_124416.jpg",
+      "lat": 42.882393899722224,
+      "lon": 0.121937,
+      "date": "2026-07-02T12:44:16+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0456-20260702_124417.jpg",
+      "thumb": "photos/thumb/0456-20260702_124417.jpg",
+      "lat": 42.882393899722224,
+      "lon": 0.121937,
+      "date": "2026-07-02T12:44:17+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0457-20260702_124655.jpg",
+      "thumb": "photos/thumb/0457-20260702_124655.jpg",
+      "lat": 42.87819329972222,
+      "lon": 0.11660009972222223,
+      "date": "2026-07-02T12:46:55+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0458-20260702_124656.jpg",
+      "thumb": "photos/thumb/0458-20260702_124656.jpg",
+      "lat": 42.8824326,
+      "lon": 0.12388119972222222,
+      "date": "2026-07-02T12:46:56+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0459-20260702_125620.jpg",
+      "thumb": "photos/thumb/0459-20260702_125620.jpg",
+      "lat": 42.8823249,
+      "lon": 0.1280087,
+      "date": "2026-07-02T12:56:20+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0460-20260702_125626.jpg",
+      "thumb": "photos/thumb/0460-20260702_125626.jpg",
+      "lat": 42.8823792,
+      "lon": 0.1280434,
+      "date": "2026-07-02T12:56:26+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0461-20260702_131641.jpg",
+      "thumb": "photos/thumb/0461-20260702_131641.jpg",
+      "lat": 42.8809601,
+      "lon": 0.13739429972222222,
+      "date": "2026-07-02T13:16:41+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0462-20260702_131642.jpg",
+      "thumb": "photos/thumb/0462-20260702_131642.jpg",
+      "lat": 42.8809862,
+      "lon": 0.1373558,
+      "date": "2026-07-02T13:16:43+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0463-20260702_135015.jpg",
+      "thumb": "photos/thumb/0463-20260702_135015.jpg",
+      "lat": 42.877187999722224,
+      "lon": 0.1459723,
+      "date": "2026-07-02T13:50:16+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0464-20260702_135017.jpg",
+      "thumb": "photos/thumb/0464-20260702_135017.jpg",
+      "lat": 42.8771757,
+      "lon": 0.14596789999999998,
+      "date": "2026-07-02T13:50:17+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0465-20260702_135135.jpg",
+      "thumb": "photos/thumb/0465-20260702_135135.jpg",
+      "lat": 42.876860399722226,
+      "lon": 0.14618809972222221,
+      "date": "2026-07-02T13:51:36+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0466-20260702_135137.jpg",
+      "thumb": "photos/thumb/0466-20260702_135137.jpg",
+      "lat": 42.87684289972222,
+      "lon": 0.1461711,
+      "date": "2026-07-02T13:51:37+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0467-20260702_135140.jpg",
+      "thumb": "photos/thumb/0467-20260702_135140.jpg",
+      "lat": 42.876841499722225,
+      "lon": 0.1461655,
+      "date": "2026-07-02T13:51:40+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0468-20260702_135422-0.jpg",
+      "thumb": "photos/thumb/0468-20260702_135422-0.jpg",
+      "lat": 42.8760714,
+      "lon": 0.14787059972222222,
+      "date": "2026-07-02T13:54:22+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0469-20260702_135422.jpg",
+      "thumb": "photos/thumb/0469-20260702_135422.jpg",
+      "lat": 42.8760714,
+      "lon": 0.14787059972222222,
+      "date": "2026-07-02T13:54:22+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0470-20260702_135835.jpg",
+      "thumb": "photos/thumb/0470-20260702_135835.jpg",
+      "lat": 42.8754816,
+      "lon": 0.15008749999999998,
+      "date": "2026-07-02T13:58:35+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0471-20260702_142632.jpg",
+      "thumb": "photos/thumb/0471-20260702_142632.jpg",
+      "lat": 42.8754413,
+      "lon": 0.1499897,
+      "date": "2026-07-02T14:26:32+02:00",
+      "caption": "",
+      "positionSource": "interpolated"
+    },
+    {
+      "file": "photos/full/0472-20260702_142633.jpg",
+      "thumb": "photos/thumb/0472-20260702_142633.jpg",
+      "lat": 42.8754413,
+      "lon": 0.1499897,
+      "date": "2026-07-02T14:26:33+02:00",
+      "caption": "",
+      "positionSource": "interpolated"
+    },
+    {
+      "file": "photos/full/0473-20260702_145959.jpg",
+      "thumb": "photos/thumb/0473-20260702_145959.jpg",
+      "lat": 42.8755365,
+      "lon": 0.14993429972222222,
+      "date": "2026-07-02T14:59:59+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0474-20260702_150004.jpg",
+      "thumb": "photos/thumb/0474-20260702_150004.jpg",
+      "lat": 42.8755305,
+      "lon": 0.1499281,
+      "date": "2026-07-02T15:00:12+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0475-20260702_150319.jpg",
+      "thumb": "photos/thumb/0475-20260702_150319.jpg",
+      "lat": 42.8758594,
+      "lon": 0.1499948997222222,
+      "date": "2026-07-02T15:03:19+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0476-20260702_151437.jpg",
+      "thumb": "photos/thumb/0476-20260702_151437.jpg",
+      "lat": 42.8755457,
+      "lon": 0.14991309972222222,
+      "date": "2026-07-02T15:14:37+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0477-20260702_152213.jpg",
+      "thumb": "photos/thumb/0477-20260702_152213.jpg",
+      "lat": 42.87529359972222,
+      "lon": 0.15048049972222222,
+      "date": "2026-07-02T15:22:13+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0478-20260702_152220.jpg",
+      "thumb": "photos/thumb/0478-20260702_152220.jpg",
+      "lat": 42.87529359972222,
+      "lon": 0.15048049972222222,
+      "date": "2026-07-02T15:22:20+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0479-20260702_154539.jpg",
+      "thumb": "photos/thumb/0479-20260702_154539.jpg",
+      "lat": 42.87615949972222,
+      "lon": 0.1549008,
+      "date": "2026-07-02T15:45:40+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0480-20260702_154741.jpg",
+      "thumb": "photos/thumb/0480-20260702_154741.jpg",
+      "lat": 42.8754397,
+      "lon": 0.1534463,
+      "date": "2026-07-02T15:47:42+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0481-20260702_154743.jpg",
+      "thumb": "photos/thumb/0481-20260702_154743.jpg",
+      "lat": 42.876281499722225,
+      "lon": 0.15562219972222222,
+      "date": "2026-07-02T15:47:43+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0482-20260702_155003.jpg",
+      "thumb": "photos/thumb/0482-20260702_155003.jpg",
+      "lat": 42.876880499722226,
+      "lon": 0.15642129999999999,
+      "date": "2026-07-02T15:50:03+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0483-20260702_155042.jpg",
+      "thumb": "photos/thumb/0483-20260702_155042.jpg",
+      "lat": 42.876957599722225,
+      "lon": 0.15673909972222222,
+      "date": "2026-07-02T15:50:42+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0484-20260702_155333.jpg",
+      "thumb": "photos/thumb/0484-20260702_155333.jpg",
+      "lat": 42.877373599722226,
+      "lon": 0.1580964,
+      "date": "2026-07-02T15:53:33+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0485-20260702_155336.jpg",
+      "thumb": "photos/thumb/0485-20260702_155336.jpg",
+      "lat": 42.8773952,
+      "lon": 0.1580934,
+      "date": "2026-07-02T15:53:36+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0486-20260702_155337.jpg",
+      "thumb": "photos/thumb/0486-20260702_155337.jpg",
+      "lat": 42.8773952,
+      "lon": 0.1580934,
+      "date": "2026-07-02T15:53:37+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0487-20260702_155338.jpg",
+      "thumb": "photos/thumb/0487-20260702_155338.jpg",
+      "lat": 42.8773952,
+      "lon": 0.1580934,
+      "date": "2026-07-02T15:53:39+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0488-20260702_155351.jpg",
+      "thumb": "photos/thumb/0488-20260702_155351.jpg",
+      "lat": 42.8773952,
+      "lon": 0.1580934,
+      "date": "2026-07-02T15:53:52+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0489-20260702_155353.jpg",
+      "thumb": "photos/thumb/0489-20260702_155353.jpg",
+      "lat": 42.8774019,
+      "lon": 0.15816349999999998,
+      "date": "2026-07-02T15:53:53+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0490-20260702_160149.jpg",
+      "thumb": "photos/thumb/0490-20260702_160149.jpg",
+      "lat": 42.878261899722226,
+      "lon": 0.1624315,
+      "date": "2026-07-02T16:01:50+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0491-20260702_160152.jpg",
+      "thumb": "photos/thumb/0491-20260702_160152.jpg",
+      "lat": 42.8782536,
+      "lon": 0.1624515,
+      "date": "2026-07-02T16:01:52+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0492-20260702_160739.jpg",
+      "thumb": "photos/thumb/0492-20260702_160739.jpg",
+      "lat": 42.87765269972222,
+      "lon": 0.1638187997222222,
+      "date": "2026-07-02T16:07:39+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0493-20260702_160742.jpg",
+      "thumb": "photos/thumb/0493-20260702_160742.jpg",
+      "lat": 42.8776523,
+      "lon": 0.1638193,
+      "date": "2026-07-02T16:07:42+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0494-20260702_160757.jpg",
+      "thumb": "photos/thumb/0494-20260702_160757.jpg",
+      "lat": 42.87765269972222,
+      "lon": 0.1638079,
+      "date": "2026-07-02T16:07:57+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0495-20260702_161906.jpg",
+      "thumb": "photos/thumb/0495-20260702_161906.jpg",
+      "lat": 42.875824,
+      "lon": 0.16862459999999999,
+      "date": "2026-07-02T16:19:06+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0496-20260702_162914.jpg",
+      "thumb": "photos/thumb/0496-20260702_162914.jpg",
+      "lat": 42.8751292,
+      "lon": 0.1703489,
+      "date": "2026-07-02T16:29:14+02:00",
+      "caption": "",
+      "positionSource": "interpolated"
+    },
+    {
+      "file": "photos/full/0497-20260702_162921.jpg",
+      "thumb": "photos/thumb/0497-20260702_162921.jpg",
+      "lat": 42.875083699722225,
+      "lon": 0.170345,
+      "date": "2026-07-02T16:29:22+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0498-20260702_163724.jpg",
+      "thumb": "photos/thumb/0498-20260702_163724.jpg",
+      "lat": 42.8743824,
+      "lon": 0.1714276,
+      "date": "2026-07-02T16:37:24+02:00",
+      "caption": "",
+      "positionSource": "interpolated"
+    },
+    {
+      "file": "photos/full/0499-20260702_163727.jpg",
+      "thumb": "photos/thumb/0499-20260702_163727.jpg",
+      "lat": 42.8742802,
+      "lon": 0.1712929,
+      "date": "2026-07-02T16:37:27+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0500-20260702_163742.jpg",
+      "thumb": "photos/thumb/0500-20260702_163742.jpg",
+      "lat": 42.8743764,
+      "lon": 0.17144179999999998,
+      "date": "2026-07-02T16:37:42+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0501-20260702_164326.jpg",
+      "thumb": "photos/thumb/0501-20260702_164326.jpg",
+      "lat": 42.873780099722225,
+      "lon": 0.17212149999999998,
+      "date": "2026-07-02T16:43:26+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0502-20260702_164328.jpg",
+      "thumb": "photos/thumb/0502-20260702_164328.jpg",
+      "lat": 42.873780099722225,
+      "lon": 0.17212149999999998,
+      "date": "2026-07-02T16:43:28+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0503-20260702_164347.jpg",
+      "thumb": "photos/thumb/0503-20260702_164347.jpg",
+      "lat": 42.87377539972222,
+      "lon": 0.1721412,
+      "date": "2026-07-02T16:43:47+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0504-20260702_164359.jpg",
+      "thumb": "photos/thumb/0504-20260702_164359.jpg",
+      "lat": 42.87377539972222,
+      "lon": 0.1721412,
+      "date": "2026-07-02T16:44:08+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0505-20260702_164945.jpg",
+      "thumb": "photos/thumb/0505-20260702_164945.jpg",
+      "lat": 42.8737282,
+      "lon": 0.17219119972222222,
+      "date": "2026-07-02T16:49:45+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0506-20260702_165002.jpg",
+      "thumb": "photos/thumb/0506-20260702_165002.jpg",
+      "lat": 42.873719999722226,
+      "lon": 0.1721848,
+      "date": "2026-07-02T16:50:03+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0507-20260702_165005.jpg",
+      "thumb": "photos/thumb/0507-20260702_165005.jpg",
+      "lat": 42.873719999722226,
+      "lon": 0.1721848,
+      "date": "2026-07-02T16:50:05+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0508-20260702_165742.jpg",
+      "thumb": "photos/thumb/0508-20260702_165742.jpg",
+      "lat": 42.87376319972222,
+      "lon": 0.17223729999999998,
+      "date": "2026-07-02T16:57:42+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0509-20260702_165744.jpg",
+      "thumb": "photos/thumb/0509-20260702_165744.jpg",
+      "lat": 42.8737791,
+      "lon": 0.17226139999999998,
+      "date": "2026-07-02T16:57:44+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0510-20260702_165751.jpg",
+      "thumb": "photos/thumb/0510-20260702_165751.jpg",
+      "lat": 42.873767,
+      "lon": 0.17225739999999998,
+      "date": "2026-07-02T16:57:56+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0511-20260702_165801.jpg",
+      "thumb": "photos/thumb/0511-20260702_165801.jpg",
+      "lat": 42.873767,
+      "lon": 0.17225739999999998,
+      "date": "2026-07-02T16:58:02+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0512-20260702_170320.jpg",
+      "thumb": "photos/thumb/0512-20260702_170320.jpg",
+      "lat": 42.8734826,
+      "lon": 0.17256639999999998,
+      "date": "2026-07-02T17:03:20+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0513-20260702_170324.jpg",
+      "thumb": "photos/thumb/0513-20260702_170324.jpg",
+      "lat": 42.8734826,
+      "lon": 0.17256459999999998,
+      "date": "2026-07-02T17:03:24+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0514-20260702_170543.jpg",
+      "thumb": "photos/thumb/0514-20260702_170543.jpg",
+      "lat": 42.873753,
+      "lon": 0.17324719972222222,
+      "date": "2026-07-02T17:05:43+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0515-20260702_170545.jpg",
+      "thumb": "photos/thumb/0515-20260702_170545.jpg",
+      "lat": 42.8737549,
+      "lon": 0.17326549972222222,
+      "date": "2026-07-02T17:05:45+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0516-20260702_172228.jpg",
+      "thumb": "photos/thumb/0516-20260702_172228.jpg",
+      "lat": 42.87260189972222,
+      "lon": 0.1808274,
+      "date": "2026-07-02T17:22:28+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0517-20260702_172232.jpg",
+      "thumb": "photos/thumb/0517-20260702_172232.jpg",
+      "lat": 42.87261219972222,
+      "lon": 0.18083169999999998,
+      "date": "2026-07-02T17:22:32+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0518-20260702_174101.jpg",
+      "thumb": "photos/thumb/0518-20260702_174101.jpg",
+      "lat": 42.871130399722226,
+      "lon": 0.1879379,
+      "date": "2026-07-02T17:41:01+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0519-20260702_174106.jpg",
+      "thumb": "photos/thumb/0519-20260702_174106.jpg",
+      "lat": 42.8711551,
+      "lon": 0.18791709999999998,
+      "date": "2026-07-02T17:41:06+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0520-20260702_175924.jpg",
+      "thumb": "photos/thumb/0520-20260702_175924.jpg",
+      "lat": 42.870496799722225,
+      "lon": 0.18923369999999998,
+      "date": "2026-07-02T17:59:24+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0521-20260702_180502.jpg",
+      "thumb": "photos/thumb/0521-20260702_180502.jpg",
+      "lat": 42.8702752,
+      "lon": 0.1904465,
+      "date": "2026-07-02T18:05:03+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0522-20260702_180511.jpg",
+      "thumb": "photos/thumb/0522-20260702_180511.jpg",
+      "lat": 42.8702752,
+      "lon": 0.1904465,
+      "date": "2026-07-02T18:05:12+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0523-20260702_180634.jpg",
+      "thumb": "photos/thumb/0523-20260702_180634.jpg",
+      "lat": 42.8702557,
+      "lon": 0.19039889999999998,
+      "date": "2026-07-02T18:06:34+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0524-20260702_180817.jpg",
+      "thumb": "photos/thumb/0524-20260702_180817.jpg",
+      "lat": 42.8701464,
+      "lon": 0.1908665,
+      "date": "2026-07-02T18:08:17+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0525-20260702_180823.jpg",
+      "thumb": "photos/thumb/0525-20260702_180823.jpg",
+      "lat": 42.8701476,
+      "lon": 0.19086309999999998,
+      "date": "2026-07-02T18:08:25+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0526-20260702_180826.jpg",
+      "thumb": "photos/thumb/0526-20260702_180826.jpg",
+      "lat": 42.8701476,
+      "lon": 0.19086309999999998,
+      "date": "2026-07-02T18:08:26+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0527-20260702_180828.jpg",
+      "thumb": "photos/thumb/0527-20260702_180828.jpg",
+      "lat": 42.8701476,
+      "lon": 0.19086309999999998,
+      "date": "2026-07-02T18:08:29+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0528-20260702_181840.jpg",
+      "thumb": "photos/thumb/0528-20260702_181840.jpg",
+      "lat": 42.8698033,
+      "lon": 0.1952542,
+      "date": "2026-07-02T18:18:41+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0529-20260702_181842.jpg",
+      "thumb": "photos/thumb/0529-20260702_181842.jpg",
+      "lat": 42.8698033,
+      "lon": 0.1952542,
+      "date": "2026-07-02T18:18:42+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0530-20260702_181855.jpg",
+      "thumb": "photos/thumb/0530-20260702_181855.jpg",
+      "lat": 42.8697912,
+      "lon": 0.1952767,
+      "date": "2026-07-02T18:18:55+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0531-20260702_183227.jpg",
+      "thumb": "photos/thumb/0531-20260702_183227.jpg",
+      "lat": 42.870663399722226,
+      "lon": 0.19827709999999998,
+      "date": "2026-07-02T18:32:27+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0532-20260702_185111.jpg",
+      "thumb": "photos/thumb/0532-20260702_185111.jpg",
+      "lat": 42.8711976,
+      "lon": 0.20119059972222222,
+      "date": "2026-07-02T18:51:11+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0533-20260702_185119.jpg",
+      "thumb": "photos/thumb/0533-20260702_185119.jpg",
+      "lat": 42.871171699722225,
+      "lon": 0.20115779972222222,
+      "date": "2026-07-02T18:51:20+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0534-20260702_185121.jpg",
+      "thumb": "photos/thumb/0534-20260702_185121.jpg",
+      "lat": 42.871171699722225,
+      "lon": 0.20115779972222222,
+      "date": "2026-07-02T18:51:21+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0535-20260702_185125.jpg",
+      "thumb": "photos/thumb/0535-20260702_185125.jpg",
+      "lat": 42.871171699722225,
+      "lon": 0.20115779972222222,
+      "date": "2026-07-02T18:51:26+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0536-20260702_190218.jpg",
+      "thumb": "photos/thumb/0536-20260702_190218.jpg",
+      "lat": 42.8709112,
+      "lon": 0.2014113,
+      "date": "2026-07-02T19:02:18+02:00",
+      "caption": "",
+      "positionSource": "interpolated"
+    },
+    {
+      "file": "photos/full/0537-20260702_190701.jpg",
+      "thumb": "photos/thumb/0537-20260702_190701.jpg",
+      "lat": 42.869196799722225,
+      "lon": 0.20295209972222222,
+      "date": "2026-07-02T19:07:01+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0538-20260702_191804.jpg",
+      "thumb": "photos/thumb/0538-20260702_191804.jpg",
+      "lat": 42.8671233,
+      "lon": 0.20643889972222224,
+      "date": "2026-07-02T19:18:05+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0539-20260702_193408.jpg",
+      "thumb": "photos/thumb/0539-20260702_193408.jpg",
+      "lat": 42.865657599722226,
+      "lon": 0.20662689972222223,
+      "date": "2026-07-02T19:34:08+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0540-20260702_193411.jpg",
+      "thumb": "photos/thumb/0540-20260702_193411.jpg",
+      "lat": 42.8654857,
+      "lon": 0.20655709972222222,
+      "date": "2026-07-02T19:34:11+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0541-20260702_203219.jpg",
+      "thumb": "photos/thumb/0541-20260702_203219.jpg",
+      "lat": 42.8554624,
+      "lon": 0.20950109972222222,
+      "date": "2026-07-02T20:32:19+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0542-20260702_203225.jpg",
+      "thumb": "photos/thumb/0542-20260702_203225.jpg",
+      "lat": 42.85488529972223,
+      "lon": 0.20964169972222224,
+      "date": "2026-07-02T20:32:25+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0543-20260702_203226.jpg",
+      "thumb": "photos/thumb/0543-20260702_203226.jpg",
+      "lat": 42.85488529972223,
+      "lon": 0.20964169972222224,
+      "date": "2026-07-02T20:32:26+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0544-20260702_203227.jpg",
+      "thumb": "photos/thumb/0544-20260702_203227.jpg",
+      "lat": 42.85488529972223,
+      "lon": 0.20964169972222224,
+      "date": "2026-07-02T20:32:28+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0545-20260702_203400.jpg",
+      "thumb": "photos/thumb/0545-20260702_203400.jpg",
+      "lat": 42.8539612,
+      "lon": 0.2098028,
+      "date": "2026-07-02T20:34:01+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0546-20260702_215120.jpg",
+      "thumb": "photos/thumb/0546-20260702_215120.jpg",
+      "lat": 42.857559,
+      "lon": 0.20757679972222223,
+      "date": "2026-07-02T21:51:20+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0547-20260702_215125.jpg",
+      "thumb": "photos/thumb/0547-20260702_215125.jpg",
+      "lat": 42.857559,
+      "lon": 0.20757679972222223,
+      "date": "2026-07-02T21:51:25+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0548-20260703_081258.jpg",
+      "thumb": "photos/thumb/0548-20260703_081258.jpg",
+      "lat": 42.8525514,
+      "lon": 0.21093009972222224,
+      "date": "2026-07-03T08:12:58+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0549-20260703_081300.jpg",
+      "thumb": "photos/thumb/0549-20260703_081300.jpg",
+      "lat": 42.8525514,
+      "lon": 0.21093009972222224,
+      "date": "2026-07-03T08:13:00+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0550-20260703_081301.jpg",
+      "thumb": "photos/thumb/0550-20260703_081301.jpg",
+      "lat": 42.8525514,
+      "lon": 0.21093009972222224,
+      "date": "2026-07-03T08:13:01+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0551-20260703_081358.jpg",
+      "thumb": "photos/thumb/0551-20260703_081358.jpg",
+      "lat": 42.8521438,
+      "lon": 0.21124599972222224,
+      "date": "2026-07-03T08:13:58+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0552-20260703_081400.jpg",
+      "thumb": "photos/thumb/0552-20260703_081400.jpg",
+      "lat": 42.8521549,
+      "lon": 0.21126679972222223,
+      "date": "2026-07-03T08:14:00+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0553-20260703_082212.jpg",
+      "thumb": "photos/thumb/0553-20260703_082212.jpg",
+      "lat": 42.847719499722224,
+      "lon": 0.21340289972222223,
+      "date": "2026-07-03T08:22:12+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0554-20260703_082214.jpg",
+      "thumb": "photos/thumb/0554-20260703_082214.jpg",
+      "lat": 42.8477151,
+      "lon": 0.21338929972222223,
+      "date": "2026-07-03T08:22:14+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0555-20260703_082218.jpg",
+      "thumb": "photos/thumb/0555-20260703_082218.jpg",
+      "lat": 42.8477151,
+      "lon": 0.21338929972222223,
+      "date": "2026-07-03T08:22:18+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0556-20260703_082915.jpg",
+      "thumb": "photos/thumb/0556-20260703_082915.jpg",
+      "lat": 42.8168318,
+      "lon": 0.20497829972222223,
+      "date": "2026-07-03T08:29:15+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0557-20260703_084446.jpg",
+      "thumb": "photos/thumb/0557-20260703_084446.jpg",
+      "lat": 42.8442706,
+      "lon": 0.20814669972222224,
+      "date": "2026-07-03T08:44:46+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0558-20260703_091238.jpg",
+      "thumb": "photos/thumb/0558-20260703_091238.jpg",
+      "lat": 42.838498,
+      "lon": 0.20833019972222222,
+      "date": "2026-07-03T09:12:38+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0559-20260703_091242.jpg",
+      "thumb": "photos/thumb/0559-20260703_091242.jpg",
+      "lat": 42.838498,
+      "lon": 0.20833019972222222,
+      "date": "2026-07-03T09:12:42+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0560-20260703_101849.jpg",
+      "thumb": "photos/thumb/0560-20260703_101849.jpg",
+      "lat": 42.83215189972223,
+      "lon": 0.23480609972222222,
+      "date": "2026-07-03T10:18:49+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0561-20260703_103036.jpg",
+      "thumb": "photos/thumb/0561-20260703_103036.jpg",
+      "lat": 42.833117799722224,
+      "lon": 0.2367101,
+      "date": "2026-07-03T10:30:36+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0562-20260703_111009.jpg",
+      "thumb": "photos/thumb/0562-20260703_111009.jpg",
+      "lat": 42.8347744,
+      "lon": 0.24922069972222222,
+      "date": "2026-07-03T11:10:10+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0563-20260703_111013.jpg",
+      "thumb": "photos/thumb/0563-20260703_111013.jpg",
+      "lat": 42.8347592,
+      "lon": 0.2492202,
+      "date": "2026-07-03T11:10:13+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0565-20260703_111018.jpg",
+      "thumb": "photos/thumb/0565-20260703_111018.jpg",
+      "lat": 42.834757199722226,
+      "lon": 0.24921989972222222,
+      "date": "2026-07-03T11:10:18+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0564-20260703_111018-0.jpg",
+      "thumb": "photos/thumb/0564-20260703_111018-0.jpg",
+      "lat": 42.834757199722226,
+      "lon": 0.24921989972222222,
+      "date": "2026-07-03T11:10:19+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0566-20260703_111019.jpg",
+      "thumb": "photos/thumb/0566-20260703_111019.jpg",
+      "lat": 42.834757199722226,
+      "lon": 0.24921989972222222,
+      "date": "2026-07-03T11:10:19+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0567-20260703_111020.jpg",
+      "thumb": "photos/thumb/0567-20260703_111020.jpg",
+      "lat": 42.834757199722226,
+      "lon": 0.24921989972222222,
+      "date": "2026-07-03T11:10:20+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0569-20260703_111027.jpg",
+      "thumb": "photos/thumb/0569-20260703_111027.jpg",
+      "lat": 42.834757199722226,
+      "lon": 0.24921989972222222,
+      "date": "2026-07-03T11:10:27+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0568-20260703_111027-0.jpg",
+      "thumb": "photos/thumb/0568-20260703_111027-0.jpg",
+      "lat": 42.834757199722226,
+      "lon": 0.24921989972222222,
+      "date": "2026-07-03T11:10:28+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0570-20260703_111034.jpg",
+      "thumb": "photos/thumb/0570-20260703_111034.jpg",
+      "lat": 42.834757199722226,
+      "lon": 0.24921989972222222,
+      "date": "2026-07-03T11:10:34+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0571-20260703_111035.jpg",
+      "thumb": "photos/thumb/0571-20260703_111035.jpg",
+      "lat": 42.834757199722226,
+      "lon": 0.24921989972222222,
+      "date": "2026-07-03T11:10:35+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0572-20260703_111104.jpg",
+      "thumb": "photos/thumb/0572-20260703_111104.jpg",
+      "lat": 42.834744,
+      "lon": 0.2492067,
+      "date": "2026-07-03T11:11:05+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0573-20260703_111108.jpg",
+      "thumb": "photos/thumb/0573-20260703_111108.jpg",
+      "lat": 42.834744,
+      "lon": 0.2492067,
+      "date": "2026-07-03T11:11:08+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0574-20260703_111110.jpg",
+      "thumb": "photos/thumb/0574-20260703_111110.jpg",
+      "lat": 42.834744,
+      "lon": 0.2492067,
+      "date": "2026-07-03T11:11:11+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0575-20260703_111421.jpg",
+      "thumb": "photos/thumb/0575-20260703_111421.jpg",
+      "lat": 42.8341733,
+      "lon": 0.2508945,
+      "date": "2026-07-03T11:14:21+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0576-20260703_112937.jpg",
+      "thumb": "photos/thumb/0576-20260703_112937.jpg",
+      "lat": 42.834388699722226,
+      "lon": 0.26342209972222225,
+      "date": "2026-07-03T11:29:37+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0577-20260703_112941.jpg",
+      "thumb": "photos/thumb/0577-20260703_112941.jpg",
+      "lat": 42.834388699722226,
+      "lon": 0.26342209972222225,
+      "date": "2026-07-03T11:29:41+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0578-20260703_115125.jpg",
+      "thumb": "photos/thumb/0578-20260703_115125.jpg",
+      "lat": 42.835265399722225,
+      "lon": 0.2796322,
+      "date": "2026-07-03T11:51:25+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0579-20260703_115127.jpg",
+      "thumb": "photos/thumb/0579-20260703_115127.jpg",
+      "lat": 42.8362588,
+      "lon": 0.2831958,
+      "date": "2026-07-03T11:51:27+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0580-20260703_131512.jpg",
+      "thumb": "photos/thumb/0580-20260703_131512.jpg",
+      "lat": 42.836323499722226,
+      "lon": 0.3144848,
+      "date": "2026-07-03T13:15:13+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0581-20260703_134854.jpg",
+      "thumb": "photos/thumb/0581-20260703_134854.jpg",
+      "lat": 42.8337845,
+      "lon": 0.31977109972222223,
+      "date": "2026-07-03T13:48:55+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0582-20260703_135523.jpg",
+      "thumb": "photos/thumb/0582-20260703_135523.jpg",
+      "lat": 42.832591,
+      "lon": 0.3200522,
+      "date": "2026-07-03T13:55:24+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    },
+    {
+      "file": "photos/full/0583-20260703_135525.jpg",
+      "thumb": "photos/thumb/0583-20260703_135525.jpg",
+      "lat": 42.832590799722226,
+      "lon": 0.3200493997222222,
+      "date": "2026-07-03T13:55:25+02:00",
+      "caption": "",
+      "positionSource": "exif"
+    }
+  ],
+  "generatedAt": "2026-07-04T14:13:50.960627+00:00"
 }

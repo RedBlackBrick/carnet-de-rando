@@ -284,7 +284,8 @@ def extract_exif(img: Image.Image):
         except ValueError:
             dt = None
 
-    return (lat, lon) if lat is not None and lon is not None else None, dt
+    has_gps = lat is not None and lon is not None and (lat, lon) != (0.0, 0.0)
+    return (lat, lon) if has_gps else None, dt
 
 
 def find_nearest_time_point(dt_utc, time_points):
