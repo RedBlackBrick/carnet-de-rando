@@ -1,0 +1,17 @@
+[
+  {
+    "id": "bus-1",
+    "date": "2026-07-02",
+    "from": {
+      "name": "Nom du lieu de départ (ville, arrêt...)",
+      "lat": null,
+      "lon": null
+    },
+    "to": {
+      "name": "Nom du lieu d'arrivée",
+      "lat": null,
+      "lon": null
+    },
+    "note": "Ex: bus de correspondance entre l'étape 2 et 3"
+  }
+]

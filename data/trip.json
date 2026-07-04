@@ -1,0 +1,15 @@
+{
+  "title": "Ma randonnée",
+  "subtitle": "Quelques jours en montagne",
+  "startDate": "2026-07-01",
+  "endDate": "2026-07-05",
+  "intro": "Récit de notre randonnée de plusieurs jours, avec les traces GPS, les trajets en bus et les photos prises en chemin.",
+  "days": [
+    {
+      "id": "jour-1",
+      "date": "2026-07-01",
+      "title": "Jour 1 — À compléter",
+      "description": "Description de l'étape (facultatif)."
+    }
+  ]
+}

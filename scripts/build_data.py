@@ -1,0 +1,423 @@
+#!/usr/bin/env python3
+"""Génère docs/data/manifest.json + copie/compresse les traces GPX et photos.
+
+Usage: python3 scripts/build_data.py
+Ré-exécutable à volonté : régénère tout à partir de data/ à chaque run.
+"""
+import bisect
+import json
+import math
+import re
+import time
+import urllib.parse
+import urllib.request
+from datetime import datetime, timezone
+from pathlib import Path
+from xml.etree import ElementTree as ET
+
+from PIL import ExifTags, Image, ImageOps
+
+try:
+    from zoneinfo import ZoneInfo
+except ImportError:  # pragma: no cover
+    ZoneInfo = None
+
+try:
+    import pillow_heif
+
+    pillow_heif.register_heif_opener()
+except ImportError:
+    pillow_heif = None
+
+ROOT = Path(__file__).resolve().parent.parent
+DATA = ROOT / "data"
+DOCS = ROOT / "docs"
+GEOCODE_CACHE_PATH = Path(__file__).resolve().parent / ".geocode_cache.json"
+
+FULL_MAX_SIDE = 1600
+FULL_QUALITY = 82
+THUMB_MAX_SIDE = 400
+THUMB_QUALITY = 78
+
+PHOTO_EXTENSIONS = {".jpg", ".jpeg", ".heic", ".heif"}
+TIME_MATCH_TOLERANCE_S = 3 * 3600  # tolérance pour rattacher une photo sans GPS à la trace GPX la plus proche dans le temps
+
+DAY_COLORS = [
+    "#2f6f4f", "#b5651d", "#3a6ea5", "#a13d3d",
+    "#6b5b95", "#4c7a3f", "#c1875a", "#2b6f77",
+]
+
+
+def log(msg):
+    print(msg, flush=True)
+
+
+# ---------------------------------------------------------------------------
+# GPX parsing
+# ---------------------------------------------------------------------------
+
+def haversine_m(lat1, lon1, lat2, lon2):
+    r = 6371000.0
+    p1, p2 = math.radians(lat1), math.radians(lat2)
+    dphi = math.radians(lat2 - lat1)
+    dlambda = math.radians(lon2 - lon1)
+    a = math.sin(dphi / 2) ** 2 + math.cos(p1) * math.cos(p2) * math.sin(dlambda / 2) ** 2
+    return 2 * r * math.asin(math.sqrt(a))
+
+
+def parse_gpx_time(text):
+    if not text:
+        return None
+    return datetime.fromisoformat(text.replace("Z", "+00:00"))
+
+
+def parse_gpx(path: Path):
+    tree = ET.parse(path)
+    root = tree.getroot()
+    ns_match = re.match(r"\{(.+)\}", root.tag)
+    ns = {"g": ns_match.group(1)} if ns_match else {"g": ""}
+
+    points = []
+    for trkpt in root.findall(".//g:trkpt", ns):
+        lat = float(trkpt.get("lat"))
+        lon = float(trkpt.get("lon"))
+        ele_el = trkpt.find("g:ele", ns)
+        ele = float(ele_el.text) if ele_el is not None and ele_el.text else None
+        time_el = trkpt.find("g:time", ns)
+        t = parse_gpx_time(time_el.text) if time_el is not None else None
+        points.append({"lat": lat, "lon": lon, "ele": ele, "time": t})
+
+    if not points:
+        return None
+
+    distance_m = 0.0
+    gain_m = 0.0
+    loss_m = 0.0
+    for a, b in zip(points, points[1:]):
+        distance_m += haversine_m(a["lat"], a["lon"], b["lat"], b["lon"])
+        if a["ele"] is not None and b["ele"] is not None:
+            delta = b["ele"] - a["ele"]
+            if delta > 0:
+                gain_m += delta
+            else:
+                loss_m += -delta
+
+    times = [p["time"] for p in points if p["time"] is not None]
+    start_time = min(times) if times else None
+    end_time = max(times) if times else None
+    duration_s = (end_time - start_time).total_seconds() if start_time and end_time else None
+
+    lats = [p["lat"] for p in points]
+    lons = [p["lon"] for p in points]
+
+    return {
+        "points": points,
+        "distance_km": round(distance_m / 1000, 2),
+        "elevation_gain_m": round(gain_m),
+        "elevation_loss_m": round(loss_m),
+        "duration_s": duration_s,
+        "start_time": start_time,
+        "end_time": end_time,
+        "bounds": [[min(lats), min(lons)], [max(lats), max(lons)]],
+    }
+
+
+def build_tracks(trip_days_by_date):
+    gpx_files = sorted((DATA / "gpx").glob("*.gpx"))
+    tracks = []
+    all_time_points = []  # (timestamp, lat, lon) across every track, for photo fallback matching
+
+    out_gpx_dir = DOCS / "data" / "gpx"
+    out_gpx_dir.mkdir(parents=True, exist_ok=True)
+    for existing in out_gpx_dir.glob("*.gpx"):
+        existing.unlink()
+
+    parsed = []
+    for gpx_path in gpx_files:
+        info = parse_gpx(gpx_path)
+        if info is None:
+            log(f"  ! {gpx_path.name}: aucun point trouvé, ignoré")
+            continue
+        parsed.append((gpx_path, info))
+
+    parsed.sort(key=lambda pair: pair[1]["start_time"] or datetime.min.replace(tzinfo=timezone.utc))
+
+    for idx, (gpx_path, info) in enumerate(parsed):
+        dest_name = f"day-{idx + 1}.gpx"
+        (out_gpx_dir / dest_name).write_bytes(gpx_path.read_bytes())
+
+        date_str = info["start_time"].date().isoformat() if info["start_time"] else None
+        day_meta = trip_days_by_date.get(date_str, {})
+
+        for p in info["points"]:
+            if p["time"] is not None:
+                all_time_points.append((p["time"], p["lat"], p["lon"]))
+
+        tracks.append({
+            "id": f"day-{idx + 1}",
+            "file": f"data/gpx/{dest_name}",
+            "label": day_meta.get("title") or f"Jour {idx + 1}",
+            "description": day_meta.get("description", ""),
+            "date": date_str,
+            "color": DAY_COLORS[idx % len(DAY_COLORS)],
+            "distanceKm": info["distance_km"],
+            "elevationGainM": info["elevation_gain_m"],
+            "elevationLossM": info["elevation_loss_m"],
+            "durationS": info["duration_s"],
+            "startTime": info["start_time"].isoformat() if info["start_time"] else None,
+            "endTime": info["end_time"].isoformat() if info["end_time"] else None,
+            "bounds": info["bounds"],
+        })
+        log(f"  - {gpx_path.name} -> {dest_name}: {info['distance_km']} km, +{info['elevation_gain_m']}m")
+
+    all_time_points.sort(key=lambda t: t[0])
+    return tracks, all_time_points
+
+
+# ---------------------------------------------------------------------------
+# Photos
+# ---------------------------------------------------------------------------
+
+def _to_deg(value_tuple):
+    d, m, s = (float(v) for v in value_tuple)
+    return d + m / 60 + s / 3600
+
+
+def extract_exif(img: Image.Image):
+    exif = img.getexif()
+    if not exif:
+        return None, None
+
+    gps_ifd = exif.get_ifd(0x8825)
+    lat = lon = None
+    if gps_ifd:
+        try:
+            lat = _to_deg(gps_ifd[2])
+            if gps_ifd.get(1) == "S":
+                lat = -lat
+            lon = _to_deg(gps_ifd[4])
+            if gps_ifd.get(3) == "W":
+                lon = -lon
+        except (KeyError, TypeError, ZeroDivisionError):
+            lat = lon = None
+
+    dt = None
+    try:
+        exif_ifd = exif.get_ifd(0x8769)
+        raw_dt = exif_ifd.get(36867) or exif.get(306)
+    except Exception:
+        raw_dt = exif.get(306)
+    if raw_dt:
+        try:
+            dt = datetime.strptime(raw_dt, "%Y:%m:%d %H:%M:%S")
+        except ValueError:
+            dt = None
+
+    return (lat, lon) if lat is not None and lon is not None else None, dt
+
+
+def find_nearest_time_point(dt_utc, time_points):
+    if not time_points or dt_utc is None:
+        return None
+    times = [t[0] for t in time_points]
+    idx = bisect.bisect_left(times, dt_utc)
+    candidates = [i for i in (idx - 1, idx) if 0 <= i < len(times)]
+    if not candidates:
+        return None
+    best = min(candidates, key=lambda i: abs((times[i] - dt_utc).total_seconds()))
+    if abs((times[best] - dt_utc).total_seconds()) > TIME_MATCH_TOLERANCE_S:
+        return None
+    return time_points[best][1], time_points[best][2]
+
+
+def build_photos(time_points, trip_timezone, captions):
+    photo_paths = sorted(
+        p for p in (DATA / "photos").rglob("*")
+        if p.suffix.lower() in PHOTO_EXTENSIONS and p.is_file()
+    )
+
+    full_dir = DOCS / "photos" / "full"
+    thumb_dir = DOCS / "photos" / "thumb"
+    for d in (full_dir, thumb_dir):
+        d.mkdir(parents=True, exist_ok=True)
+        for existing in d.glob("*"):
+            existing.unlink()
+
+    tz = ZoneInfo(trip_timezone) if ZoneInfo and trip_timezone else None
+
+    entries = []
+    skipped = []
+    for i, path in enumerate(photo_paths, start=1):
+        try:
+            img = Image.open(path)
+        except Exception as e:
+            skipped.append((path.name, f"lecture impossible ({e})"))
+            continue
+
+        gps, dt_naive = extract_exif(img)
+        source = None
+        lat = lon = None
+
+        if gps:
+            lat, lon = gps
+            source = "exif"
+        elif dt_naive is not None:
+            dt_local = dt_naive.replace(tzinfo=tz) if tz else dt_naive.replace(tzinfo=timezone.utc)
+            dt_utc = dt_local.astimezone(timezone.utc)
+            match = find_nearest_time_point(dt_utc, time_points)
+            if match:
+                lat, lon = match
+                source = "interpolated"
+
+        if lat is None:
+            skipped.append((path.name, "pas de position GPS ni de trace GPX proche dans le temps"))
+            continue
+
+        slug = re.sub(r"[^a-zA-Z0-9_-]+", "-", path.stem).strip("-").lower() or "photo"
+        out_name = f"{i:04d}-{slug}.jpg"
+
+        try:
+            oriented = ImageOps.exif_transpose(img).convert("RGB")
+        except Exception as e:
+            skipped.append((path.name, f"traitement impossible ({e})"))
+            continue
+
+        full_img = oriented.copy()
+        full_img.thumbnail((FULL_MAX_SIDE, FULL_MAX_SIDE), Image.LANCZOS)
+        full_img.save(full_dir / out_name, "JPEG", quality=FULL_QUALITY)
+
+        thumb_img = oriented.copy()
+        thumb_img.thumbnail((THUMB_MAX_SIDE, THUMB_MAX_SIDE), Image.LANCZOS)
+        thumb_img.save(thumb_dir / out_name, "JPEG", quality=THUMB_QUALITY)
+
+        date_iso = None
+        if dt_naive is not None:
+            dt_local = dt_naive.replace(tzinfo=tz) if tz else dt_naive.replace(tzinfo=timezone.utc)
+            date_iso = dt_local.isoformat()
+
+        entries.append({
+            "file": f"photos/full/{out_name}",
+            "thumb": f"photos/thumb/{out_name}",
+            "lat": lat,
+            "lon": lon,
+            "date": date_iso,
+            "caption": captions.get(path.name, ""),
+            "positionSource": source,
+        })
+
+    entries.sort(key=lambda e: e["date"] or "")
+
+    log(f"  {len(entries)} photo(s) géolocalisée(s), {len(skipped)} ignorée(s)")
+    for name, reason in skipped:
+        log(f"  ! {name}: {reason}")
+
+    return entries
+
+
+# ---------------------------------------------------------------------------
+# Bus (géocodage)
+# ---------------------------------------------------------------------------
+
+def load_geocode_cache():
+    if GEOCODE_CACHE_PATH.exists():
+        return json.loads(GEOCODE_CACHE_PATH.read_text())
+    return {}
+
+
+def save_geocode_cache(cache):
+    GEOCODE_CACHE_PATH.write_text(json.dumps(cache, ensure_ascii=False, indent=2))
+
+
+def geocode(name, cache):
+    if name in cache:
+        return cache[name]
+    url = "https://nominatim.openstreetmap.org/search?" + urllib.parse.urlencode({
+        "q": name, "format": "json", "limit": 1,
+    })
+    req = urllib.request.Request(url, headers={"User-Agent": "rando-site-builder/1.0"})
+    try:
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            results = json.loads(resp.read().decode())
+        time.sleep(1)  # politesse envers l'API Nominatim (max 1 req/s)
+    except Exception as e:
+        log(f"  ! géocodage échoué pour '{name}': {e}")
+        cache[name] = None
+        return None
+    if not results:
+        log(f"  ! aucun résultat de géocodage pour '{name}'")
+        cache[name] = None
+        return None
+    coords = {"lat": float(results[0]["lat"]), "lon": float(results[0]["lon"])}
+    cache[name] = coords
+    return coords
+
+
+def build_buses():
+    bus_path = DATA / "bus.json"
+    if not bus_path.exists():
+        return []
+    raw = json.loads(bus_path.read_text())
+    cache = load_geocode_cache()
+    resolved = []
+    for leg in raw:
+        for endpoint in ("from", "to"):
+            point = leg.get(endpoint) or {}
+            if point.get("lat") is None or point.get("lon") is None:
+                coords = geocode(point.get("name", ""), cache)
+                if coords:
+                    point["lat"], point["lon"] = coords["lat"], coords["lon"]
+            leg[endpoint] = point
+        if leg["from"].get("lat") is not None and leg["to"].get("lat") is not None:
+            resolved.append(leg)
+        else:
+            log(f"  ! trajet bus '{leg.get('id')}' ignoré (coordonnées introuvables)")
+    save_geocode_cache(cache)
+    return resolved
+
+
+# ---------------------------------------------------------------------------
+# Main
+# ---------------------------------------------------------------------------
+
+def main():
+    trip = json.loads((DATA / "trip.json").read_text())
+    captions_path = DATA / "captions.json"
+    captions = json.loads(captions_path.read_text()) if captions_path.exists() else {}
+    trip_days_by_date = {d["date"]: d for d in trip.get("days", []) if d.get("date")}
+
+    log("Traces GPX:")
+    tracks, time_points = build_tracks(trip_days_by_date)
+
+    log("Trajets bus:")
+    buses = build_buses()
+
+    log("Photos:")
+    photos = build_photos(time_points, trip.get("timezone", "Europe/Paris"), captions)
+
+    total_distance = round(sum(t["distanceKm"] for t in tracks), 1)
+    total_gain = round(sum(t["elevationGainM"] for t in tracks))
+    total_duration = sum(t["durationS"] or 0 for t in tracks)
+
+    manifest = {
+        "trip": trip,
+        "stats": {
+            "totalDistanceKm": total_distance,
+            "totalElevationGainM": total_gain,
+            "totalDurationS": total_duration,
+            "dayCount": len(tracks),
+        },
+        "tracks": tracks,
+        "buses": buses,
+        "photos": photos,
+        "generatedAt": datetime.now(timezone.utc).isoformat(),
+    }
+
+    manifest_path = DOCS / "data" / "manifest.json"
+    manifest_path.parent.mkdir(parents=True, exist_ok=True)
+    manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2))
+    log(f"\nOK -> {manifest_path.relative_to(ROOT)}")
+    log(f"   {len(tracks)} jour(s), {total_distance} km, +{total_gain} m, {len(photos)} photo(s), {len(buses)} trajet(s) bus")
+
+
+if __name__ == "__main__":
+    main()
